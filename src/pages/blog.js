@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const BlogPage = ({data}) => (
   <div>
-    <h1>Blog Posts</h1>
+    <h1>Latest Posts</h1>
     {data.allMarkdownRemark.edges.map(post => (
         <div key={ post.node.id }>
             <h3>{post.node.frontmatter.title}</h3>
@@ -20,21 +20,23 @@ const BlogPage = ({data}) => (
 )
 
 export const pageQuery = graphql`
-    query BlogIndexQuery {
-            allMarkdownRemark {
-              edges {
-                node {
-                    id
-                    frontmatter {
-                        path
-                        title
-                        date
-                        author
-                  }
-                }
-              }
-            }
+query BlogIndexQuery {
+  allMarkdownRemark(limit: 10, filter: {frontmatter: {published: {eq: true}}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          path
+          title
+          date
+          author
+          path
+          published
+        }
+      }
     }
+  }
+}
 `
 
 

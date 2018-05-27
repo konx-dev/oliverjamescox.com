@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -40,6 +41,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
   color: #333333;
   text-decoration: none;
 }
@@ -131,6 +133,7 @@ select {
 button,
 html [type=button] {
   -webkit-appearance: button;
+  appearance: button;
 }
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -172,11 +175,13 @@ textarea {
 }
 [type=search] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 [type=search]::-webkit-search-cancel-button,
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 ::-webkit-input-placeholder {
   color: inherit;
@@ -184,6 +189,7 @@ textarea {
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  appearance: button;
   font: inherit;
 }
 html {
@@ -626,3 +632,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.pStyle {
+  text-align: center;
+  color: magenta;
+}
+
