@@ -5,12 +5,19 @@ const ContactPage = () => (
   <div>
     <h1>Contact Me</h1>
     <p>personal information page</p>
-    <form name="contact" method="POST" netlify>
+    
+    <form name="contact" method="POST" action="thank-you" netlify>
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
   <p>
     <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
   </p>
   <p>
     <label>Message: <textarea name="message"></textarea></label>
@@ -21,7 +28,7 @@ const ContactPage = () => (
 </form>
 
 
-  </div>
+</div>
 )
 
 export default ContactPage
