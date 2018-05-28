@@ -30,7 +30,6 @@ query BlogIndexQuery {
           title
           date
           author
-          path
           published
         }
       }

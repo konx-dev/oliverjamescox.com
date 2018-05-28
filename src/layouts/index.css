@@ -1,3 +1,7 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6,6 +10,7 @@ html {
 }
 body {
   margin: 0;
+  
 }
 article,
 aside,
@@ -42,13 +47,14 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration-skip: objects;
-  color: #333333;
+  color: inherit;
   text-decoration: none;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  text-decoration: underline;
+  text-decoration: none;
+  color: #333333;
 
 }
 abbr[title] {
@@ -633,8 +639,45 @@ pre tt:after {
   }
 }
 
-.pStyle {
-  text-align: center;
-  color: magenta;
+.logo {
+  height: 75px;
+  align-items: center;
 }
 
+.nav--items {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.nav--item {
+  color: #333333;
+}
+
+.nav--items li {
+  margin: 0 5% 5% 0;
+}
+
+.headerStyle {
+  display: flex;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  padding-top: 1%;
+}
+
+.indexLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 100vh;
+  justify-content: center;
+}
+
+.indexH1 {
+  font-size: 60px;
+  color: #333333;
+  font-family: "Montserrat";
+}
