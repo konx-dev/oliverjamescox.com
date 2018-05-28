@@ -6,7 +6,14 @@ const ContactPage = () => (
     <h1>Contact Me</h1>
     <p>personal information page</p>
     
-    <form name="contact" method="POST" action="thank-you" netlify>
+    <form 
+        name="contact" 
+        method="POST" 
+        action="thank-you" 
+        data-netlify="true" 
+        data-netlify-honeypot="bot-field"
+    >
+ 
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
