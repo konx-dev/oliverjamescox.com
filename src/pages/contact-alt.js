@@ -20,13 +20,13 @@ const ContactPageAlt = () => (
     >
  
   <p>
-    <label>Your Name: <input type="text" name="name" required /></label>   
+    <label>Your Name: <input type="text" name="name" /></label>   
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" required /></label>
+    <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Message: <textarea name="message" required ></textarea></label>
+    <label>Message: <textarea name="message" ></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
