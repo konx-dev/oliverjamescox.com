@@ -18,7 +18,9 @@ const ContactPage = () => (
               data-netlify="true" 
               data-netlify-honeypot="bot-field"
             >
- 
+          <p className="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
           <p>
             <label>Name 
               <input type="text" name="name" required />
@@ -46,7 +48,7 @@ const ContactPage = () => (
             </label>
           </p>
           <p className="full">
-            <button type="submit">Submit</button>
+            <button>Submit</button>
           </p>
             </form>
 
