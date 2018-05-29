@@ -15,9 +15,11 @@ const ContactPage = () => (
             
             <form 
               name="my-contacts" 
-              method="post" 
+              method="POST" 
+              action="#" 
               data-netlify="true" 
-              data-netlify-honeypot="bot-field">
+              data-netlify-honeypot="bot-field"
+            >
                 <input type="hidden" name="bot-field" />
                 <p>
                   <label>Name 
@@ -31,12 +33,12 @@ const ContactPage = () => (
                 </p>
                 <p className="full">
                   <label>Message 
-                    <textarea name="message" rows="6" required>
+                    <textarea name="message" rows="6">
                     </textarea>
                   </label>
                  </p>
                   <p className="full">
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send</button>
                   </p>
             </form>
           </div>
