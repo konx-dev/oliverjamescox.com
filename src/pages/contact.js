@@ -2,40 +2,59 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ContactPage = () => (
-  <div>
-    <h1>Contact Me</h1>
-    <p>personal information page</p>
-    
-    <form 
-        name="contact" 
-        method="POST" 
-        action="thank-you" 
-        data-netlify="true" 
-        data-netlify-honeypot="bot-field"
-    >
+
+    <div className="container">
+        <div className="wrapper">
+
+          <div className="my-info">
+            <h3>Contact Me</h3>
+            <p>Pop me a message if you would like to work on a project together, or just want to chat.</p>
+          </div>
+
+          <div className="contact">
+            <form 
+              name="contact" 
+              method="POST" 
+              action="thank-you" 
+              data-netlify="true" 
+              data-netlify-honeypot="bot-field"
+            >
  
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+          <p>
+            <label>Name 
+              <input type="text" name="name" required />
+            </label>   
+          </p>
+          <p>
+            <label>Company 
+              <input type="text" name="company-name" />
+            </label>   
+          </p>
+          <p>
+            <label>Email Address 
+              <input type="email" name="email" placeholder="example@address.com" required />
+            </label>
+          </p>
+          <p>
+            <label>Contact Number 
+              <input type="number" name="number" />
+            </label>
+          </p>
+          <p className="full">
+            <label>Message 
+              <textarea name="message" rows="5" required>
+              </textarea>
+            </label>
+          </p>
+          <p className="full">
+            <button type="submit">Submit</button>
+          </p>
+            </form>
 
+          </div>
 
-</div>
+      </div>
+    </div>
 )
 
 export default ContactPage
