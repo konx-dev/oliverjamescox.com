@@ -13,7 +13,7 @@ const ContactPageAlt = () => (
           <div className="contact">
     
     <form 
-        name="my-contacts" 
+        name="contact-form" 
         method="POST"  
         data-netlify="true" 
         data-netlify-honeypot="bot-field"
