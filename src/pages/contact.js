@@ -9,7 +9,7 @@ const ContactPage = () => (
     <form 
         name="my-contacts" 
         method="POST" 
-        action="/thank-you" 
+        action="thank-you" 
         data-netlify="true" 
         data-netlify-honeypot="bot-field"
     >
