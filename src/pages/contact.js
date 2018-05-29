@@ -13,9 +13,8 @@ const ContactPage = () => (
 
           <div className="contact">
             <form 
-              name="contact" 
-              method="POST" 
-              action="thank-you" 
+              name="contact-new" 
+              method="POST"  
               data-netlify="true" 
               data-netlify-honeypot="bot-field"
             >
