@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ContactPage = () => (
-
+  <div>
     <div className="container">
         <div className="wrapper">
 
@@ -44,6 +44,7 @@ const ContactPage = () => (
           </div>
 
       </div>
+    </div>
     </div>
 )
 
