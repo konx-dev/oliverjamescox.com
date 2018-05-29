@@ -2,9 +2,15 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ContactPageAlt = () => (
-  <div>
-    <h1>Contact Me</h1>
-    <p>personal information page</p>
+  <div className="container">
+        <div className="wrapper">
+
+          <div className="my-info">
+            <h3>Contact Me</h3>
+            <p>Pop me a message if you would like to work on a project together, or just want to chat.</p>
+          </div>
+
+          <div className="contact">
     
     <form 
         name="my-contacts" 
@@ -26,6 +32,9 @@ const ContactPageAlt = () => (
     <button type="submit">Send</button>
   </p>
 </form>
+
+</div>
+</div>
 
 
 </div>
