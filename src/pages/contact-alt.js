@@ -8,8 +8,7 @@ const ContactPageAlt = () => (
     
     <form 
         name="my-contacts" 
-        method="POST" 
-        action="contact" 
+        method="POST"  
         data-netlify="true" 
         data-netlify-honeypot="bot-field"
     >
