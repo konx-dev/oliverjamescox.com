@@ -12,42 +12,33 @@ const ContactPage = () => (
           </div>
 
           <div className="contact">
+            
             <form 
-              name="contact-form" 
-              method="POST"
-              data-netlify="true"
-            >
-          <p>
-            <label>Name 
-              <input type="text" name="name" required />
-            </label>   
-          </p>
-          <p>
-            <label>Company 
-              <input type="text" name="company-name" />
-            </label>   
-          </p>
-          <p>
-            <label>Email Address 
-              <input type="email" name="email" placeholder="example@address.com" required />
-            </label>
-          </p>
-          <p>
-            <label>Contact Number 
-              <input type="number" name="number" />
-            </label>
-          </p>
-          <p className="full">
-            <label>Message 
-              <textarea name="message" rows="5" required>
-              </textarea>
-            </label>
-          </p>
-          <p className="full">
-            <button type="submit">Submit</button>
-          </p>
+              name="my-contacts" 
+              method="post" 
+              data-netlify="true" 
+              data-netlify-honeypot="bot-field">
+                <input type="hidden" name="bot-field" />
+                <p>
+                  <label>Name 
+                    <input type="text" name="name" />
+                  </label>   
+                </p>
+                <p>
+                  <label>Email Address 
+                    <input type="email" name="email" placeholder="example@address.com" />
+                  </label>
+                </p>
+                <p className="full">
+                  <label>Message 
+                    <textarea name="message" rows="6" required>
+                    </textarea>
+                  </label>
+                 </p>
+                  <p className="full">
+                    <button type="submit">Submit</button>
+                  </p>
             </form>
-
           </div>
 
       </div>
