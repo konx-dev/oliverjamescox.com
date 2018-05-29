@@ -31,13 +31,13 @@ const ContactPage = () => (
                     <input type="email" name="email" placeholder="example@address.com" />
                   </label>
                 </p>
-                <p className="full">
+                <p>
                   <label>Message 
                     <textarea name="message" rows="6">
                     </textarea>
                   </label>
                  </p>
-                  <p className="full">
+                  <p>
                     <button type="submit">Send</button>
                   </p>
             </form>
