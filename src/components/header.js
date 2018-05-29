@@ -9,7 +9,7 @@ const Header = () => (
       <ul className="nav--items">
         <li className="nav--item"><Link to="/about">About</Link></li>
         <li className="nav--item"><Link to="/work">Work</Link></li>
-        <li className="nav--item"><Link to="/contact-alt">Contact</Link></li>
+        <li className="nav--item"><a href="https://dazzling-lichterman-b6623a.netlify.com/contact-alt/">Contact</a></li>
         <li className="nav--item"><Link to="/blog">Blog</Link></li>
       </ul>
     </div>
