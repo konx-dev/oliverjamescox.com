@@ -662,12 +662,12 @@ pre tt:after {
   align-items: center;
 }
 
-.nav--item {
-  color: #333333;
-}
-
 .nav--items li {
   margin: 0 10% 5% 0;
+}
+
+.nav--item {
+  color: #333333;
 }
 
 .headerStyle {
