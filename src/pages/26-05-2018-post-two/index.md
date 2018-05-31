@@ -4,6 +4,7 @@ date: "26-05-2018"
 title: "Post Two"
 author: "Admin"
 published: true
+thumbnail: "dbutt.jpg"
 ---
 
 This is my very **second** blog post in Gatsby.
