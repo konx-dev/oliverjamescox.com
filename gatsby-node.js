@@ -25,6 +25,14 @@
                          title
                          date
                          author
+                         thumbnail {
+                             childImageSharp {
+                                 responsiveSizes(maxWidth: 400) {
+                                     src
+                                     sizes
+                                 }
+                             }
+                         }
                      }
                  }
              }
