@@ -3,10 +3,10 @@ import Link from 'gatsby-link'
 
 import logo from '../images/oc_logo.svg'
 
-const Header = () => (
+const Footer = () => (
 
-  <div className="header--wrapper">
-    <nav className="header--nav">
+  <div className="footer--wrapper">
+    <div className="footer--container">
       <ul>
         <li><img className="logo" src={logo} alt="oc logo" /></li>
         <li><Link to="/">Home</Link></li>
@@ -14,9 +14,9 @@ const Header = () => (
         <li><Link to="/work">Work</Link></li>
         <li><Link to="/blog">Blog</Link></li>
       </ul>
-    </nav>
+    </div>
   </div>
 
 )
 
-export default Header
+export default Footer
