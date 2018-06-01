@@ -22,7 +22,12 @@ const BlogPage = ({data}) => (
 
 export const pageQuery = graphql`
 query BlogIndexQuery {
-  allMarkdownRemark(limit: 10, filter: {frontmatter: {published: {eq: true}}}) {
+  allMarkdownRemark(limit: 10, filter: {
+    														frontmatter: {published: {eq: true} 
+                                blogpost: {eq: true} 
+                                featured: {eq: true}
+  }})
+  {
     edges {
       node {
         id
@@ -32,6 +37,8 @@ query BlogIndexQuery {
           date
           author
           published
+          featured
+          blogpost
           thumbnail {
             childImageSharp {
               responsiveSizes(maxWidth: 200) {
