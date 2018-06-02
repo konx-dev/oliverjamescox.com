@@ -8,7 +8,6 @@ import instaIcon from '../images/social-icons/instagram.svg'
 import twitIcon from '../images/social-icons/twitter.svg'
 import emailIcon from '../images/social-icons/email.svg'
 import linkedIcon from '../images/social-icons/linkedin.svg'
-import gatsbyIcon from '../images/gatsbylogo.svg'
 
 const Footer = () => (
 
