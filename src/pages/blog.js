@@ -2,23 +2,22 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const BlogPage = ({data}) => (
-
-  <div>
-    <h1>Latest Posts</h1>
-    {data.allMarkdownRemark.edges.map(post => (
-        <div key={ post.node.id }>
-            <img src={post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
-            <h3>{post.node.frontmatter.title}</h3>
-            <small>Posted by { post.node.frontmatter.author } on {post.node.frontmatter.date}</small>
-            <br />
-            <br />
-            <Link to={post.node.frontmatter.path}>Read More</Link>
-            <br />
-            <br />
-            <hr />
-        </div>
-    ))}
-  </div>
+  <div className="blog__container">
+    <h1 className="blog__header">Latest Posts</h1>
+      <div className="blog">
+        {data.allMarkdownRemark.edges.map(post => (
+            <div className="blog__post"  key={ post.node.id }>
+                  <img className="blog__image" src={post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
+                    <div className="blog__details">
+                        <div className="blog__title">{post.node.frontmatter.title}</div>
+                        <div className="blog__description">{post.node.frontmatter.description}</div>
+                        <Link to={post.node.frontmatter.path}><button className="blog__cta">Read More</button></Link>
+                        <div className="blog__date">Posted by <strong>{ post.node.frontmatter.author }</strong> on <em>{post.node.frontmatter.date}</em></div>
+                    </div>
+            </div>
+        ))}
+      </div>
+    </div>
 )
 
 export const pageQuery = graphql`
@@ -40,6 +39,7 @@ query BlogIndexQuery {
           published
           featured
           blogpost
+          description
           thumbnail {
             childImageSharp {
               responsiveSizes(maxWidth: 200) {

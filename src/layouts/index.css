@@ -650,7 +650,7 @@ pre tt:after {
 /* Logo & Icons */
 
 .logo {
-  height: 75px;
+  max-width: 75px;
   display: block;
 }
 
@@ -829,3 +829,63 @@ pre tt:after {
 
 /* Blog Card */
 
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 1em;
+  grid-gap: 20px;
+}
+
+.blog__post {
+  background: white;
+  box-shadow: 0 0 20px 0 rgba(51,51,51,0.25);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 20px;
+  font-size: 12px;
+  border-top: 2px white solid;
+}
+
+.blog__post:hover {
+  border-top: #24b5ba 2px solid;
+}
+
+
+.blog__image {
+  width: 100%;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+.blog__details {
+  font-size: 12px;
+  font-family: "Montserrat";
+  display: grid;
+  grid-gap: 10px;
+}
+
+.blog__title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.blog__description {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.blog__date {
+  font-size: 10px;
+}
+
+.blog__cta {
+  text-transform: uppercase;
+  font-size: 10px;
+  background: none;
+  border: #24b5ba 1px solid;
+}
+
+.blog__cta:hover, .blog__cta:focus {
+  color: #24b5ba;
+}

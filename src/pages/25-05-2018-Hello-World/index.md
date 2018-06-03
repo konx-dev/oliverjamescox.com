@@ -6,6 +6,7 @@ author: "Oliver Cox"
 thumbnail: "./dbutt.jpg"
 blogpost: true
 category: "Category String, Illustration, UI etc"
+description: "This is a blog post to test, it needs to be max a couple of sentences. Hello World."
 published: true
 featured: true
 ---

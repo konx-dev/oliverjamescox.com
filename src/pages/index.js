@@ -5,9 +5,17 @@ import Contactform from '../components/contact-form'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi, I’m Oliver Cox.</h1>
-    <p>I’m a Digital Designer and Web Developer for Raleigh.</p>
-    <Contactform />
+      <div className="index__headline">
+        Designer, Developer &amp; VR fanatic
+      </div>
+      <div className="index__headline--sub">
+        I design and code with modern tooling, and love what I do.
+      </div>
+
+
+      <div>
+        <Contactform />
+      </div>
   </div>
   
 )
