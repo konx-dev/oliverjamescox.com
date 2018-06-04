@@ -649,10 +649,10 @@ pre tt:after {
 
 /* Logo & Icons */
 
-.logo {
+/* .logo {
   max-width: 75px;
   display: block;
-}
+} */
 
 .social-icon {
   height: 60px;
@@ -671,32 +671,112 @@ pre tt:after {
 
 /* Header */
 
-.header--nav {
-  padding: 0;
+.menu-container {
+  margin: 0px auto; 
+  max-width: 960px; 
 }
 
-.header--nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2fr 1fr;
+  margin-top: 1em;
+  grid-gap: 10px;
+  margin-bottom: 1em;
+}
+
+.menu-logo {
+  grid-column: 3 / span 2;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  margin: 0;
+
 }
 
-.header--nav ul li {
-  padding: 1em 1.5em;
+.menu-logo img {
+  max-width: 75px;
+  display: block;
   margin: 0;
+}
+
+
+.menu-items {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 1;
+}
+
+.menu-items ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+
+.menu-items li {
   text-transform: uppercase;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   color: #333333;
+  margin: 0;
 }
 
-.header--nav ul a:hover, .header--nav ul a:focus {
+.menu-items ul a:hover, .menu-items ul a:focus {
   color: #24b5ba;
-  transition: 0.5s ease;
+  transition: 0.25s ease;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .menu-items {
+      grid-column: 1 / span 6;
+      grid-row: 2 / span 1;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
+  
+  .menu {
+      grid-template-columns: repeat(8, 1fr);
+      margin-bottom: 0;
+  }
+
+  .menu-items ul {
+      justify-content: center;
+  }
+
+  .menu-items li {
+      margin-right: 10px;
+  }
+
+
+  .menu-logo {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+  }
+  
+  .menu-items {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 1;
+      align-self: center;
+  }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .menu-items {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      align-self: center;
+  }
+
 }
 
 /* Footer */
@@ -731,7 +811,8 @@ pre tt:after {
   font-weight: 400;
   font-size: 14px;
   padding: 0 0 2.5em 0;
-  margin: 0;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 
