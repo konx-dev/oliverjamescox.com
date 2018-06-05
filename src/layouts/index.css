@@ -649,11 +649,6 @@ pre tt:after {
 
 /* Logo & Icons */
 
-/* .logo {
-  max-width: 75px;
-  display: block;
-} */
-
 .social-icon {
   height: 60px;
   display: block;
@@ -912,8 +907,8 @@ pre tt:after {
 
 .blog {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0;
   grid-gap: 20px;
 }
 
@@ -970,3 +965,66 @@ pre tt:after {
 .blog__cta:hover, .blog__cta:focus {
   color: #24b5ba;
 }
+
+/* Blog Styling End */
+
+/* Index Page Styling */
+
+.index__headline {
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 1em;
+}
+
+.index__headline--sub {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 11px
+}
+
+.work__container {
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(8, auto);
+  grid-gap: 5px;
+  color: white;
+  font-family: "Montserrat";
+  margin-top: 2em;
+  padding: 1em;
+
+}
+
+.work__item {
+  background: #24b5ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+}
+
+.item_1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+
+.item_2 {
+  grid-row: 4 / span 3;
+}
+
+.item_3 {
+  grid-column: 2;
+  grid-row: 4 / span 3;
+}
+
+.item_4 {
+  grid-column: 1 / span 2;
+  grid-row: 7 / span 2;
+}
+
+
+
+/* Index Styling End */
