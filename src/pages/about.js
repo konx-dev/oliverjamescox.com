@@ -7,7 +7,7 @@ const AboutPage = () => (
       Hi, I'm Oliver Cox.
     </div>
     <div className="about__body">
-      Currently a Designer &amp; Front-end Developer for Raleigh Bikes based in Nottingham. I also do freelance design and development projects. With a background in traditional Graphic Design, I apply those skills to my work with impactful typography, colour and layout design. I have a keen interest in Photography, VR tech and always looking to learn and further my knowledge through emerging technologies and best practices within the industry as a source of inspiration.
+      Currently a Designer &amp; Front-end Developer for Raleigh Bikes based in Nottingham. I also do freelance design and development projects. With a background in traditional Graphic Design, I apply those skills to my work with impactful typography, colour and layout design. I have a keen interest in Photography, VR tech and always looking for sources of inspiration from subjects I enjoy to continue learning.
     </div>
     <div className="CV_container">
       <div className="CV_header">Vita</div>
