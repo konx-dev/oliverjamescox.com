@@ -6,7 +6,30 @@ const BlogPage = ({data}) => (
     <h1 className="blog__header">Latest Posts</h1>
       <div className="blog">
         {data.allMarkdownRemark.edges.map(post => (
-            <div className="blog__post"  key={ post.node.id }>
+          <div className="blog-container" key={ post.node.id }>
+            <div className="blog-card">
+                <div className="blog-img-container">
+                    <img className="blog-img" src={post.node.frontmatter.thumbnail.childImageSharp.sizes.src} />
+                </div>
+                <div className="blog-info">
+                    <div className="blog-info-title">
+                      {post.node.frontmatter.title}
+                    </div>
+                    <div className="blog-info-description">
+                      {post.node.frontmatter.description}
+                    </div>
+                    <div className="blog-info-cta">
+                      <Link to={post.node.frontmatter.path}>Read More</Link>
+                    </div>
+                    <div className="blog-info-post">
+                        Posted by <strong>{ post.node.frontmatter.author }</strong> on {post.node.frontmatter.date}
+                    </div>
+    
+    
+                </div>
+            </div>
+          </div>
+          /*  <div className="blog__post"  key={ post.node.id }>
                   <img className="blog__image" src={post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
                     <div className="blog__details">
                         <div className="blog__title">{post.node.frontmatter.title}</div>
@@ -14,7 +37,7 @@ const BlogPage = ({data}) => (
                         <Link to={post.node.frontmatter.path}><button className="blog__cta">Read More</button></Link>
                         <div className="blog__date">Posted by <strong>{ post.node.frontmatter.author }</strong> on <em>{post.node.frontmatter.date}</em></div>
                     </div>
-            </div>
+            </div> */
         ))}
       </div>
     </div>
@@ -23,8 +46,7 @@ const BlogPage = ({data}) => (
 export const pageQuery = graphql`
 query BlogIndexQuery {
   allMarkdownRemark(limit: 10, filter: {
-    														frontmatter: {published: {eq: true} 
-                                blogpost: {eq: true} 
+    														frontmatter: {published: {eq: true}  
                                 featured: {eq: true}
   }})
   {
@@ -38,11 +60,10 @@ query BlogIndexQuery {
           author
           published
           featured
-          blogpost
           description
           thumbnail {
             childImageSharp {
-              responsiveSizes(maxWidth: 200) {
+              sizes {
                 src
               }
             }
