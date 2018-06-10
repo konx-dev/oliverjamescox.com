@@ -958,21 +958,20 @@ pre tt:after {
 }
 
 .blog-info-cta {
-  border:#24b5ba 1px solid;
+  background: #24b5ba;
   grid-column: 1 / span 2;
   grid-row: 3;
   margin: 1em 0;
   padding: 0px 10px;
-  color: #333333;
+  color: white;
   font-size: 10px;
-  border-radius: 5px;
   font-family: "Montserrat";
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .blog-info-cta a:hover {
-  color: teal;
+  color: white;
 }
 
 
@@ -1085,4 +1084,134 @@ pre tt:after {
 
 
 /* About Styling End */
+
+/* Index Grid Styling */
+
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  height: 80vh;
+  padding: 1em;
+}
+
+.work-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background: url('../images/aeroburner_illustration.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.item_2 {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+  background: url('../images/aeroburner_illustration.jpg');
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+}
+
+.item_3 {
+  grid-column: 1;
+  grid-row: 2;
+  background: url('../images/aeroburner_illustration.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.item_4 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  background: url('../images/aeroburner_illustration.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.item_5 {
+  grid-column: 4;
+  grid-row: 2;
+  background: url('../images/aeroburner_illustration.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* USED FOR <IMG> AS A GRID ITEM */
+
+/* .work-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.work-content {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  background: #24b5ba;
+  padding: 0.5em 1em;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.work-item:hover .work-content {
+  opacity: 1;
+}
+
+.work-item a {
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+  }
+
+  .item_1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item_2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item_3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .item_4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .item_5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+}
+
+
+/*Index Grid End */
 

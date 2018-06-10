@@ -9,7 +9,7 @@ const BlogPage = ({data}) => (
           <div className="blog-container" key={ post.node.id }>
             <div className="blog-card">
                 <div className="blog-img-container">
-                    <img className="blog-img" src={post.node.frontmatter.thumbnail.childImageSharp.sizes.src} />
+                  <Link to={post.node.frontmatter.path}><img className="blog-img" src={post.node.frontmatter.thumbnail.childImageSharp.sizes.src} /></Link>
                 </div>
                 <div className="blog-info">
                     <div className="blog-info-title">
