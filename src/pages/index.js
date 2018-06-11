@@ -13,19 +13,36 @@ const IndexPage = () => (
       </div>
       <div className="work-grid">
         <div className="work-item item_1">
-          <div className="work-content"><Link to="/work">Explore &rarr;</Link></div>
+          <Link to="/raleigh-history"><div className="work-content">
+            Raleigh History
+              <div className="work-category">
+                Illustration
+              </div>
+          </div></Link>
         </div>
         <div className="work-item item_2">
-            <div className="work-content">Explore &rarr;</div>
+          <Link to="/raleigh-history"><div className="work-content">
+              Raleigh History
+                <div className="work-category">
+                  Illustration
+                </div>
+            </div></Link>
         </div>
         <div className="work-item item_3">
-            <div className="work-content">Explore &rarr;</div>
+          <Link to="/raleigh-history"><div className="work-content">
+              Email Marketing
+                <div className="work-category">
+                  HTML, CSS
+                </div>
+            </div></Link>
         </div>
         <div className="work-item item_4">
-            <div className="work-content">Explore &rarr;</div>
-        </div>
-        <div className="work-item item_5">
-            <div className="work-content">Explore &rarr;</div>
+          <Link to="/work"><div className="work-content">
+            Product Infographic
+              <div className="work-category">
+                Illustration
+              </div>
+          </div></Link>
         </div>
       </div>
 
