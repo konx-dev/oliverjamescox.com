@@ -6,26 +6,39 @@ export default function Template({data}) {
 
     return (
 
-          <div>
-            <Link to="/blog">Go Back</Link>
+          <div className="blog-page__container">
+            <div className="blog-page__title">{post.frontmatter.title}</div>
+            <div className="blog-page__description">{post.frontmatter.description}</div>
+            <div className="blog-page__path">{post.frontmatter.path}</div>
+            <img className="blog-page__featured-image" src={post.frontmatter.thumbnail.childImageSharp.sizes.src} />
+
+            <div className="blog-page__html" dangerouslySetInnerHTML={{__html: post.html}} />
+            
+            <div className="blog-page__author">Posted by {post.frontmatter.author} on {post.frontmatter.date}</div>
             <hr />
-            <h1>{post.frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{__html: post.html}} />
-            <h4>Posted by {post.frontmatter.author} on {post.frontmatter.date}</h4>
+            <button className="blog-page__nav-button"><Link to="/blog">&larr; Go Back</Link></button>
           </div>
     )
 }
 
 export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
-        markdownRemark(frontmatter: {path: {eq: $path}}){
+        markdownRemark(frontmatter: {path: {eq: $path}}) {
             html
             frontmatter {
-                path
-                title
-                author
-                date
-            }
+              path
+              title
+              author
+              date
+              description
+              thumbnail {
+                childImageSharp {
+                  sizes {
+                    src
+                  }
+                }
+              }
+            }        
         }
     }
 `
