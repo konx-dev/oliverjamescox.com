@@ -22,9 +22,9 @@ const IndexPage = () => (
         </div>
         <div className="work-item item_2">
           <Link to="/raleigh-history"><div className="work-content">
-              Raleigh History
+              Project Name
                 <div className="work-category">
-                  Illustration
+                  category
                 </div>
             </div></Link>
         </div>
@@ -37,7 +37,7 @@ const IndexPage = () => (
             </div></Link>
         </div>
         <div className="work-item item_4">
-          <Link to="/work"><div className="work-content">
+          <Link to="/raleigh-infographic"><div className="work-content">
             Product Infographic
               <div className="work-category">
                 Illustration

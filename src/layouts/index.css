@@ -1188,7 +1188,7 @@ pre tt:after {
 .item_1 {
   grid-column: 1;
   grid-row: 1;
-  background: url('../images/aeroburner_illustration.jpg');
+  background: url('../images/illustration__raleigh-history/raleigh-history__1000px_splash.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1196,7 +1196,7 @@ pre tt:after {
 .item_2 {
   grid-column: 2;
   grid-row: 1;
-  background: url('../images/aeroburner_illustration.jpg');
+  background: #333333;
   background-size: cover;
   background-position: center;
   background-position: center;
@@ -1205,7 +1205,7 @@ pre tt:after {
 .item_3 {
   grid-column: 1;
   grid-row: 2;
-  background: url('../images/aeroburner_illustration.jpg');
+  background: #333333;
   background-size: cover;
   background-position: center;
 
@@ -1214,7 +1214,7 @@ pre tt:after {
 .item_4 {
   grid-column: 2;
   grid-row: 2;
-  background: url('../images/aeroburner_illustration.jpg');
+  background: url('../images/illustration__infographic/raleigh-infographic__splash.jpg');
   background-size: cover;
   background-position: center;
 }
