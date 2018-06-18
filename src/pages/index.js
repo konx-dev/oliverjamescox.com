@@ -14,17 +14,17 @@ const IndexPage = () => (
       <div className="work-grid">
         <div className="work-item item_1">
           <Link to="/raleigh-history"><div className="work-content">
-            Raleigh History
+            Raleigh History Redesign
               <div className="work-category">
                 Illustration
               </div>
           </div></Link>
         </div>
         <div className="work-item item_2">
-          <Link to="/raleigh-history"><div className="work-content">
-              Project Name
+          <Link to="/design-bike-abstrakt"><div className="work-content">
+              Abstrakt - Kids Bike
                 <div className="work-category">
-                  category
+                  Product Design
                 </div>
             </div></Link>
         </div>
@@ -38,7 +38,7 @@ const IndexPage = () => (
         </div>
         <div className="work-item item_4">
           <Link to="/raleigh-infographic"><div className="work-content">
-            Product Infographic
+            Infographic
               <div className="work-category">
                 Illustration
               </div>

@@ -1316,3 +1316,20 @@ pre tt:after {
   margin-bottom: 2em;
   width: 75%;
 }
+
+.workPage-img-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 2em;
+}
+
+.workPage-grid-img {
+  margin: 0;
+}
+
+.grid-img_1 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+}

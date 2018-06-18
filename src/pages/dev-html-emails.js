@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import EmailImage_1 from '../images/development__html-emails/email-motus__fullpage.jpg'
-import EmailImage_2 from '../images/development__html-emails/email-GDPR__fullpage.jpg'
-import EmailImage_3 from '../images/development__html-emails/email-blackfriday__fullpage.jpg'
 
 const devHtmlEmails = () => (
  <div>
