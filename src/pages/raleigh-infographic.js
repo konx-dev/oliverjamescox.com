@@ -4,11 +4,11 @@ import FeaturedImage from '../images/illustration__infographic/650B_infog_900px_
 
 const RaleighInfographic = () => (
  <div>
-     <div className="workPage-title index__headline">
+     <div className="workPage-title blog-page__title">
         Raleigh Infographic
      </div>
-     <div className="workPage-description index__headline--sub">
-        Project Overview and description goes here
+     <div className="workPage-description">
+        The purpose was to create a more rewarding learning experience for the user in the form of a illustrated infographic. Additionally the page was optimized for search engines and currently sits on page 1 for relevant search terms. Now the most visited resource on the Raleigh blog and a direct reason for the relaunch of the <Link to="/raleigh-history">Raleigh History Page</Link>.
      </div>
      <div className="workPage-img-container">
         <img className="workPage-img" src={FeaturedImage} alt="oc logo" />

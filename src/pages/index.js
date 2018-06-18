@@ -29,7 +29,7 @@ const IndexPage = () => (
             </div></Link>
         </div>
         <div className="work-item item_3">
-          <Link to="/raleigh-history"><div className="work-content">
+          <Link to="/dev-html-emails"><div className="work-content">
               Email Marketing
                 <div className="work-category">
                   HTML, CSS
