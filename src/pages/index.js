@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import Contactform from '../components/contact-form'
+import DeveloperIcon from '../images/developer-icon.svg'
+import DesignerIcon from '../images/designer-icon.svg'
 
 const IndexPage = () => (
   <div>
@@ -13,18 +15,17 @@ const IndexPage = () => (
       </div>
       <div className="index__keyinfo-container">
         <div className="keyinfo-section">
-          Icon here
+          <div className="keyinfo-icon">
+            <Link to="/"><img className="logo" src={DesignerIcon} alt="oc logo" /></Link>
+          </div>
           <div className="keyinfo-header">
             Designer
-          </div>
-          <div className="keyinfo-body">
-            Quick Designer Overview goes here
           </div>
           <div className="keyinfo-subheader">
           Skills
           </div>
           <div className="keyinfo-body">
-            UI Design, Branding, Editorial
+            Typography, Print Design, Branding, UI / UX Design and Illustration
           </div>
           <div className="keyinfo-subheader">
           Tools
@@ -40,18 +41,17 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="keyinfo-section">
-          Icon here
+          <div className="keyinfo-icon">
+            <Link to="/"><img className="logo" src={DeveloperIcon} alt="oc logo" /></Link>
+          </div>
           <div className="keyinfo-header">
             Developer
-          </div>
-          <div className="keyinfo-body">
-            Quick Developer Overview goes here
           </div>
           <div className="keyinfo-subheader">
             Industry Knowledge
           </div>
           <div className="keyinfo-body">
-            Responsive Design, SEO, Email Marketing
+            Responsive Design, SEO, Email Marketing, Web Standards and Optimization best practises
           </div>
           <div className="keyinfo-subsection">
             <div className="keyinfo-subheader">
@@ -71,8 +71,8 @@ const IndexPage = () => (
               Frameworks
               <div className="keyinfo-body">
               <ul>
-                <li>React</li>
                 <li>Angular</li>
+                <li>React</li>
                 <li>Express.js</li>
                 <li>Gatsby.js</li>
                 <li>Apollo</li>
@@ -88,6 +88,9 @@ const IndexPage = () => (
           </div>
 
         </div>
+      </div>
+      <div className="index__headline headline_2">
+        Recent Work
       </div>
       <div className="work-grid">
         <div className="work-item item_1">

@@ -659,6 +659,11 @@ pre tt:after {
   transition: 0.2s ease;
 }
 
+.keyinfo-icon img {
+  margin: 0;
+  width: 40%;
+}
+
 /* Header */
 
 .menu-container {
@@ -1089,6 +1094,12 @@ pre tt:after {
   padding: 0 1em 0 1em;
 }
 
+.headline_2 {
+  margin: 0;
+  margin-top: 2em;
+  font-size: 30px;
+}
+
 /* Index Styling End */
 
 /* About Page Styling */
@@ -1097,7 +1108,7 @@ pre tt:after {
   font-family: "Montserrat";
   font-weight: 800;
   text-align: left;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
@@ -1105,7 +1116,7 @@ pre tt:after {
 .about__body {
   font-family: "Montserrat";
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   line-height: 1.5;
 }
@@ -1130,12 +1141,12 @@ pre tt:after {
   background: #24b5ba;
   text-align: center;
   color: white;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-transform: uppercase;
 }
 
 .CV_subheader {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0.5em;
   font-weight: 800;
   color: #24b5ba;
@@ -1151,6 +1162,7 @@ pre tt:after {
   font-weight: 800;
   margin-top: 1em;
   margin-bottom: 2em;
+  font-size: 18px;
 }
 
 .CV_duration {
@@ -1162,8 +1174,41 @@ pre tt:after {
 .CV_description {
   font-weight: 400;
   margin-top: 0.5em;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
+.CV_downloads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 22px;
+  margin-top: 2em;
+  font-weight: 800;
+}
+
+.CV_btns {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.CV_btns > a {
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  background: #24b5ba;
+  border: none;
+}
+
+
+.CV_downloads > span {
+  font-size: 16px;
+  font-weight: 400;
+}
 
 /* About Styling End */
 
@@ -1353,20 +1398,21 @@ pre tt:after {
 .keyinfo-header {
   font-weight: 800;
   font-size: 24px;
+  margin-bottom: 0.5em;
 }
 
 .keyinfo-subheader {
   font-weight: 600;
   font-size: 20px;
   color: #24b5ba;
-  padding: 0.5em;
 }
 
 .keyinfo-body {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
-  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .keyinfo-body > ul {
@@ -1383,8 +1429,9 @@ pre tt:after {
 }
 
 .keyinfo-section {
-  border: 0.5px lightgray solid;
+  /* border: 0.5px lightgray solid; */
   padding: 1em;
+  background: #fafafa;
 }
 
 

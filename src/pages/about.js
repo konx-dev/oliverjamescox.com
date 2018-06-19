@@ -1,16 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import logo from '../images/oc_logo.svg'
+
 const AboutPage = () => (
   <div>
     <div className="about__headline">
       Hi, I'm Oliver Cox.
     </div>
     <div className="about__body">
-      Currently a Designer &amp; Front-end Developer for Raleigh Bikes based in Nottingham. I also do freelance design and development projects. With a background in traditional Graphic Design, I apply those skills to my work with impactful typography, colour and layout design. I have a keen interest in Photography, VR tech and always looking for sources of inspiration from subjects I enjoy to continue learning.
+        Currently a Designer / Developer for Raleigh Bikes based in Nottingham. I specialize in traditional print and digital design, alongside front end development. I also do freelance design and development projects. I have a keen interest in Photography, VR tech and always looking for sources of inspiration from subjects I enjoy to continue learning.
     </div>
     <div className="CV_container">
-      <div className="CV_header">Vita</div>
+      <div className="CV_header">CURRICULUM VITAE</div>
         <div className="CV_subheader">Qualifications</div>
           <div className="CV_body">
             <ul>
@@ -25,7 +27,7 @@ const AboutPage = () => (
             <ul>
               <li className="CV_title">Designer &amp; Front-end Developer
                 <div className="CV_duration">Raleigh UK, Oct '17 - Present</div>
-                <div className="CV_description">I create, maintain and develop all of the production code for our outbound emails. Making sure the code is tested and with sufficient fallbacks. The emails have a 250% increase year on year for engagement. A key project I have worked on has been the Product Finder tool. Since launch it has resulted in a continued increase in daily uses and an increase of conversions with a top 10 page value across the entire ecommerce platform.</div>
+                <div className="CV_description">I create, maintain and develop all of the production code for the outbound emails. Making sure the code is tested and with sufficient fall backs. The emails have a 250% increase year on year for engagement. I work on projects across all social channels as the sole creative resource on the team. That includes content such as digital artwork, illustrations, wire-framing and Wordpress pages.</div>
               </li>
               <li className="CV_title">Graphic Designer
                 <div className="CV_duration">Raleigh UK, Oct '16 - Oct '17</div>
@@ -45,6 +47,14 @@ const AboutPage = () => (
                 <li>A Levels in Graphic Design, Computing &amp; Law</li>
                 <li>GCSES - 9 A-C's</li>
               </ul>
+            </div>
+            <div className="CV_downloads">
+              Downloads
+              <div className="CV_btns">
+                <a href={logo} download="OC_portfolio_samples">Curriculum Vitae</a>
+                <a href={logo} download="OC_portfolio_samples">Portfolio Samples</a>
+              </div>
+              <span>Last Updated: June 2018</span>
             </div>
           </div>
     </div>
