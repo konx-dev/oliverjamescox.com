@@ -1285,8 +1285,9 @@ pre tt:after {
 
 }
 
+/* Index Grid End */
 
-/*Index Grid End */
+/* Work Pages Styling */
 
 .workPage-description {
   font-family: "Montserrat";
@@ -1333,3 +1334,59 @@ pre tt:after {
   grid-column: 3 / span 2;
   grid-row: 1 / span 2;
 }
+
+/* ========== Work Page Styling End ==========*/
+
+/* ========== Key Info Section Styling ========== */
+
+.index__keyinfo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 2em;
+  text-align: center;
+  font-family: "Montserrat";
+  grid-gap: 10px;
+  padding: 1em;
+}
+
+.keyinfo-header {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.keyinfo-subheader {
+  font-weight: 600;
+  font-size: 18px;
+  color: #24b5ba;
+  padding: 0.5em;
+}
+
+.keyinfo-body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.5em;
+}
+
+.keyinfo-body > ul {
+  list-style: none;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+
+.keyinfo-subsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5em;
+}
+
+.keyinfo-section {
+  border: 0.5px lightgray solid;
+}
+
+
+/* ========== Key Info End ========== */
+
