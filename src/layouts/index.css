@@ -1352,13 +1352,12 @@ pre tt:after {
 
 .keyinfo-header {
   font-weight: 800;
-  font-size: 20px;
-  padding: 1em;
+  font-size: 24px;
 }
 
 .keyinfo-subheader {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   color: #24b5ba;
   padding: 0.5em;
 }
@@ -1385,6 +1384,7 @@ pre tt:after {
 
 .keyinfo-section {
   border: 0.5px lightgray solid;
+  padding: 1em;
 }
 
 
