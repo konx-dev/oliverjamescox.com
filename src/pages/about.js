@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../images/oc_logo.svg'
+import myCV from '../files/OliverCox_CV_Jun18.pdf'
+import myPortfolio from '../files/OliverCox_portfolio_Jun18.pdf'
 
 const AboutPage = () => (
   <div>
@@ -51,8 +52,8 @@ const AboutPage = () => (
             <div className="CV_downloads">
               Downloads
               <div className="CV_btns">
-                <a href={logo} download="OC_portfolio_samples">Curriculum Vitae</a>
-                <a href={logo} download="OC_portfolio_samples">Portfolio Samples</a>
+                <a href={myCV} download="OliverCox_CV_Jun18">Curriculum Vitae</a>
+                <a href={myPortfolio} download="OliverCox_portfolio_Jun18">Portfolio Samples</a>
               </div>
               <span>Last Updated: June 2018</span>
             </div>
