@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Contactform from '../components/contact-form'
 import DeveloperIcon from '../images/developer-icon.svg'
 import DesignerIcon from '../images/designer-icon.svg'
+import AvatarLogo from '../images/avatar-me.svg'
 
 const IndexPage = () => (
   <div>
@@ -12,6 +13,9 @@ const IndexPage = () => (
       </div>
       <div className="index__headline--sub">
         I design and code with modern tooling, and love what I do.
+      </div>
+      <div className="index__avatar">
+        <img className="avatar-logo" src={AvatarLogo} alt="oc logo" />
       </div>
       <div className="index__keyinfo-container">
         <div className="keyinfo-section">
