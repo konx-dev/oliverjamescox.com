@@ -9,6 +9,6 @@ published: true
 featured: true
 ---
 
-Built with CSS Grid and a sprinkling of flexbox. My submission for the Codepen Challenge of cards, aprox build time: 2hours.
+Built with CSS Grid and a sprinkling of Flexbox, Link to the codepen can be found **[here](https://codepen.io/olivercoxdesign/details/OEbNeB/)**
 
-Link to live codepen and my other pens found here: <https://codepen.io/olivercoxdesign/details/OEbNeB/>
+#### Aprox build time: 2 Hours

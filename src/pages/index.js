@@ -20,7 +20,7 @@ const IndexPage = () => (
       <div className="index__keyinfo-container">
         <div className="keyinfo-section">
           <div className="keyinfo-icon">
-            <Link to="/"><img className="logo" src={DesignerIcon} alt="oc logo" /></Link>
+            <img className="logo" src={DesignerIcon} alt="oc logo" />
           </div>
           <div className="keyinfo-header">
             Designer
@@ -46,7 +46,7 @@ const IndexPage = () => (
         </div>
         <div className="keyinfo-section">
           <div className="keyinfo-icon">
-            <Link to="/"><img className="logo" src={DeveloperIcon} alt="oc logo" /></Link>
+            <img className="logo" src={DeveloperIcon} alt="oc logo" />
           </div>
           <div className="keyinfo-header">
             Developer

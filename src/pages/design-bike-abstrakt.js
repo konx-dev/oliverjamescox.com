@@ -19,6 +19,15 @@ import bikeImage_3 from '../images/design__bike-abstrakt/abstrakt-img-07.jpg'
 
 const BikeAbstrakt = () => (
   <div>
+      <div className="workPage-title blog-page__title">
+        Bike Design: Raleigh Abstrakt
+      </div>
+      <div className="workPage-tech">
+          Illustrator
+      </div>
+      <div className="workPage-description">
+          Initial research took me to competitors and explored colour theory present in existing products of the required age range. I then worked towards a theme based on the name creating the mark, decals and colourways.
+      </div>
      <div className="bikePage-img-container">
         <img className="bikePage-img workPage-img_1" src={bikeMark_1} alt="oc logo" />
         <img className="bikePage-img workPage-img_2" src={bikeImage_1} alt="oc logo" />
@@ -33,7 +42,10 @@ const BikeAbstrakt = () => (
         <img className="bikePage-img workPage-img_11" src={bikeImage_3} alt="oc logo" />
      </div>
      
-     <button className="blog-page__nav-button"><Link to="/work">&larr; Work</Link></button>
+     <div className="workPage__bottom-nav">
+        <div className="workPage__nav-button workPage__nav-button_1"><Link to="/">&larr; Home</Link></div>
+        <div className="workPage__nav-button workPage__nav-button_2"><Link to="/work">Work &rarr;</Link></div>
+    </div>
      
 </div>
 )

@@ -7,14 +7,19 @@ const devHtmlEmails = () => (
      <div className="workPage-title blog-page__title">
         Email Marketing
      </div>
+     <div className="workPage-tech">
+        HTML, CSS, MJML
+    </div>
      <div className="workPage-description">
-        Creating Bespoke emails for the various channels I have been able to constantly evolve and test. For example the B2B channel has a high volume of users on enterprise OS's and old versions of outlook which creates the need for extensive backwards compatibility. The majority of current content is created using tables to accomodate this. Specialised emails for events and product launches, I have reached for div based layouts and tools such as MJML.
+        Creating Bespoke email templates for all channels. Creating a variety of table based templates that can be easily used by others with just a basic understanding of HTML. The email below has interactive elements in the form of a image slider.
      </div>
      <div className="workPage-img-container">
         <img className="workPage-img workPage-img_1" src={EmailImage_1} alt="oc logo" />
      </div>
-     
-     <button className="blog-page__nav-button"><Link to="/work">&larr; Work</Link></button>
+     <div className="workPage__bottom-nav">
+        <div className="workPage__nav-button workPage__nav-button_1"><Link to="/">&larr; Home</Link></div>
+        <div className="workPage__nav-button workPage__nav-button_2"><Link to="/work">Work &rarr;</Link></div>
+    </div>
      
 </div>
 )

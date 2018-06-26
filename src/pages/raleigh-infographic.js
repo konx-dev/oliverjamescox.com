@@ -7,13 +7,22 @@ const RaleighInfographic = () => (
      <div className="workPage-title blog-page__title">
         Raleigh Infographic
      </div>
+     <div className="workPage-tech">
+          Illustrator
+      </div>
      <div className="workPage-description">
-        The purpose was to create a more rewarding learning experience for the user in the form of a illustrated infographic. Additionally the page was optimized for search engines and currently sits on page 1 for relevant search terms. Now the most visited resource on the Raleigh blog and a direct reason for the relaunch of the <Link to="/raleigh-history">Raleigh History Page</Link>.
+        Creating an engaging visual learning experience for the user through illustrations and infographic elements. Additionally the page was optimized for search engines and currently sits on the first page for relevant search terms. At this time, the most visited resource on the Raleigh blog.
      </div>
      <div className="workPage-img-container">
         <img className="workPage-img" src={FeaturedImage} alt="oc logo" />
      </div>
-     <button className="blog-page__nav-button"><Link to="/work">&larr; Work</Link></button>
+     <div className="workPage-description">
+        Similar project I worked on was for the illustrated relaunch of the <Link to="/raleigh-history">Raleigh History Page</Link>.
+     </div>
+     <div className="workPage__bottom-nav">
+        <div className="workPage__nav-button workPage__nav-button_1"><Link to="/">&larr; Home</Link></div>
+        <div className="workPage__nav-button workPage__nav-button_2"><Link to="/work">Work &rarr;</Link></div>
+    </div>
      
 </div>
 )
