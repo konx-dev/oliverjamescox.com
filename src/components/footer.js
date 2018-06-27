@@ -22,7 +22,7 @@ const Footer = () => (
         <li><a href="https://www.linkedin.com/in/oliverjamescox/" target="_blank"><img className="social-icon" src={linkedIcon} alt="linkedin logo" /></a></li>
       </ul>
       <p>
-        Copyright &copy; 2018 Oliver Cox • Nottingham based Designer &amp; Developer
+        Copyright &copy; Oliver Cox 2018
       </p>
     </div>
   </div>

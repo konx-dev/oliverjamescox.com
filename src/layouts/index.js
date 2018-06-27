@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import './index.css'
+import ocFavicon from '../images/oc-favicon.png'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -13,6 +14,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${ocFavicon}`}
       ]}
     />
     <Header />

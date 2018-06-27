@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Oliver James Cox • Designer & Developer',
+    title: 'Oliver James Cox | Designer & Developer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

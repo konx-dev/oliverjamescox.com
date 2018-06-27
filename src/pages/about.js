@@ -7,7 +7,7 @@ import myPortfolio from '../files/OliverCox_portfolio_Jun18.pdf'
 const AboutPage = () => (
   <div>
     <div className="about__headline">
-      Hi, I'm Oliver Cox.
+      Hi, I'm Oliver.
     </div>
     <div className="about__body">
         Currently a Designer / Developer for Raleigh Bikes based in Nottingham. I specialize in traditional print and digital design, alongside front end development. I also do freelance design and development projects. I have a keen interest in Photography, VR tech and always looking for sources of inspiration from subjects I enjoy to continue learning.

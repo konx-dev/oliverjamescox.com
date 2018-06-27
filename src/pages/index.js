@@ -41,6 +41,7 @@ const IndexPage = () => (
               <li>Photoshop</li>
               <li>After Effects</li>
               <li>Figma</li>
+              <li>InVision</li>
             </ul>
           </div>
         </div>
@@ -65,7 +66,6 @@ const IndexPage = () => (
                   <li>JavaScript</li>
                   <li>HTML5</li>
                   <li>CSS3</li>
-                  <li>Wordpress</li>
                   <li>Node.js</li>
                   <li>GraphQL</li>
                 </ul>
@@ -75,7 +75,6 @@ const IndexPage = () => (
               Frameworks
               <div className="keyinfo-body">
               <ul>
-                <li>Angular</li>
                 <li>React</li>
                 <li>Express.js</li>
                 <li>Gatsby.js</li>
@@ -88,13 +87,13 @@ const IndexPage = () => (
             FWIW
           </div>
           <div className="keyinfo-body">
-            jQuery, SQL, Git, Gulp
+            Wordpress, jQuery, Git, Gulp
           </div>
 
         </div>
       </div>
       <div className="index__headline headline_2">
-        Recent Work
+        My Recent Work
       </div>
       <div className="work-grid">
         <div className="work-item item_1">
