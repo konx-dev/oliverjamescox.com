@@ -35,7 +35,7 @@ const RaleighHistory = () => (
     </div>
     <div className="workPage__bottom-nav">
         <div className="workPage__nav-button workPage__nav-button_1"><Link to="/">&larr; Home</Link></div>
-        <div className="workPage__nav-button workPage__nav-button_2"><Link to="/work">Work &rarr;</Link></div>
+        <div className="workPage__nav-button workPage__nav-button_2"><Link to="/portfolio">Portfolio &rarr;</Link></div>
     </div>
 </div>
 )

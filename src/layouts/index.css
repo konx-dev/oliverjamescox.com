@@ -1554,3 +1554,23 @@ pre tt:after {
   grid-column: 1 / span 2;
 }
 
+.portfolioPage-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  margin-bottom: 4em;
+}
+
+.portfolioPage-grid__item {
+  background: #fafafa;  
+  padding: 1em;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.portfolioPage_header {
+  font-size: 36px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: center;
+}
