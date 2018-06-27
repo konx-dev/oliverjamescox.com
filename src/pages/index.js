@@ -67,6 +67,7 @@ const IndexPage = () => (
                   <li>HTML5</li>
                   <li>CSS3</li>
                   <li>Node.js</li>
+                  <li>Webpack</li>
                   <li>GraphQL</li>
                 </ul>
               </div>
@@ -87,7 +88,7 @@ const IndexPage = () => (
             FWIW
           </div>
           <div className="keyinfo-body">
-            Wordpress, jQuery, Git, Gulp
+            Wordpress, jQuery &amp; Git
           </div>
 
         </div>
@@ -100,7 +101,7 @@ const IndexPage = () => (
           <Link to="/raleigh-history"><div className="work-content">
             Raleigh History Redesign
               <div className="work-category">
-                Illustration
+                Illustration, Wordpress
               </div>
           </div></Link>
         </div>
