@@ -670,6 +670,13 @@ pre tt:after {
   margin: 0;
 }
 
+/* !important classes */
+
+#hidden {
+  display: none;
+}
+
+
 /* Header */
 
 .menu-container {
