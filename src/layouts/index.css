@@ -954,7 +954,6 @@ pre tt:after {
 .blog-img {
   width: 100%;
   margin: 0;
-  border-radius: 10px 10px 0 0;
 }
 
 .blog-info {
@@ -1022,7 +1021,7 @@ pre tt:after {
 .blog-page__path {
   font-family: "Montserrat";
   font-size: 10px;
-  color: lightgray;
+  color: #333333;
 }
 
 .blog-page__title {

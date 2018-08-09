@@ -24,20 +24,9 @@ const BlogPage = ({data}) => (
                     <div className="blog-info-post">
                         Posted by <strong>{ post.node.frontmatter.author }</strong> on {post.node.frontmatter.date}
                     </div>
-    
-    
                 </div>
             </div>
           </div>
-          /*  <div className="blog__post"  key={ post.node.id }>
-                  <img className="blog__image" src={post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
-                    <div className="blog__details">
-                        <div className="blog__title">{post.node.frontmatter.title}</div>
-                        <div className="blog__description">{post.node.frontmatter.description}</div>
-                        <Link to={post.node.frontmatter.path}><button className="blog__cta">Read More</button></Link>
-                        <div className="blog__date">Posted by <strong>{ post.node.frontmatter.author }</strong> on <em>{post.node.frontmatter.date}</em></div>
-                    </div>
-            </div> */
         ))}
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function Template({data}) {
             <div className="blog-page__title">{post.frontmatter.title}</div>
             <div className="blog-page__description">{post.frontmatter.description}</div>
             <div className="blog-page__path">{post.frontmatter.path}</div>
-            <img className="blog-page__featured-image" src={post.frontmatter.thumbnail.childImageSharp.sizes.src} />
+            <img className="blog-page__featured-image" src={post.frontmatter.thumbnail.childImageSharp.sizes.src} alt={post.frontmatter.title}/>
 
             <div className="blog-page__html" dangerouslySetInnerHTML={{__html: post.html}} />
             
