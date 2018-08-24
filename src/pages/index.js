@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
 
 import Contactform from '../components/contact-form'
 import DeveloperIcon from '../images/developer-icon.svg'
@@ -7,7 +7,7 @@ import DesignerIcon from '../images/designer-icon.svg'
 import AvatarLogo from '../images/avatar-me.svg'
 
 const IndexPage = () => (
-  <div>
+  <Layout>
       <div className="index__headline">
         Designer, Developer &amp; Virtual Reality fanatic
       </div>
@@ -96,7 +96,7 @@ const IndexPage = () => (
       <div>
         <Contactform />
       </div>
-  </div>
+  </Layout>
   
 )
 

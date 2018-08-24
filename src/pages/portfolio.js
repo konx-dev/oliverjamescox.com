@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
 
 const portfolioPage = () => (
-  <div>
+  <Layout>
     <div className="portfolioPage_header">
        Design Projects
     </div>
@@ -91,7 +91,7 @@ const portfolioPage = () => (
         </div>
       </div>
     </div>
-  </div>
+  </Layout>
 )
 
 export default portfolioPage

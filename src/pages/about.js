@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../components/layout'
 
 import myCV from '../files/OliverCox_CV_Jun18.pdf'
 import myPortfolio from '../files/OliverCox_portfolio_Jun18.pdf'
 
 const AboutPage = () => (
-  <div>
+  <Layout>
     <div className="about__headline">
       Hi, I'm Oliver.
     </div>
@@ -58,7 +58,7 @@ const AboutPage = () => (
               <span>Last Updated: June 2018</span>
             </div>
           </div>
-    </div>
+    </Layout>
 )
 
 export default AboutPage
