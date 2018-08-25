@@ -1,6 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,800|Open+Sans');
 
 html {
   font-family: sans-serif;
@@ -650,7 +650,7 @@ pre tt:after {
 /* Logo & Icons */
 
 .logo {
-  height: 75px;
+  height: 60px;
   display: block;
 }
 
@@ -684,13 +684,13 @@ pre tt:after {
 /* Header */
 
 .menu-container {
-  margin: 0px auto; 
-  max-width: 960px; 
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, auto);
   grid-template-rows: 2fr 1fr;
   margin-top: 1em;
   grid-gap: 10px;
@@ -698,7 +698,7 @@ pre tt:after {
 }
 
 .menu-logo {
-  grid-column: 3 / span 2;
+  grid-column: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,8 +714,10 @@ pre tt:after {
 
 
 .menu-items {
-  grid-column: 2 / span 4;
-  grid-row: 2 / span 1;
+  grid-column: 6;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .menu-items ul {
@@ -730,63 +732,30 @@ pre tt:after {
 .menu-items li {
   text-transform: uppercase;
   font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 14px;
-  color: #333333;
+  font-weight: 300;
+  font-size: 12px;
+  color: #9a9b9d;
   margin: 0;
+  letter-spacing: 0.5px;
+  padding: 1em;
 }
 
 .menu-items ul a:hover, .menu-items ul a:focus {
-  color: #24b5ba;
+  color: #333333;
   transition: 0.25s ease;
 }
 
+@media only screen and (max-width: 470px) {
 
-@media only screen and (max-width: 500px) {
-
-  .menu-items {
-      grid-column: 1 / span 6;
-      grid-row: 2 / span 1;
-  }
-
-}
-
-@media only screen and (min-width: 700px) {
-  
   .menu {
-      grid-template-columns: repeat(8, 1fr);
-      margin-bottom: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
   }
-
-  .menu-items ul {
-      justify-content: center;
-  }
-
-  .menu-items li {
-      margin-right: 10px;
-  }
-
-
-  .menu-logo {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
-  }
-  
-  .menu-items {
-      grid-column: 2 / span 2;
-      grid-row: 1 / span 1;
-      align-self: center;
-  }
-
-
-}
-
-@media only screen and (min-width: 900px) {
 
   .menu-items {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
-      align-self: center;
+    grid-column: 1;
+    grid-row: 2;
   }
 
 }

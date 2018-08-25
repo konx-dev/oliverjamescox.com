@@ -12,10 +12,10 @@ const Header = () => (
     </div>
     <nav className="menu-items">
         <ul>
-            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/portfolio">Portfolio</Link></li>
             <li><Link to="/">Blog</Link></li>
+            <li><Link to="/">Contact</Link></li>
         </ul>
     </nav>
   </div>
