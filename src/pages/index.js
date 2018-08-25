@@ -1,6 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 
+import Img from 'gatsby-image'
+import { graphql } from "gatsby"
+
 const IndexPage = ({ data }) => (
   <Layout>
       <div className="index__wrapper">
@@ -17,10 +20,37 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
       <div className="index__body">
-          
+        <div className="index__project-container">
+          <div className="index__project-container-sec1">
+            <div className="index__project-title">
+              Project Title
+            </div>
+            <div className="index__project-tech">
+              GatsbyJS, GraphQL
+            </div>
+            <div className="index__project-desc">
+              The Description goes here. A couple of sentences to hook and drive clickthrough.
+            </div>
+          </div>
+          <div className="index__project-container-sec2">
+            <Img fluid={data.image1.childImageSharp.fluid} />
+          </div>
+        </div>
       </div>
   </Layout>
   
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query IndexQuery {
+    image1: file(relativePath: { regex: "/placeholder-4Kres-1.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 2400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
