@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
       <div className="index__wrapper">
         <div className="index__container">
@@ -17,6 +17,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="index__body">
+          
       </div>
   </Layout>
   
