@@ -649,6 +649,11 @@ pre tt:after {
 
 /* Logo & Icons */
 
+.logo {
+  height: 75px;
+  display: block;
+}
+
 .social-icon {
   height: 50px;
   display: block;
