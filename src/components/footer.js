@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import githubIcon from '../images/social-icons/github.svg'
 import cpenIcon from '../images/social-icons/codepen.svg'

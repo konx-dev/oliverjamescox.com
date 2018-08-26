@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Oliver James Cox | Designer & Developer',
+    title: 'Oliver Cox - Designer | Nottingham',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -10,6 +10,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: `pages`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`
       }
     },
     'gatsby-transformer-remark',
