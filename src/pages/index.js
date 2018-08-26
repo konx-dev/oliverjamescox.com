@@ -31,6 +31,47 @@ const IndexPage = ({ data }) => (
             <div className="index__project-desc">
               The Description goes here. A couple of sentences to hook and drive clickthrough.
             </div>
+            <div className="index__project-cta">
+              Find out more
+            </div>
+          </div>
+          <div className="index__project-container-sec2">
+            <Img fluid={data.image1.childImageSharp.fluid} />
+          </div>
+        </div>
+        <div className="index__project-container">
+          <div className="index__project-container-sec1">
+            <div className="index__project-title">
+              Project Title
+            </div>
+            <div className="index__project-tech">
+              GatsbyJS, GraphQL
+            </div>
+            <div className="index__project-desc">
+              The Description goes here. A couple of sentences to hook and drive clickthrough.
+            </div>
+            <div className="index__project-cta">
+              Find out more
+            </div>
+          </div>
+          <div className="index__project-container-sec2">
+            <Img fluid={data.image1.childImageSharp.fluid} />
+          </div>
+        </div>
+        <div className="index__project-container">
+          <div className="index__project-container-sec1">
+            <div className="index__project-title">
+              Project Title
+            </div>
+            <div className="index__project-tech">
+              GatsbyJS, GraphQL
+            </div>
+            <div className="index__project-desc">
+              The Description goes here. A couple of sentences to hook and drive clickthrough.
+            </div>
+            <div className="index__project-cta">
+              Find out more
+            </div>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image1.childImageSharp.fluid} />
