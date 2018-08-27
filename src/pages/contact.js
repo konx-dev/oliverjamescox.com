@@ -5,7 +5,9 @@ import Contactform from '../components/contact-form'
 
 const ContactPage = () => (
   <Layout>
-    <Contactform />
+    <div className="contact__body">
+      <Contactform />
+    </div>
   </Layout>
   
 )
