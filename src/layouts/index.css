@@ -760,6 +760,10 @@ pre tt:after {
     grid-row: 2;
   }
 
+  .menu-items li {
+    font-weight: 400;
+  }
+
 }
 
 /* /////////// Header ends /////////// */
@@ -1034,7 +1038,7 @@ pre tt:after {
 }
 
 .index__headline--sub {
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 15px;
   line-height: 1;
@@ -1043,7 +1047,7 @@ pre tt:after {
 .index__headline--job {
   font-weight: 300;
   margin-bottom: 75px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .index__headline--job a {
@@ -1088,6 +1092,7 @@ pre tt:after {
   .index__headline--job {
     margin-bottom: 50px;
   }
+
 }
 
 .index__body, .about__body {
@@ -1165,6 +1170,10 @@ pre tt:after {
   }
   .index__project-desc {
     margin-bottom: 20px;
+  }
+
+  .index__project-container {
+    width: 85vw;
   }
 }
 
@@ -1293,24 +1302,32 @@ pre tt:after {
 .contact__hero--image {
   grid-column: 1 / span 3;
   grid-row: 1;
+  background: black;
 }
 
 .contact__hero--image img {
   margin: 0 auto;
 }
 
+/* I can't target the damn thing! */
+
+#___gatsby > div > div.contact__body > div.contact__hero > div.contact__hero--image > div > div {
+  opacity: 0.75;
+}
+
+
 .contact__hero--title {
   grid-column: 2;
   grid-row: 1;
   z-index: 1;
-  font-size: 54px;
+  font-size: 50px;
   align-self: center;
 }
 
 @media only screen and (max-width: 470px) {
   
   .contact__hero--title {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
