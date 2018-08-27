@@ -693,10 +693,10 @@ pre tt:after {
 .menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-template-rows: 2fr 1fr;
-  margin-top: 1em;
+  grid-template-rows: 1fr;
+  margin-top: 2em;
   grid-gap: 10px;
-  margin-bottom: 75px;
+  margin-bottom: 2em;
 }
 
 .menu-logo {
@@ -1024,6 +1024,7 @@ pre tt:after {
 .index__container {
   font-family: "Montserrat";
   color: #333333;
+  margin-top: 50px;
 }
 
 .index__headline {
@@ -1271,11 +1272,48 @@ pre tt:after {
 /* ////////////////////// contact form & contact page ////////////////////// */
 
 .contact__body {
-  padding-top: 75px;
+  padding-top: 0;
   padding-bottom: 75px;
   background-color: #f6f6f6;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
+/* ///// hero styling //// */
+
+.contact__hero {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  color: #fafafa;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact__hero--image {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.contact__hero--image img {
+  margin: 0 auto;
+}
+
+.contact__hero--title {
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 1;
+  font-size: 54px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 470px) {
+  
+  .contact__hero--title {
+    font-size: 48px;
+  }
+}
+
 
 /* ///// form styling //// */
 
@@ -1285,7 +1323,8 @@ pre tt:after {
   margin: 0 auto;
   padding: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  margin-top: 75px;
 }
 
 .form-body {
@@ -1336,6 +1375,25 @@ pre tt:after {
   outline: none;
   background: #555555;
 }
+
+@media only screen and (max-width: 900px) {
+  .form-body-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .form-body-sec1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .form-body-sec2 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+/* /////////// contact  end /////////// */
 
 
 /* Work Pages Styling */
