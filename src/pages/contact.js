@@ -34,9 +34,9 @@ export default ContactPage
 
 export const query = graphql`
   query ContactQuery {
-    image1: file(relativePath: { regex: "/contact-hero-4Kres-4.jpg/" }) {
+    image1: file(relativePath: { regex: "/contact-banner-4kres-1.jpg/" }) {
       childImageSharp {
-        fluid( maxWidth: 1600 ) {
+        fluid( quality: 90 ) {
           ...GatsbyImageSharpFluid
         }
       }

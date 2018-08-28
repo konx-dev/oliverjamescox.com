@@ -1040,14 +1040,14 @@ pre tt:after {
 .index__headline--sub {
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
 .index__headline--job {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 75px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .index__headline--job a {
@@ -1312,7 +1312,7 @@ pre tt:after {
 /* I can't target the damn thing! */
 
 #___gatsby > div > div.contact__body > div.contact__hero > div.contact__hero--image > div > div {
-  opacity: 0.75;
+  opacity: 0.4;
 }
 
 
@@ -1364,6 +1364,8 @@ pre tt:after {
   border: 0;
   border-bottom: 1px solid lightgray;
   resize: none;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .form-name label, .form-email label, .form-messagebox label {
@@ -1407,6 +1409,10 @@ pre tt:after {
   .form-body-sec2 {
     grid-row: 1;
     grid-column: 1;
+  }
+
+  .form-name input, .form-email input, .form-messagebox textarea {
+    font-size: 16px;
   }
 }
 
