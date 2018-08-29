@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => (
     <div className="about__body">
       <div className="about__body-container">
         <div className="cv-body-main">
-          Currently a Designer for Raleigh, based in Nottingham. I specialize in traditional print and digital design, alongside freelancing development projects. With a interest in usability and experience design, I'm always looking for sources of inspiration to continue learning.
+          Designer for Raleigh, based in Nottingham. I specialize in traditional print and digital design. With a interest in UX and psychology within design &amp; development, I'm always looking for new sources of inspiration and projects to undertake to grow and learn within this ever-changing and fast-paced industry.
         </div>
         <div className="cv-header">
           Qualifications
@@ -24,7 +24,7 @@ const AboutPage = ({ data }) => (
             <li>Received a Bachelors degree in Graphic Design at Nottingham Trent University.</li>
             <li>Excellent organisation, self-motivation and problem-solving skills.</li>
             <li>Creative, strong communication skills and working consistently within established timelines</li>
-            <li>Passionate about design, web development and bleeding edge tech.</li>
+            <li>Passionate about design, web development and bleeding edge consumer tech.</li>
           </ul>
         </div>
         <div className="cv-header">

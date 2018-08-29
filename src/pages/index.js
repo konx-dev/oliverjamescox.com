@@ -88,7 +88,7 @@ export const query = graphql`
   query IndexQuery {
     image1: file(relativePath: { regex: "/placeholder-4Kres-1.jpg/" }) {
       childImageSharp {
-        fluid( quality: 85, maxWidth: 3840 ) {
+        fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid
         }
       }

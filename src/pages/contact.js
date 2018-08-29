@@ -19,7 +19,7 @@ const ContactPage = ({ data }) => (
                   left: 0,
                   top: 0,
                   width: "100%",
-                  height: "40vh"
+                  height: "30vh"
                 }} 
           />
         </div>
@@ -36,7 +36,7 @@ export const query = graphql`
   query ContactQuery {
     image1: file(relativePath: { regex: "/contact-banner-4kres-1.jpg/" }) {
       childImageSharp {
-        fluid( quality: 90 ) {
+        fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid
         }
       }
