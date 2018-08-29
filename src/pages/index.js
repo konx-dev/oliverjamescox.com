@@ -89,7 +89,7 @@ export const query = graphql`
     image1: file(relativePath: { regex: "/placeholder-4Kres-1.jpg/" }) {
       childImageSharp {
         fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
