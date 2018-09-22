@@ -835,186 +835,192 @@ pre tt:after {
 
 /* Blog Card */
 
-.blog {
+.blog--container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 0;
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 75px;
 }
 
-.blog-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0;
-}
-
-.blog__header {
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-weight: 800;
-  text-align: left;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  color: #333333;
-}
-
-.blog-card {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-  background: #fafafa;
-  max-width: 350px;
-  min-width: 300px;
-  border-bottom: #fafafa 5px solid;
-}
-
-.blog-card:hover {
-  border-bottom: #24b5ba 5px solid;
-}
-
-.blog-img {
-  width: 100%;
+.blog--image img {
   margin: 0;
 }
 
-.blog-info {
-  padding: 0.5em 1em 1em 1em;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+.blog--card {
+  background: white;
+  margin-bottom: 100px;
+  padding: 10px;
 }
 
-.blog-info-title {
-  color: #333333;
-  font-family: "Montserrat";
+.blog--card-sec2 {
+  padding: 10px;
+}
+
+.blog--card-title {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 20px;
   font-weight: 800;
-  font-size: 20px;
-  grid-column: 1 / span 4;
-  font-size: 20px;
 }
 
-.blog-info-description {
-  grid-row: 2;
-  grid-column: 1 / span 4;
-  font-size: 16px;
-  color: #333333;
+.blog--card-topic {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #24b5ba;
+}
+
+.blog--card-desc {
+  margin: 0 0 20px 0;
+  font-size: 14px;
   font-family: "Montserrat";
-  margin-top: 0.5em;
+  font-weight: 300;
   line-height: 1.25;
-  font-weight: 400;
 }
 
-.blog-info-cta {
-  background: #24b5ba;
-  grid-column: 1 / span 2;
-  grid-row: 3;
-  margin: 1em 0;
-  padding: 0px 10px;
-  color: white;
-  font-size: 10px;
+.blog--card-cta {
+  margin: 0;
+  font-size: 14px;
   font-family: "Montserrat";
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 300;
+  color: #24b5ba;
 }
 
-.blog-info-cta a:hover {
-  color: white;
+@media only screen and (min-width: 1400px) {
+  .blog--container {
+    max-width: 1300px;
+  }
 }
 
-
-.blog-info-post {
-  font-size: 12px;
-  font-family: "Montserrat";
-  color: #333333;
-  font-style: italic;
-  font-weight: 400;
-  grid-column: 1 / span 4;
-  grid-row: 4;
+@media only screen and (max-width: 1000px) {
+  
+  .blog--container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 75px;
+  }
+  .blog--card {
+    margin-bottom: 50px;
+  }
 }
+
+@media only screen and (max-width: 700px) {
+  
+  .blog--container {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .blog--card {
+    margin-bottom: 25px;
+  }
+}
+
 
 /* Blog Card Styling End */
 
 /* Blog Page Styling */
 
-.blog-page__container {
+.blog__body {
+  padding-top: 0;
+  padding-bottom: 75px;
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.blog--header {
   margin: 0 auto;
 }
 
-.blog-page__path {
-  font-family: "Montserrat";
-  font-size: 10px;
-  color: #333333;
-}
-
-.blog-page__title {
-  font-family: "Montserrat";
-  font-size: 40px;
-  color: #333333;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-weight: 800;
-  padding-bottom: 10px;
-  line-height: 1;
-}
-
-.blog-page__description {
-  font-family: "Montserrat";
-  font-size: 20px;
-  color: #333333;
-  display: flex;
-  justify-content: center;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-
-.blog-page__featured-image {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 2em;
-}
-
-.blog-page__html {
-  font-family: "Montserrat";
-  font-size: 16px;
-  color: #333333;
-}
-
-.blog-page__author {
-  font-family: "Montserrat";
-  font-size: 16px;
-  color: #333333;
-  margin-bottom: 1em;
-}
-
-.blog-page__nav-button {
-  background: #24b5ba;
-  color: white;
-  border : none;
-  padding: 0.5em 1em;
-  font-family: "Montserrat";
-  font-size: 16px;
-}
-
-.blog-page__nav-button:hover {
-  background: #1fa8ad;
-}
-
-.blog-page__nav-button a:hover {
-  color: white;
-}
-
-@media only screen and (max-width: 580px) {
-  .blog-page__title {
-    font-size: 30px;
-  }
-
-  .blog-page__description {
-    font-size: 18px;
-  }
-
+.blog--header h1 {
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* Blog Page Styling END */
+
+/* Blog Post Styling */
+
+.blog--post-innerHTML {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.blog--post-innerHTML a {
+  color: #0070c9;
+}
+
+.blog--post-container {
+  padding-top: 0;
+  padding-bottom: 75px;
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.blog--post-hero {
+  height: 40vh;
+}
+
+.blog--post-copyblock {
+  background: #ffffff;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding: 20px;
+  font-family: "Montserrat";
+  color: #333333;
+}
+
+.blog--post-date {
+  text-align: right;
+  font-size: 16px;
+  color: #9a9b9d;
+  font-weight: 300;
+  padding-right: 10px;
+}
+
+.blog--post-topic {
+  color: #24b5ba;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.blog--post-title {
+  font-weight: 800;
+  font-size: 40px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.blog--post-desc {
+  color: #9a9b9d;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+  width: 60vw;
+  margin-left: 40px;
+  border-left: #9a9b9d 2px solid;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .blog--post-title {
+    font-size: 26px;
+  }
+
+  .blog--post-desc {
+    margin-left: 10px;
+    padding-left: 25px;
+    font-size: 14px;
+  }
+
+  .blog--post-innerHTML {
+    font-size: 14px;
+  }
+}
+
 
 /* ////////////////////// Index.js ////////////////////// */
 
@@ -1308,13 +1314,6 @@ pre tt:after {
 .contact__hero--image img {
   margin: 0 auto;
 }
-
-/* I can't target the damn thing! */
-
-#___gatsby > div > div.contact__body > div.contact__hero > div.contact__hero--image > div > div {
-  opacity: 0.4;
-}
-
 
 .contact__hero--title {
   grid-column: 2;

@@ -10,7 +10,7 @@ const ContactPage = ({ data }) => (
     <div className="contact__body">
       <div className="contact__hero">
         <div className="contact__hero--title">
-          CONTACT
+          Contact
         </div>
         <div className="contact__hero--image">
           <Img  fluid={data.image1.childImageSharp.fluid}
@@ -34,7 +34,7 @@ export default ContactPage
 
 export const query = graphql`
   query ContactQuery {
-    image1: file(relativePath: { regex: "/contact-banner-4kres-1.jpg/" }) {
+    image1: file(relativePath: { regex: "/4k-wallpaper-hello.jpg/" }) {
       childImageSharp {
         fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid_withWebp

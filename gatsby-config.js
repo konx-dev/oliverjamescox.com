@@ -21,6 +21,20 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp'
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              quality: 80,
+              withWebp: true,
+            }
+          }
+        ]
+      }
+    }
   ],
 }
