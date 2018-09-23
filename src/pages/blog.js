@@ -7,12 +7,12 @@ export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <div className="blog__body">
-        <div className="contact__hero">
-          <div className="contact__hero--title">
+      <div className="body--background">
+        <div className="hero--container">
+          <div className="hero--title">
             Latest Posts
           </div>
-          <div className="contact__hero--image">
+          <div className="hero--image">
             <Img  fluid={data.bannerImage.childImageSharp.fluid}
                   style={{
                     position: "relative",

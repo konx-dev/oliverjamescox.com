@@ -7,12 +7,12 @@ import { graphql } from "gatsby"
 
 const ContactPage = ({ data }) => (
   <Layout>
-    <div className="contact__body">
-      <div className="contact__hero">
-        <div className="contact__hero--title">
+    <div className="body--background">
+      <div className="hero--container">
+        <div className="hero--title">
           Contact
         </div>
-        <div className="contact__hero--image">
+        <div className="hero--image">
           <Img  fluid={data.image1.childImageSharp.fluid}
                 style={{
                   position: "relative",
