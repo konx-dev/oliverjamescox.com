@@ -1013,11 +1013,16 @@ pre tt:after {
   .blog--post-desc {
     margin-left: 10px;
     padding-left: 25px;
-    font-size: 14px;
+    font-size: 16px;
+    width: 80vw;
   }
 
   .blog--post-innerHTML {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .blog--post-copyblock {
+    max-width: 100vw;
   }
 }
 
@@ -1217,7 +1222,7 @@ pre tt:after {
   padding: 7em 1em 3em 1em;
   color: #333333;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -1258,7 +1263,7 @@ pre tt:after {
 
 .cv-description {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -1277,8 +1282,12 @@ pre tt:after {
   .cv-body, .cv-header, .cv-body-main {
     margin-left: 10px;
   }
-  .cv-body-main {
-    font-size: 14px;
+}
+
+@media only screen and (max-width: 400px) {
+    
+  .about__body-container {
+    width: 100vw;
   }
 }
 
