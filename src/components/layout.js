@@ -18,8 +18,10 @@ export default ({ children }) => (
             link={[
               { rel: 'shortcut icon', type: 'image/png', href: `${Favicon}` }
             ]}
-
-          />
+          >
+            <html lang="en" />
+          
+          </Helmet>
           
           <Header />
           
