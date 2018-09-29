@@ -1416,4 +1416,143 @@ pre tt:after {
 
 /* /////////// contact  end /////////// */
 
+/* ////////////////////// Case Studies ////////////////////// */
 
+.cs-body--background {
+  padding-top: 0;
+  padding-bottom: 75px;
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.cs--intro-block {
+  background: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ib-sec1--title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.cs--skills-block {
+  background: lightcoral;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cs--problem-block {
+  background: #ffffff;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.problem-block--sec2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.pb-sec2--block {
+  background: lightblue;
+}
+
+.cs--findings-block {
+  background: #fafafa;
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.findings-block--sec1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.fb-sec1--block {
+  background: lightcoral;
+}
+
+.findings-block--sec2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.cs--question-block {
+  background: #ffffff;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 800;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.cs--explore-block {
+  background: #fafafa;
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.explore-block-sec2 {
+  background: lightblue;
+}
+
+.cs--core-block {
+  background: #ffffff;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.core-block-sec2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.cb-sec2--block {
+  background: lightcoral;
+}
+
+.cs--brand-block {
+  background: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.bb-sec1--title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.cs--examples-block {
+  width: 90vw;
+  margin: 0 auto;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.examples-block--image {
+  background: lightblue;
+}
+
+.cs--feedback-block {
+  background: #ffffff;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 800;
+  width: 90vw;
+  margin: 0 auto;
+}

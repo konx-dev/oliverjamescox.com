@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 const portfolioPage = ({ data }) => (
   <Layout>
@@ -45,7 +45,7 @@ const portfolioPage = ({ data }) => (
         <div className="index__project-container">
           <div className="index__project-container-sec1">
             <div className="index__project-title">
-              Project Title
+              Wedding Website
             </div>
             <div className="index__project-tech">
               GatsbyJS, GraphQL
@@ -54,7 +54,7 @@ const portfolioPage = ({ data }) => (
               The Description goes here. A couple of sentences to hook and drive clickthrough.
             </div>
             <div className="index__project-cta">
-              Find out more
+              <Link to="/p-dev-ryanandchristie">Find out more</Link>
             </div>
           </div>
           <div className="index__project-container-sec2">
