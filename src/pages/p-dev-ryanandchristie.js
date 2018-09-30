@@ -4,6 +4,9 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import { graphql } from "gatsby"
 
+import poundSign from '../images/general-icons/oc-poundsign.svg'
+import customiseIcon from '../images/general-icons/oc-customisation.svg'
+
 const IndexPage = ({ data }) => (
   <Layout>
     <div className="cs-body--background">
@@ -39,7 +42,7 @@ const IndexPage = ({ data }) => (
           
           <div className="pb-sec2--block">
             <div className="pb-block--img">
-            Image goes Here
+              <img className="general-icon" src={poundSign} alt="poundSign logo" />
             </div>
             <div className="pb-block--subheader">
               Running costs
@@ -51,7 +54,7 @@ const IndexPage = ({ data }) => (
           
           <div className="pb-sec2--block">
             <div className="pb-block--img">
-            Image goes Here
+              <img className="general-icon" src={customiseIcon} alt="customised logo" />
             </div>
             <div className="pb-block--subheader">
               Customisation
@@ -68,7 +71,7 @@ const IndexPage = ({ data }) => (
         <div className="findings-block--sec1">
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              Image goes here
+              Image goes here - www..
             </div>
             <div className="fb-sec1--block-copy">
               Personalising the site with a custom domain has an initial outlay and every year thereafter. Domain names of combined client names are reasonably priced due to the scarcity of demand.
@@ -76,7 +79,7 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              Image goes here
+              Image goes here - could be boxes overlapping for icon
             </div>
             <div className="fb-sec1--block-copy">
               WSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as Wordpress can require separate hosting if not opting to host with their platform.
@@ -84,7 +87,7 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              Image goes here
+              Image goes here - calendar + money
             </div>
             <div className="fb-sec1--block-copy">
               Exploring options such as Wix, Squarespace on the surface you would often have to pay a monthly fee for features you don’t necessarily need and can include ads unless you pay more.

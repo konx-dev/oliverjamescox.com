@@ -661,6 +661,11 @@ pre tt:after {
   display: block;
 }
 
+.general-icon {
+  height: 75px;
+  display: inline-block;
+}
+
 .social-icon:hover {
   filter: brightness(0.4) sepia(1) hue-rotate(130deg) saturate(6);
 }
@@ -1500,17 +1505,29 @@ pre tt:after {
   font-size: 14px;
 }
 
+.pb-block--img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pb-block--img img {
+  margin-bottom: 10px;
+}
+
 .pb-block--subheader {
   font-size: 18px;
   color: #24b5ba;
   font-weight: 600;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 0;
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .pb-block--body {
-  line-height: 1.5;
+  line-height: 1.75;
   padding: 5px 20px 50px 20px;
   width: 85%;
   margin: 0 auto;
