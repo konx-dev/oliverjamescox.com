@@ -1544,7 +1544,7 @@ pre tt:after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  padding: 0 20px;
+  padding: 10px 0 50px 0;
 }
 
 .fb-sec1--block {
@@ -1556,17 +1556,31 @@ pre tt:after {
   padding: 20px;
 }
 
+.fb-sec1--block-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.fb-sec1--block-img img {
+  margin: 0;
+}
+
 .findings-block--sec2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-bottom: 25px;
+  grid-gap: 20px;
 }
 
 .fb-sec2--conclusion {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.25;
   font-weight: 800;
   padding: 50px 0 20px 40px;
+}
+
+.fb-sec2--image {
+  padding: 0 25px;
 }
 
 

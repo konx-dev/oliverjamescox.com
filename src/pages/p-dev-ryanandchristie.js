@@ -6,6 +6,9 @@ import { graphql } from "gatsby"
 
 import poundSign from '../images/general-icons/oc-poundsign.svg'
 import customiseIcon from '../images/general-icons/oc-customisation.svg'
+import monthlyCost from '../images/general-icons/oc-monthlycost.svg'
+import wwwIcon from '../images/general-icons/oc-www.svg'
+import wysiwyg from '../images/general-icons/oc-wysiwyg.svg'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -71,7 +74,7 @@ const IndexPage = ({ data }) => (
         <div className="findings-block--sec1">
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              Image goes here - www..
+              <img className="general-icon" src={wwwIcon} alt="world wide web icon" />
             </div>
             <div className="fb-sec1--block-copy">
               Personalising the site with a custom domain has an initial outlay and every year thereafter. Domain names of combined client names are reasonably priced due to the scarcity of demand.
@@ -79,7 +82,7 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              Image goes here - could be boxes overlapping for icon
+              <img className="general-icon" src={wysiwyg} alt="wysiwyg logo" />
             </div>
             <div className="fb-sec1--block-copy">
               WSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as Wordpress can require separate hosting if not opting to host with their platform.
@@ -87,7 +90,7 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              Image goes here - calendar + money
+              <img className="general-icon" src={monthlyCost} alt="Monthly cost logo" />
             </div>
             <div className="fb-sec1--block-copy">
               Exploring options such as Wix, Squarespace on the surface you would often have to pay a monthly fee for features you don’t necessarily need and can include ads unless you pay more.
@@ -96,10 +99,10 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="findings-block--sec2">
           <div className="fb-sec2--conclusion">
-            WSIWYG builders can get you up and running with ease but may not offer the level of customisation required by the client.
+            WSIWYG builders can get you up and running with ease but at a varying level of cost and may not offer the level of customisation required by the client.
           </div>
           <div className="fb-sec2--image">
-            Supporting image here, graph etc
+            <Img fluid={data.image2.childImageSharp.fluid} />
           </div>
         </div>
       </div>
@@ -230,6 +233,13 @@ export default IndexPage
 export const query = graphql`
   query cs1Query {
     image1: file(relativePath: { regex: "/rc-iphone-mockup1.png/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image2: file(relativePath: { regex: "/rc--wix-pricing-table/" }) {
       childImageSharp {
         fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid_withWebp
