@@ -122,7 +122,7 @@ const IndexPage = ({ data }) => (
             The initial brief was to adopt the pre-existing styling from the save the date stationary and create a solution where guests could RSVP, read important information about the day and explore the possibility of image uploading.
           </div>
           <div className="eb-sec1-image">
-            Supporting image goes here
+          <Img fluid={data.image3.childImageSharp.fluid} />
           </div>
           <div className="eb-sec1-body">
             Started by asking myself what information do I need to know or what would be important to me if I were the bride or groom? I then looked into pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
@@ -130,7 +130,7 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="explore-block-sec2">
           <div className="eb-sec2-image">
-            Image goes here
+          <Img fluid={data.image5.childImageSharp.fluid} />
           </div>
           <div className="eb-sec2-caption">
             Prototyped initially on paper before moving to illustrator to create mockups for presentation.
@@ -145,32 +145,6 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="cb-sec1-subheading">
           They were delighted with the mockups and signed off on the additional features. Added was a countdown timer to the wedding day, an “about us” page to tell the story of the proposal and a gallery integrated with instagram.
-          </div>
-        </div>
-        <div className="core-block-sec2">
-          <div className="cb-sec2--block">
-            <div className="cb-sec2--block-img">
-              Image goes here
-            </div>
-            <div className="cb-sec2--block-copy">
-              Countdown Timer
-            </div>
-          </div>
-          <div className="cb-sec2--block">
-            <div className="cb-sec2--block-img">
-              Image goes here
-            </div>
-            <div className="cb-sec2--block-copy">
-              "About Us" page
-            </div>
-          </div>
-          <div className="cb-sec2--block">
-            <div className="cb-sec2--block-img">
-              Image goes here
-            </div>
-            <div className="cb-sec2--block-copy">
-              RSVP Form
-            </div>
           </div>
         </div>
       </div>
@@ -198,7 +172,7 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="brand-block--sec2">
           <div className="bb-sec2--image">
-          PNG mockup image goes here
+            <Img fluid={data.image6.childImageSharp.fluid} />
           </div>
         </div>
       </div>
@@ -243,6 +217,27 @@ export const query = graphql`
       childImageSharp {
         fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image3: file(relativePath: { regex: "/rc-weddinginvite/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp 
+        }
+      }
+    }
+    image5: file(relativePath: { regex: "/rc-mockups-alt/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp 
+        }
+      }
+    }
+    image6: file(relativePath: { regex: "/rc-iphone-mockup2/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp 
         }
       }
     }

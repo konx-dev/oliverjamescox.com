@@ -1655,12 +1655,6 @@ pre tt:after {
   width: 90%;
 }
 
-.core-block-sec2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
 .cs--brand-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
