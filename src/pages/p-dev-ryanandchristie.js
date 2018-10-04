@@ -17,12 +17,18 @@ const IndexPage = ({ data }) => (
       
       <div className="cs--intro-block">
         <div className="intro-block--sec1">
+          <div className="ib-sec1--category">
+            Case Study
+          </div>
           <div className="ib-sec1--title">
             The Wedding of Ryan &amp; Christie
           </div>
           <div className="ib-sec1--subtitle">
             A statically generated wedding site using cloud hosting. Created to gather RSVP responses, day information and an image gallery.
           </div>
+          <button className="ib-sec1--cta-btn">
+            <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View live &rarr; </a>
+          </button>
         </div>
         <div className="intro-block--sec2">
           <div className="ib-sec2--image">
@@ -51,7 +57,7 @@ const IndexPage = ({ data }) => (
               Running costs
             </div>
             <div className="pb-block--body">
-              With the site going up prior to the wedding, an estimatated monthly rolling cost just covering the hosting would acrue in the run up to the event. Beyond that if the site provides a gallery the hosting would need to run indefinitly unless moved to another solution.
+              With the site going up prior to the wedding, an estimated monthly rolling cost just covering the hosting would accrue in the run up to the event. Beyond that if the site provides a gallery the hosting would need to run indefinitely unless moved to another solution.
             </div>
           </div>
           
@@ -109,7 +115,7 @@ const IndexPage = ({ data }) => (
 
       <div className="cs--question-block">
         <div className="qb-body">
-          Based on findings the proposal is for a statically generated site that can be hosted for free on one of the services such as Netlify, surge.sh or GitHub pages. Completely negating the issue of monthly hosting costs and continued site overhead.
+          Based on findings the proposal is for a statically generated site that can be hosted for free on a cloud services such as Netlify. Negating the issue of monthly billing costs and continued site overhead.
         </div>
       </div>
 
@@ -127,13 +133,13 @@ const IndexPage = ({ data }) => (
           <div className="eb-sec1-body">
             Started by asking myself what information do I need to know or what would be important to me if I were the bride or groom? I then looked into pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
           </div>
+          <button className="eb-sec2--cta-btn">
+            <a href="https://www.figma.com/file/YbZ3ZIkWt34CR37syGb4QiO5/Ryan-and-Christies-Wedding-site-prototyping-r1?node-id=0%3A1" target="_blank" rel="noopener noreferrer">View prototypes &rarr;</a>
+          </button>
         </div>
         <div className="explore-block-sec2">
           <div className="eb-sec2-image">
           <Img fluid={data.image5.childImageSharp.fluid} />
-          </div>
-          <div className="eb-sec2-caption">
-            Prototyped initially on paper before moving to illustrator to create mockups for presentation.
           </div>
         </div>
       </div>
@@ -141,10 +147,7 @@ const IndexPage = ({ data }) => (
       <div className="cs--core-block">
         <div className="core-block-sec1">
           <div className="cb-sec1-heading">
-            Conversation with the client enabled discussion and feedback on the proposed features. Redifining and finalising the project deliverables.
-          </div>
-          <div className="cb-sec1-subheading">
-          They were delighted with the mockups and signed off on the additional features. Added was a countdown timer to the wedding day, an “about us” page to tell the story of the proposal and a gallery integrated with instagram.
+            Conversation with the client enabled discussion and feedback on the proposed features, redefining and finalising the project deliverables.
           </div>
         </div>
       </div>
@@ -158,7 +161,7 @@ const IndexPage = ({ data }) => (
             Instagram Integration
           </div>
           <div className="bb-sec1--body">
-            <p>One of the initial requirements was for the ability to upload images to the site and host them, The proposed solution instead uses the instagram api to pull images from either a specific hashtag or user account.</p>
+            <p>One of the initial requirements was for the ability to upload images to the site and host them, the proposed solution instead uses the Instagram API to pull images from either a specific hashtag or user account.</p>
           </div>
           <div className="bb-sec1--quoteblock">
           Wedding parties are capturing their own images, with 60% of brides using social media on their wedding day, 76% taking a wedding selfie – affectionately coined the ‘welfie’, and an average of 3,400 photos being taken at each wedding by guests alone. 57% now use a wedding hashtag – an increase of over 40% from the year before.
@@ -167,7 +170,7 @@ const IndexPage = ({ data }) => (
             - bridebook.co.uk
           </div>
           <div className="bb-sec1--body">
-            <p>Having all the guests upload their photos to the site; although possible would have created a poor user experience. Using instagram and adding a hashtag has the images  pulled down in real time and the site can be used instead to check the collection of photos. Fallbacks have been put in place for any of those who don’t use instagram and should a photo be taken which doesn’t have the hashtag anyone can comment on that photo and add the hashtag and have it generate instantly on the site.</p>
+            <p>Having all the guests upload their photos to the site; although possible would have created a poor user experience. Using Instagram and adding a hashtag has the images  pulled down in real time and the site can be used instead to check the collection of photos.</p>
           </div>
         </div>
         <div className="brand-block--sec2">
@@ -179,23 +182,15 @@ const IndexPage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-          Image goes here
-        </div>
-        <div className="examples-block--image">
-          Image goes here
-        </div>
-        <div className="examples-block--image">
-          Image goes here
-        </div>
-        <div className="examples-block--image">
-          Image goes here
+        <Img fluid={data.image4.childImageSharp.fluid} />
         </div>
       </div>
 
       <div className="cs--feedback-block">
-        Client feedback goes here
+        <p>Oliver went above and beyond with our wedding website. From drafting out the initial pages to final detailing and revisions, he was helpful, knowledgeable and was able to take our input and weave it into exactly what we wanted. The resulting website was great - better than we were hoping for. The RSVP forms have allowed us to plan easily, and our guests kept commenting how nice it looked and how simple it was for them to respond.</p> 
+        <p>I'd recommend Oliver's services to anyone. He delivered us a great website that we really felt a part of.</p>
+        <p className="fb-block-sig">- Ryan Hunt</p>
       </div>
-
 
     </div>
   </Layout>
@@ -241,5 +236,12 @@ export const query = graphql`
         }
       }
     }
+    image4: file(relativePath: { regex: "/rc-room-mockup/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    } 
   }
 `
