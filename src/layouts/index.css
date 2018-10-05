@@ -1448,6 +1448,7 @@ pre tt:after {
   width: 90%;
   margin: 0 auto;
   align-self: center;
+  padding: 25px 0;
 }
 
 .ib-sec1--category {
@@ -1477,7 +1478,7 @@ pre tt:after {
 .ib-sec1--cta-btn {
   padding: 10px 30px;
   margin-left: 50px;
-  margin-top: 75px;
+  margin-top: 50px;
   border: 0;
   font-size: 14px;
   text-transform: uppercase;
@@ -1492,6 +1493,44 @@ pre tt:after {
   margin-top: 50px;
   padding: 0 50px 0 0;
 }
+
+@media only screen and (max-width: 1020px) {
+
+  .ib-sec1--title {
+    font-size: 36px;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .cs--intro-block {
+    grid-template-columns: 1fr;
+  }
+  .ib-sec1--category {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .ib-sec1--title {
+    font-size: 30px;
+  }
+  .ib-sec1--subtitle {
+    font-size: 16px;
+  }
+  .ib-sec1--category {
+    margin-top: 25px;
+  }
+
+  .intro-block--sec2 {
+    display: none;
+  }
+  .intro-block--sec1 {
+    margin-left: 0;
+  }
+}
+
+/* ////////////////////// */
 
 .cs--skills-block {
   background: #ffffff;
@@ -1561,6 +1600,32 @@ pre tt:after {
   padding-top: 100px;
 }
 
+@media only screen and (max-width: 715px) {
+  .problem-block--sec1 {
+    padding: 50px 50px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .problem-block--sec2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cs--problem-block {
+    margin-top: 50px;
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .problem-block--sec1 {
+    font-size: 14px;
+    padding: 25px 25px;
+  }
+}
+
+/* ////////////////////// */
+
 .findings-block--sec1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1606,6 +1671,30 @@ pre tt:after {
   padding: 0 25px;
 }
 
+@media only screen and (max-width: 830px) {
+  .findings-block--sec1 {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+  }
+  .cs--findings-block {
+    padding-top: 25px;
+  }
+
+  .findings-block--sec2 {
+    grid-template-columns: 1fr;
+  }
+
+  .fb-sec2--conclusion {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .fb-sec2--image {
+    padding: 0;
+  }
+}
+
+/* ////////////////////// */
 
 .cs--question-block {
   background: #ffffff;
@@ -1621,6 +1710,15 @@ pre tt:after {
   padding: 125px 40px 125px 40px;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 550px) {
+  .qb-body {
+    padding: 75px 20px;
+    font-size: 16px;
+  }
+}
+
+/* ////////////////////// */
 
 .cs--explore-block {
   background: #fafafa;
@@ -1683,6 +1781,14 @@ pre tt:after {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1000px) {
+  .cs--explore-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ////////////////////// */
+
 .cs--core-block {
   background: #ffffff;
   width: 90vw;
@@ -1701,6 +1807,17 @@ pre tt:after {
   font-weight: 800;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 525px) {
+  .cb-sec1-heading {
+    font-size: 16px;
+  }
+  .core-block-sec1 {
+    padding: 75px 20px;
+  }
+}
+
+/* ////////////////////// */
 
 .cs--brand-block {
   display: grid;
@@ -1772,6 +1889,15 @@ pre tt:after {
     align-self: flex-end;
 }
 
+@media only screen and (max-width: 935px) {
+
+  .cs--brand-block {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ////////////////////// */
 
 .cs--examples-block {
   width: 90vw;
@@ -1805,3 +1931,13 @@ pre tt:after {
   font-size: 22px;
   font-weight: 800;
 }
+
+@media only screen and (max-width: 375px) {
+
+  .cs--feedback-block {
+    font-size: 16px;
+  }
+
+}
+
+/* ////////////////////// */
