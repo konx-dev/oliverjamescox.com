@@ -21,19 +21,14 @@ const IndexPage = ({ data }) => (
             Case Study
           </div>
           <div className="ib-sec1--title">
-            The Wedding of Ryan &amp; Christie
+            Event web app
           </div>
           <div className="ib-sec1--subtitle">
-            A statically generated wedding site using cloud hosting. Created to gather RSVP responses, day information and an image gallery.
+            The cost of small bespoke web apps can widely vary in price, with monthly subscriptions and hosting costs. I helped address such pain points and created a statically generated app. Key features included the ability to gather RSVP responses, provide day information and an integrated image gallery.
           </div>
           <button className="ib-sec1--cta-btn">
-            <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View live &rarr; </a>
+            <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View project &rarr; </a>
           </button>
-        </div>
-        <div className="intro-block--sec2">
-          <div className="ib-sec2--image">
-            <Img fluid={data.image1.childImageSharp.fluid} />
-          </div>
         </div>
       </div>
 
@@ -45,7 +40,7 @@ const IndexPage = ({ data }) => (
 
       <div className="cs--problem-block">
         <div className="problem-block--sec1">
-          The need to create a cost effective solution with little to no overhead with a degree of customisability to satisfy personal requirements.
+          The need to create a cost effective solution with little to no overhead with customisability to satisfy personal requirements.
         </div>
         <div className="problem-block--sec2">
           
@@ -131,16 +126,55 @@ const IndexPage = ({ data }) => (
           <Img fluid={data.image3.childImageSharp.fluid} />
           </div>
           <div className="eb-sec1-body">
-            Started by asking myself what information do I need to know or what would be important to me if I were the bride or groom? I then looked into pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
+            Started by exploring what information beyond those specified could elevate the app's usefulness and pre-emptively incorporate features that had yet to be realised. I looked into pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
           </div>
-          <button className="eb-sec2--cta-btn">
-            <a href="https://www.figma.com/file/YbZ3ZIkWt34CR37syGb4QiO5/Ryan-and-Christies-Wedding-site-prototyping-r1?node-id=0%3A1" target="_blank" rel="noopener noreferrer">View prototypes &rarr;</a>
-          </button>
         </div>
         <div className="explore-block-sec2">
           <div className="eb-sec2-image">
           <Img fluid={data.image5.childImageSharp.fluid} />
           </div>
+        </div>
+      </div>
+
+      <div className="cs--question-block">
+        <div className="qb-body">
+          <h2>Building the wireframes</h2>
+          <p>I had ideas of how I was going to design the app based around the existing stationary and made a habit of sketching by hand before moving to digital mock-ups.</p>
+          <p>I used Adobe Illustrator to create the wireframes and prototypes. I use it everyday for work, so is extremely easy for me to create the visuals. The mock-ups were a great visual aid for the client, a lot of decisions and improvements were discussed with important information prioritised.</p>
+        </div>
+      </div>
+
+      <div className="cs--examples-block">
+        <div className="examples-block--image">
+        <Img fluid={data.image7.childImageSharp.fluid} />
+        </div>
+      </div>
+
+      <div className="cs--question-block">
+        <div className="qb-body">
+          <h2>Mapping the features &amp; interactions</h2>
+          <p>Collated both as the app has only a few elements of interaction and mostly serves as a hub of information. With the ideas generated from previous stages I mapped out a feature flow chart. It served as blueprint for the app structure with each page broken down and going into all the details required for each page</p>
+          <p>The interactions are only present on the index and photos page. The goal of the site besides providing information is for guests to easily correspond to the RSVP. The Instagram API is called on every page refresh and highlighted for visibility. Building a diagram helps me keep track of all the components and provides value when communicating the proposals to the client.</p>
+        </div>
+      </div>
+
+      <div className="cs--examples-block">
+        <div className="examples-block--image">
+        <Img fluid={data.image1.childImageSharp.fluid} />
+        </div>
+      </div>
+
+      <div className="cs--question-block">
+        <div className="qb-body">
+          <h2>Visual Design</h2>
+          <p>I set up a Trello board (web-based project management app) to provide instant feedback with the design going through several iterations. Trello provided granular feedback and reduced time between client inputs.</p>
+          <p>Below are some of the resulting visuals.</p>
+        </div>
+      </div>
+
+      <div className="cs--examples-block">
+        <div className="examples-block--image">
+        <Img fluid={data.image8.childImageSharp.fluid} />
         </div>
       </div>
 
@@ -192,6 +226,12 @@ const IndexPage = ({ data }) => (
         <p className="fb-block-sig">- Ryan Hunt</p>
       </div>
 
+      <div className="cs--links-block">
+        <button className="links--cta-btn">
+          <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View project &rarr; </a>
+        </button>
+      </div>
+
     </div>
   </Layout>
   
@@ -201,13 +241,6 @@ export default IndexPage
 
 export const query = graphql`
   query cs1Query {
-    image1: file(relativePath: { regex: "/rc-iphone-mockup1.png/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
     image2: file(relativePath: { regex: "/rc--wix-pricing-table/" }) {
       childImageSharp {
         fluid( quality: 85 ) {
@@ -242,6 +275,27 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_withWebp
         }
       }
-    } 
+    }
+    image1: file(relativePath: { regex: "/rc-feature-flowchart/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image7: file(relativePath: { regex: "/rc-wireframes/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image8: file(relativePath: { regex: "/rc-visual-designs/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }    
   }
 `
