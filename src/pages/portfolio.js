@@ -116,6 +116,9 @@ const portfolioPage = ({ data }) => (
           </div>
         </div>
     </div>
+    <button id="myBtn">
+          <a href="#page-top" title="Go to top">&#8679;</a>
+    </button>
   </Layout>
 )
 

@@ -1966,3 +1966,27 @@ pre tt:after {
   color: #f6f6f6;
 
 }
+
+#myBtn {
+  display: block; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: #24b5ba; 
+  color: white; 
+  cursor: pointer; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+#myBtn a:hover {
+  color: #fff;
+}
