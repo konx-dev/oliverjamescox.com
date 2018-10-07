@@ -24,7 +24,8 @@ const IndexPage = ({ data }) => (
             Event web app
           </div>
           <div className="ib-sec1--subtitle">
-            The cost of small bespoke web apps can widely vary in price, with monthly subscriptions and hosting costs. I helped address such pain points and created a statically generated app. Key features included the ability to gather RSVP responses, provide day information and an integrated image gallery.
+          <p>The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated app as an alternative to the subscription model prevelant in WYSIWYG builders.</p>
+          <p>Key features included the ability to gather RSVP responses, provide day information and an integrated image gallery with zero hosting costs.</p>
           </div>
           <button className="ib-sec1--cta-btn">
             <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View project &rarr; </a>
@@ -86,7 +87,7 @@ const IndexPage = ({ data }) => (
               <img className="general-icon" src={wysiwyg} alt="wysiwyg logo" />
             </div>
             <div className="fb-sec1--block-copy">
-              WSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as Wordpress can require separate hosting if not opting to host with their platform.
+              WYSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as Wordpress can require separate hosting if not opting to host with their platform.
             </div>
           </div>
           <div className="fb-sec1--block">
@@ -100,7 +101,7 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="findings-block--sec2">
           <div className="fb-sec2--conclusion">
-            WSIWYG builders can get you up and running with ease but at a varying level of cost and may not offer the level of customisation required by the client.
+            WYSIWYG builders can get you up and running with ease but at a varying level of cost and may not offer the level of customisation required by the client.
           </div>
           <div className="fb-sec2--image">
             <Img fluid={data.image2.childImageSharp.fluid} />
@@ -110,7 +111,7 @@ const IndexPage = ({ data }) => (
 
       <div className="cs--question-block">
         <div className="qb-body">
-          Based on findings the proposal is for a statically generated site that can be hosted for free on a cloud services such as Netlify. Negating the issue of monthly billing costs and continued site overhead.
+          Based on findings the proposal is for a statically generated site that can be hosted for free on a service such as Netlify. Negating the issue of monthly billing costs and continued site overhead.
         </div>
       </div>
 

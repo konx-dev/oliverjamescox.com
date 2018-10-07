@@ -1470,7 +1470,7 @@ pre tt:after {
 .ib-sec1--subtitle {
   color: #f6f6f6;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 50px;
   width: 65%;
 }
@@ -1478,7 +1478,7 @@ pre tt:after {
 .ib-sec1--cta-btn {
   padding: 10px 30px;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 25px;
   border: 0;
   font-size: 14px;
   text-transform: uppercase;
