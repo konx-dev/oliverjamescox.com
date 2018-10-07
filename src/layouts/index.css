@@ -1697,6 +1697,15 @@ pre tt:after {
   font-weight: 800;
 }
 
+.cs--question-block-alt {
+  background: #fafafa;
+  width: 90vw;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
 .qb-body {
   width: 80%;
   padding: 125px 40px 125px 40px;
@@ -1948,6 +1957,20 @@ pre tt:after {
   width: 90vw;
   margin: 0 auto;
   padding-bottom: 125px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.cs--links-block--top-padding {
+  background: #ffffff;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 125px;
+  padding-top: 75px;
   display: flex;
   justify-content: center;
 }

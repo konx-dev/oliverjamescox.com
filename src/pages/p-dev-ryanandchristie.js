@@ -10,7 +10,7 @@ import monthlyCost from '../images/general-icons/oc-monthlycost.svg'
 import wwwIcon from '../images/general-icons/oc-www.svg'
 import wysiwyg from '../images/general-icons/oc-wysiwyg.svg'
 
-const IndexPage = ({ data }) => (
+const weddingAppPage = ({ data }) => (
   <Layout>
     <div className="cs-body--background">
       
@@ -240,7 +240,7 @@ const IndexPage = ({ data }) => (
   
 )
 
-export default IndexPage
+export default weddingAppPage
 
 export const query = graphql`
   query cs1Query {
