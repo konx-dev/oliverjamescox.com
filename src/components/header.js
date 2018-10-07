@@ -5,7 +5,7 @@ import logo from '../images/oc_logo.svg'
 
 const Header = () => (
 
-<div className="menu-container">
+<div className="menu-container" id="page-top">
   <div className="menu">
     <div className="menu-logo">
         <Link to="/"><img className="logo" src={logo} alt="oc logo" /></Link>

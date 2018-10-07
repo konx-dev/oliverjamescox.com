@@ -7,6 +7,7 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => (
   <Layout>
       <div className="index__wrapper">
+      
         <div className="index__container">
           <div className="index__headline">
             Hello, I'm Oliver.
@@ -78,6 +79,9 @@ const IndexPage = ({ data }) => (
           </div>
         </div>
       </div>
+      <button id="myBtn">
+          <a href="#page-top" title="Go to top">&#8679;</a>
+      </button>
   </Layout>
   
 )
