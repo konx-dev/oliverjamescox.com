@@ -15,7 +15,7 @@ const lapierreEdgePage = ({ data }) => (
             Case Study
           </div>
           <div className="ib-sec1--title">
-            Brand web app
+            Lapierre Edge web app
           </div>
           <div className="ib-sec1--subtitle">
           <p>Consumer facing web app tied in with the product launch of a range of Lapierre mountain bikes. The web app will assist consumers in discovering the range and drive them through to the store locator to find their nearest stockist.</p>

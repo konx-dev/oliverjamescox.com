@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import Img from 'gatsby-image'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -24,58 +24,60 @@ const IndexPage = ({ data }) => (
         <div className="index__project-container">
           <div className="index__project-container-sec1">
             <div className="index__project-title">
-              Project Title
+            Wedding bespoke app
             </div>
             <div className="index__project-tech">
-              GatsbyJS, GraphQL
+              GatsbyJS, UI/UX Design
             </div>
             <div className="index__project-desc">
-              The Description goes here. A couple of sentences to hook and drive clickthrough.
+              The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated app as an alternative to the subscription model prevelant in WYSIWYG builders.
             </div>
             <div className="index__project-cta">
-              Find out more
+              <Link to="/p-dev-ryanandchristie">Find out more</Link>
             </div>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image1.childImageSharp.fluid} />
+            <Img fluid={data.image2.childImageSharp.fluid} />
           </div>
         </div>
         <div className="index__project-container">
           <div className="index__project-container-sec1">
             <div className="index__project-title">
-              Project Title
+              Lapierre Edge app
             </div>
             <div className="index__project-tech">
-              GatsbyJS, GraphQL
+              Wordpress, UI/UX Design
             </div>
             <div className="index__project-desc">
-              The Description goes here. A couple of sentences to hook and drive clickthrough.
+              <p>Consumer facing web app tied in with the product launch of a range of Lapierre mountain bikes.</p>
+              <p>Assisting consumers in discovering the range and driving them through to the store locator to find their nearest stockist.</p>
             </div>
             <div className="index__project-cta">
-              Find out more
+              <Link to="/p-dev-lapierre-edge">Find out more</Link>
             </div>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image1.childImageSharp.fluid} />
+            <Img fluid={data.image3.childImageSharp.fluid} />
           </div>
         </div>
         <div className="index__project-container">
           <div className="index__project-container-sec1">
             <div className="index__project-title">
-              Project Title
+              Bike Design: Centros
             </div>
             <div className="index__project-tech">
-              GatsbyJS, GraphQL
+              Product Design, Artworking
             </div>
             <div className="index__project-desc">
-              The Description goes here. A couple of sentences to hook and drive clickthrough.
+              <p>A product design brief to create the new flagship Raleigh urban e-bike.</p>
+              <p>**CASE STUDY COMING**</p>
             </div>
             <div className="index__project-cta">
-              Find out more
+              <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer">Find out more</a>
             </div>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image1.childImageSharp.fluid} />
+            <Img fluid={data.image4.childImageSharp.fluid} />
           </div>
         </div>
       </div>
@@ -91,6 +93,27 @@ export default IndexPage
 export const query = graphql`
   query IndexQuery {
     image1: file(relativePath: { regex: "/placeholder-4Kres-1.jpg/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image2: file(relativePath: { regex: "/rc-portfolio-cover-alt/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image3: file(relativePath: { regex: "/le-portfolio-cover/" }) {
+      childImageSharp {
+        fluid( quality: 85 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    image4: file(relativePath: { regex: "/p-des-centros-portfolio-cover/" }) {
       childImageSharp {
         fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid_withWebp

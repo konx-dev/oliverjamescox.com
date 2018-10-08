@@ -79,9 +79,6 @@ return (
             </div>
             </form>
         </div>
-        <div className="form-body-sec2">
-            IMAGE GOES HERE
-        </div>
     </div>
 );
 }

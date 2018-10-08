@@ -1343,7 +1343,7 @@ pre tt:after {
   margin: 0 auto;
   padding: 1em;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   margin-top: 75px;
 }
 
@@ -1352,7 +1352,7 @@ pre tt:after {
 }
 
 .form-body-sec1 {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1;
 }
 
