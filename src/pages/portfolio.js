@@ -26,7 +26,7 @@ const portfolioPage = ({ data }) => (
       <div className="index__project-container">
           <div className="index__project-container-sec1">
             <div className="index__project-title">
-              Project Title
+              Lapierre Edge
             </div>
             <div className="index__project-tech">
               GatsbyJS, GraphQL
@@ -35,7 +35,7 @@ const portfolioPage = ({ data }) => (
               The Description goes here. A couple of sentences to hook and drive clickthrough.
             </div>
             <div className="index__project-cta">
-              Find out more
+              <Link to="/p-dev-lapierre-edge">Find out more</Link>
             </div>
           </div>
           <div className="index__project-container-sec2">
