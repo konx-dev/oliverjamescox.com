@@ -134,11 +134,27 @@ const lapierreEdgePage = ({ data }) => (
         </button>
       </div>
 
+
+      <div className="cs--question-block-alt">
+        <div className="qb-body">
+          <h2>Audits</h2>
+          <p>After shipping the site my next goal was to boost user experience with audits. Using Lighthouse to identify the low hanging fruit I was able to boost a performance score from 52 to 93 / 100 utilising image compression, https and caching. There is still plenty of room across the board for continued iterations and improvement.</p>
+        </div>
+      </div>
+
+      <div className="cs--examples-block">
+        <div className="examples-block--image">
+        <Img fluid={data.image6.childImageSharp.fluid} />
+        </div>
+      </div>
+
+
       <div className="cs--examples-block">
         <div className="examples-block--image">
         <Img fluid={data.image4.childImageSharp.fluid} />
         </div>
       </div>
+
 
       <div className="cs--links-block--top-padding">
         <button className="links--cta-btn">
@@ -178,7 +194,7 @@ export const query = graphql`
         }
       }
     }
-    image6: file(relativePath: { regex: "/rc-iphone-mockup2/" }) {
+    image6: file(relativePath: { regex: "/le-audits-r1/" }) {
       childImageSharp {
         fluid( quality: 85 ) {
           ...GatsbyImageSharpFluid_withWebp 
