@@ -14,17 +14,18 @@ const AboutPage = ({ data }) => (
     <div className="about__body">
       <div className="about__body-container">
         <div className="cv-body-main">
-          Designer for Raleigh, based in Nottingham. I specialize in traditional print and digital design. With a interest in UX and psychology within design &amp; development, I'm always looking for new sources of inspiration and projects to undertake to grow and learn within this ever-changing and fast-paced industry.
+          As a designer, I’m always looking for new sources of inspiration and projects to grow and learn within this ever-changing and fast-paced industry. My interests lie in usability and performance within design and development. I specialise in traditional print and digital design and am currently utilising these skills as the creative lead for Raleigh UK Ltd. digital marketing team.
         </div>
         <div className="cv-header">
           Qualifications
         </div>
         <div className="cv-body">
           <ul>
-            <li>Received a Bachelors degree in Graphic Design at Nottingham Trent University.</li>
-            <li>Excellent organisation, self-motivation and problem-solving skills.</li>
-            <li>Creative, strong communication skills and working consistently within established timelines</li>
-            <li>Passionate about design, web development and bleeding edge consumer tech.</li>
+            <li>Passionate about marrying graphic design with web development to enrich user experience.</li>
+            <li>Proven excellence in using psychology with design to convey company ideology and evoke emotions in consumers.</li>
+            <li>Ensure I am learning new technologies by continually self-studying and connecting with other professionals.</li>
+            <li>Highly motivated by fast-paced and multiple projects and supporting others to resolve problems.</li>
+            <li>Personable and professional; able to engage with and forge lasting relationships with a range of customers.</li>
           </ul>
         </div>
         <div className="cv-header">
@@ -34,15 +35,15 @@ const AboutPage = ({ data }) => (
           <ul>
             <li className="cv-title">Digital Designer, Raleigh UK
               <div className="cv-duration">October '17 - Present</div>
-              <div className="cv-description">In the last year, I have taken on new responsibility and I now create, maintain and develop all of the production code for the outbound emails. Making sure the code is tested and with sufficient fall backs. The emails have a 250% increase year on year for engagement. I work on projects across all social channels as the sole creative resource on the team. That includes content such as digital artwork, illustrations, wire-framing and Wordpress pages.</div>
+              <div className="cv-description">As digital designer, I design, maintain and develop all code for numerous email channels. Within Raleigh, I work as a creative lead across a portfolio of brands on digital projects such as the Bike finder tool, helping consumers find the right product. This feature has resulted in an increased conversion rate across all bike ranges. I collaborate with departments on larger consumer-centric projects such as the Lapierre Edge product launch, creating the consumer website accomodating the new ranges.</div>
             </li>
             <li className="cv-title">Graphic Designer, Raleigh UK
               <div className="cv-duration">October '16 - October '17</div>
-              <div className="cv-description">Major projects included collaborating on the Raleigh 2017 Catalogue, featuring over 10,000 products. The design and artworking of accessory packaging ranges and the styling of a range of bikes. The continuous distribution of our product range through printed and digital collateral.</div>
+              <div className="cv-description">My role focussed on printed and digital products for a range of branding within Raleigh UK. This included major projects, such as the parts catalogue featuring over 10,000 products and the design and artworking of accessory packaging ranges along with the product design of the flagship e-bike Centros bicycle.</div>
             </li>
             <li className="cv-title">Graphic Designer, Creative Design &amp; Print
               <div className="cv-duration">November '14 - March '16</div>
-              <div className="cv-description">I worked with clients often from the inception to completion giving me a great insight into the client relations aspect of agency work and a full understanding of the design process at all stages. I became confident dealing directly with clients and liaising with external suppliers. As a digital printers with on our competitive quick turnaround time required me to be efficient and organised with many projects running at one time.</div>
+              <div className="cv-description">In this truly client-centric role, I demonstrated excellent client relations with a range of customers directly from inception to completion on a variety of products. I liaised with numerous suppliers and managed concurrent projects to strict deadlines whilst maintaining the highest quality.</div>
             </li>
           </ul>
         </div>
@@ -53,14 +54,14 @@ const AboutPage = ({ data }) => (
             Design
         </div>
         <div className="cv-body">
-          Work extensively across the Adobe CC product range on a daily basis. <strong>Illustrator</strong> is my goto for anything vector based; such as svg icons, also for any illustration work I do. <strong>Photoshop</strong> for anything pixel based. <strong>InDesign</strong> I use alot at work creating print collateral and digital assets. <strong>After Effects</strong> is something I use on occasions for motion graphics and looking to incorporate it more in future projects with the viability and industries interest in animation.<br></br><br></br>My goto for prototyping / wireframing is <strong>Figma</strong>, I have experimented with alternatives but found this to tick the most boxes. The ability to share my designs and recieve instant feedback along with it being accessible across mac and windows has really streamlined my design process.  
+          Work extensively across the Adobe CC product range on a daily basis. Illustrator is my goto for anything vector based; such as svg icons, also for any illustration work I do. Photoshop for anything pixel based. InDesign I use alot at work creating print collateral and digital assets. After Effects is something I use on occasions for motion graphics and looking to incorporate it more in future projects with the viability and industries interest in animation.<br></br><br></br>My goto for prototyping / wireframing is Figma, I have experimented with alternatives but found this to tick the most boxes. The ability to share my designs and recieve instant feedback along with it being accessible across mac and windows has really streamlined my design process.  
         </div>
         <div className="cv-tools-title">
             Development
         </div>
         <div className="cv-body">
-          Strong understanding of the fundamentals in <strong>HTML</strong>, <strong>CSS</strong> &amp; <strong>JavaScript</strong>. Specifically for creating layouts utilizing CSS Grid and flexbox. Recently for React projects I have started to use CSS-in-JS with <strong>Styled Components</strong>.<br></br><br></br>
-          Frameworks I reach for are <strong>ReactJS</strong>, <strong>NodeJS</strong> and <strong>ExpressJS</strong> in a MERN stack and smaller projects with <strong>GatsbyJS</strong> as part of the JAM stack with queried markdown generated from <strong>GraphQL</strong>. I organise my projects with git and have experience of <strong>jQuery</strong> and <strong>Wordpress</strong> theming and page builders.
+          Strong understanding of the fundamentals in HTML, CSS &amp; JavaScript. Specifically for creating layouts utilizing CSS Grid and flexbox. Recently for React projects I have started to use CSS-in-JS with Styled Components.<br></br><br></br>
+          Frameworks I reach for are ReactJS, NodeJS and ExpressJS in a MERN stack and smaller projects with GatsbyJS as part of the JAM stack with queried markdown generated from GraphQL. I organise my projects with git and have experience of jQuery and Wordpress theming and page builders.
         </div>
         <div className="cv-header">
           Education
