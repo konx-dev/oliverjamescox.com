@@ -36,9 +36,7 @@ const portfolioPage = ({ data }) => (
               <p>Assisting consumers in discovering the range and driving them through to the store locator to find their nearest stockist.</p>
               <p>*Still a work in progress, case study will follow*</p>
             </div>
-            <div className="index__project-cta">
-              <Link to="/p-dev-lapierre-edge">Find out more</Link>
-            </div>
+              <Link to="/p-dev-lapierre-edge"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image3.childImageSharp.fluid} />
@@ -55,9 +53,7 @@ const portfolioPage = ({ data }) => (
             <div className="index__project-desc">
             The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated app as an alternative to the subscription model prevelant in WYSIWYG builders.
             </div>
-            <div className="index__project-cta">
-              <Link to="/p-dev-ryanandchristie">Find out more</Link>
-            </div>
+              <Link to="/p-dev-ryanandchristie"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image5.childImageSharp.fluid} />
@@ -108,9 +104,7 @@ const portfolioPage = ({ data }) => (
               <p>A product design brief to create the new flagship Raleigh urban e-bike.</p>
               <p>*Case Study in progress*</p>
             </div>
-            <div className="index__project-cta">
-              <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer">Find out more</a>
-            </div>
+              <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image8.childImageSharp.fluid} />
@@ -127,9 +121,7 @@ const portfolioPage = ({ data }) => (
             <div className="index__project-desc">
               Looking back over the 130 years of Raleigh's rich history and illustrating iconic moments in the bike industry as the UK's most recognised bicycle brand.
             </div>
-            <div className="index__project-cta">
-            <a href="https://www.raleigh.co.uk/raleigh-history" target="_blank" rel="noopener noreferrer">Find out more</a>
-            </div>
+            <a href="https://www.raleigh.co.uk/raleigh-history" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image7.childImageSharp.fluid} />
@@ -147,9 +139,7 @@ const portfolioPage = ({ data }) => (
               <p>An interactive product finder that helps the users select the right bicycle for them. Converting website visitors into buyers</p>
               <p>*This feature is currently being worked on and being relaunched in Q4 2018*</p>
             </div>
-            <div className="index__project-cta">
-            <a href="https://www.raleigh.co.uk/bike-finder" target="_blank" rel="noopener noreferrer">Find out more</a>
-            </div>
+            <a href="https://www.raleigh.co.uk/bike-finder" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image9.childImageSharp.fluid} />
@@ -167,18 +157,14 @@ const portfolioPage = ({ data }) => (
               <p>Created an infographic demonstrating the comparisons between two variations of tyres in an engaging informative way.</p> 
               <p>The infographic is the most visited page currently on the blog.</p>
             </div>
-            <div className="index__project-cta">
-              <a href="https://www.raleigh.co.uk/2017/11/650b-wheels-vs-700c-wheels/" target="_blank" rel="noopener noreferrer">Find out more</a>
-            </div>
+              <a href="https://www.raleigh.co.uk/2017/11/650b-wheels-vs-700c-wheels/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image6.childImageSharp.fluid} />
           </div>
         </div>
     </div>
-    <button id="myBtn">
-          <a href="#page-top" title="Go to top">&#8679;</a>
-    </button>
+    <a href="#page-top" title="Go to top"><button id="myBtn">&#8679;</button></a>
   </Layout>
 )
 

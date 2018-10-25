@@ -32,9 +32,7 @@ const IndexPage = ({ data }) => (
             <div className="index__project-desc">
               The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated app as an alternative to the subscription model prevelant in WYSIWYG builders.
             </div>
-            <div className="index__project-cta">
-              <Link to="/p-dev-ryanandchristie">Find out more</Link>
-            </div>
+              <Link to="/p-dev-ryanandchristie"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image2.childImageSharp.fluid} />
@@ -52,9 +50,7 @@ const IndexPage = ({ data }) => (
               <p>Consumer facing web app tied in with the product launch of a range of Lapierre mountain bikes.</p>
               <p>Assisting consumers in discovering the range and driving them through to the store locator to find their nearest stockist.</p>
             </div>
-            <div className="index__project-cta">
-              <Link to="/p-dev-lapierre-edge">Find out more</Link>
-            </div>
+              <Link to="/p-dev-lapierre-edge"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image3.childImageSharp.fluid} />
@@ -72,18 +68,13 @@ const IndexPage = ({ data }) => (
               <p>A product design brief to create the new flagship Raleigh urban e-bike.</p>
               <p>**CASE STUDY COMING**</p>
             </div>
-            <div className="index__project-cta">
-              <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer">Find out more</a>
-            </div>
+              <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
             <Img fluid={data.image4.childImageSharp.fluid} />
           </div>
         </div>
       </div>
-      <button id="myBtn">
-          <a href="#page-top" title="Go to top">&#8679;</a>
-      </button>
   </Layout>
   
 )
