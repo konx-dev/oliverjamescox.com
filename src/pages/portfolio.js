@@ -1,10 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Img from 'gatsby-image'
-import { graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 
-const portfolioPage = ({ data }) => (
+const portfolioPage = () => (
   <Layout>
     <div className="body--background">
       <div className="hero--container">
@@ -12,15 +11,7 @@ const portfolioPage = ({ data }) => (
           Development
         </div>
         <div className="hero--image">
-          <Img  fluid={data.image2.childImageSharp.fluid}
-                style={{
-                  position: "relative",
-                  left: 0,
-                  top: 0,
-                  width: "100%",
-                  height: "30vh",
-                }} 
-          />
+          <img className="banner-container" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300829/oliverjamescox.com/project%20media/4k-wallpaper-developer.jpg" />
         </div>
       </div>
       <div className="index__project-container">
@@ -39,7 +30,7 @@ const portfolioPage = ({ data }) => (
               <Link to="/p-dev-lapierre-edge"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image3.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300820/oliverjamescox.com/project%20media/le-portfolio-cover.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -56,7 +47,7 @@ const portfolioPage = ({ data }) => (
               <Link to="/p-dev-ryanandchristie"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image5.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -73,7 +64,7 @@ const portfolioPage = ({ data }) => (
             </div>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image10.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300829/oliverjamescox.com/project%20media/p-dev-personalPortfolio-portfolio-cover.jpg" />
           </div>
         </div>
       <div className="hero--container-divider">
@@ -81,15 +72,8 @@ const portfolioPage = ({ data }) => (
           Design
         </div>
         <div className="hero--image">
-          <Img  fluid={data.image4.childImageSharp.fluid}
-                style={{
-                  position: "relative",
-                  left: 0,
-                  top: 0,
-                  width: "100%",
-                  height: "30vh"
-                }} 
-          />
+          <img className="banner-container" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300831/oliverjamescox.com/project%20media/4k-wallpaper-designer.jpg" />
+
         </div>
       </div>
       <div className="index__project-container">
@@ -107,7 +91,7 @@ const portfolioPage = ({ data }) => (
               <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image8.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300821/oliverjamescox.com/project%20media/p-des-centros-portfolio-cover.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -124,7 +108,7 @@ const portfolioPage = ({ data }) => (
             <a href="https://www.raleigh.co.uk/raleigh-history" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image7.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300829/oliverjamescox.com/project%20media/p-des-historyRedesign-portfolio-cover.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -137,12 +121,11 @@ const portfolioPage = ({ data }) => (
             </div>
             <div className="index__project-desc">
               <p>An interactive product finder that helps the users select the right bicycle for them. Converting website visitors into buyers</p>
-              <p>*This feature is currently being worked on and being relaunched in Q4 2018*</p>
             </div>
             <a href="https://www.raleigh.co.uk/bike-finder" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image9.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300828/oliverjamescox.com/project%20media/p-des-bikeFinder-portfolio-cover.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -160,7 +143,7 @@ const portfolioPage = ({ data }) => (
               <a href="https://www.raleigh.co.uk/2017/11/650b-wheels-vs-700c-wheels/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image6.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300822/oliverjamescox.com/project%20media/p-des-650binfo-portfolio-cover.jpg" />
           </div>
         </div>
     </div>
@@ -169,78 +152,3 @@ const portfolioPage = ({ data }) => (
 )
 
 export default portfolioPage
-
-export const query = graphql`
-  query DesignQuery {
-    image1: file(relativePath: { regex: "/4k-wallpaper-hello.jpg/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image2: file(relativePath: { regex: "/4k-wallpaper-developer/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image4: file(relativePath: { regex: "/4k-wallpaper-designer/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image3: file(relativePath: { regex: "/le-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image5: file(relativePath: { regex: "/rc-portfolio-cover-alt/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image6: file(relativePath: { regex: "/p-des-650binfo-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image7: file(relativePath: { regex: "/p-des-historyRedesign-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image8: file(relativePath: { regex: "/p-des-centros-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image9: file(relativePath: { regex: "/p-des-bikeFinder-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image10: file(relativePath: { regex: "/p-dev-personalPortfolio-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`

@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -9,7 +8,7 @@ export default ({ data }) => {
     <Layout>
         <div className="body--background">
             <div className="blog--post-heroblock">
-              <Img className="blog--post-hero" fluid={post.frontmatter.thumbnail.childImageSharp.fluid} />
+              <img className="blog--post-hero" src={post.frontmatter.thumbnail} />
             </div>
             <div className="blog--post-copyblock">
               <div className="blog--post-date">{post.frontmatter.date}</div>
@@ -34,14 +33,8 @@ export const query = graphql`
         author
         description
         date(formatString: "MMMM Do, YYYY")
-        thumbnail {
-          childImageSharp {
-            fluid(quality: 85) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
+        thumbnail
+      } 
     }
   }
 `

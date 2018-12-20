@@ -4,7 +4,7 @@ date: "2018-09-20"
 title: "What is Markdown?"
 author: "Oliver Cox"
 topic: "Resource"
-thumbnail: "./md-splash.jpg"
+thumbnail: "https://res.cloudinary.com/olivercoxdesign/image/upload/v1545316487/oliverjamescox.com/blog%20content/md-splash.jpg"
 description: "Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid HTML."
 published: true
 ---
@@ -133,7 +133,7 @@ http://www.example.com or <http://www.example.com>
 
 ```
 Inline-style: 
-![alt text](./md-splash.jpg "What is Markdown article hero image")
+![alt text](image-address-here.jpg "What is Markdown article hero image")
 
 Reference-style: 
 ![alt text][logo]
@@ -142,7 +142,7 @@ Reference-style:
 ```
 
 Inline-style: 
-![alt text](./md-splash.jpg "What is Markdown article hero image")
+![alt text](https://res.cloudinary.com/olivercoxdesign/image/upload/v1545316487/oliverjamescox.com/blog%20content/md-splash.jpg "What is Markdown article hero image")
 
 ## Code & Syntax Highlighting
 

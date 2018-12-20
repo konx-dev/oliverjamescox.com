@@ -3,7 +3,7 @@ path: "/pantones-codepen"
 date: "2018-06-08"
 title: "CSS Grid: Pantone Cards"
 author: "Oliver Cox"
-thumbnail: "./pantone_cards.PNG"
+thumbnail: "https://res.cloudinary.com/olivercoxdesign/image/upload/v1545316713/oliverjamescox.com/blog%20content/pantone_cards.png"
 description: "Created as part of a codepen challenge experimenting with CSS Grid." 
 topic: "Challenge"
 published: true

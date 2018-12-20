@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 
 import Header from './header'
 import Footer from './footer'
-import Favicon from '../images/oc-favicon.png'
 import '../layouts/index.css'
 
 export default ({ children }) => (
@@ -16,7 +15,7 @@ export default ({ children }) => (
               { name: 'keywords', content: 'webdev, design, gatsbyjs, reactjs, frontend, graphql, portfolio'}
             ]}
             link={[
-              { rel: 'shortcut icon', type: 'image/png', href: `${Favicon}` }
+              { rel: 'shortcut icon', type: 'image/png', href: `https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300207/oliverjamescox.com/logos%20%2B%20icons/oc-favicon.png` }
             ]}
           >
             <html lang="en" />

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 
 export default ({ data }) => {
   console.log(data)
@@ -13,15 +12,7 @@ export default ({ data }) => {
             Latest Posts
           </div>
           <div className="hero--image">
-            <Img  fluid={data.bannerImage.childImageSharp.fluid}
-                  style={{
-                    position: "relative",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "30vh"
-                  }} 
-            />
+            <img className="banner-container" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300828/oliverjamescox.com/project%20media/4k-wallpaper-blog.jpg" />
           </div>
         </div>
         <div className="blog--container">
@@ -29,7 +20,7 @@ export default ({ data }) => {
             <div className="blog--card"  key={node.id}>
               <div className="blog--card-sec1">
                 <div className="blog--image">
-                <Link to={node.frontmatter.path}><Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} alt={node.frontmatter.title}/></Link>
+                <Link to={node.frontmatter.path}><img src={node.frontmatter.thumbnail} alt={node.frontmatter.title}/></Link>
                 </div>
               </div>
               <div className="blog--card-sec2">
@@ -71,13 +62,7 @@ query {
           description
           topic
           path
-          thumbnail {
-            childImageSharp {
-              fluid(quality: 85) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
+          thumbnail
         }
         fields {
           slug
@@ -85,12 +70,5 @@ query {
     }
   }
 }
-  bannerImage: file(relativePath: { regex: "/4k-wallpaper-blog.jpg/" }) {
-    childImageSharp {
-      fluid (quality: 85) {
-        ...GatsbyImageSharpFluid_withWebp
-      }
-    }
-  }
 }
 `

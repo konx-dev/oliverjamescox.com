@@ -1,14 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Img from 'gatsby-image'
-import { graphql } from "gatsby"
-
-const AboutPage = ({ data }) => (
+const AboutPage = () => (
   <Layout>
     <div className="about__header">
       <div className="about__header-image">
-        <Img fluid={data.image1.childImageSharp.fluid} />
+        <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300829/oliverjamescox.com/project%20media/oc-profilepic.jpg" />
       </div>
     </div>
     <div className="about__body">
@@ -82,15 +79,3 @@ const AboutPage = ({ data }) => (
 )
 
 export default AboutPage
-
-export const query = graphql`
-  query AboutQuery {
-    image1: file(relativePath: { regex: "/oc-profilepic.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

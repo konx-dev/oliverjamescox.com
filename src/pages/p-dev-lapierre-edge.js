@@ -1,10 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Img from 'gatsby-image'
-import { graphql } from "gatsby"
-
-const lapierreEdgePage = ({ data }) => (
+const lapierreEdgePage = () => (
   <Layout>
     <div className="cs-body--background">
       
@@ -50,7 +47,7 @@ const lapierreEdgePage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image2.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300819/oliverjamescox.com/project%20media/le-lifestyle1.jpg" />
         </div>
       </div>
 
@@ -64,7 +61,7 @@ const lapierreEdgePage = ({ data }) => (
             The initial brief was to create an online presence for the UK only range. I was tasked with choosing the build stack, finding appropriate hosting and then creating the app from the ground up.
           </div>
           <div className="eb-sec1-image">
-          <Img fluid={data.image3.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300826/oliverjamescox.com/project%20media/le-sitesample.jpg" />
           </div>
           <div className="eb-sec1-body">
           The deadline was less than a month to run inline with the dealer launch event at Raleigh HQ. I choose a PHP stack using a Wordpress install on a DigitalOcean VM droplet. Wordpress allows me to utilise the GUI page building with plugins such as Elementor. Having a simple and straight forward build stack gave me more time to focus on creating wireframes and prototypes. 
@@ -72,7 +69,7 @@ const lapierreEdgePage = ({ data }) => (
         </div>
         <div className="explore-block-sec2">
           <div className="eb-sec2-image">
-          <Img fluid={data.image5.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300830/oliverjamescox.com/project%20media/le-mockups.png" />
           </div>
         </div>
       </div>
@@ -88,7 +85,7 @@ const lapierreEdgePage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image1.childImageSharp.fluid} />
+        <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300826/oliverjamescox.com/project%20media/le-feature-flowchart.jpg" />
         </div>
       </div>  
 
@@ -103,7 +100,7 @@ const lapierreEdgePage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image7.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300824/oliverjamescox.com/project%20media/le-wireframes.jpg" />
         </div>
       </div>
 
@@ -118,7 +115,7 @@ const lapierreEdgePage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image8.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300825/oliverjamescox.com/project%20media/le-visual-designs.jpg" />
         </div>
       </div>
 
@@ -144,14 +141,14 @@ const lapierreEdgePage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image6.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300817/oliverjamescox.com/project%20media/le-audits-r1.jpg" />
         </div>
       </div>
 
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image4.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300818/oliverjamescox.com/project%20media/le-room-mockup.jpg" />
         </div>
       </div>
 
@@ -168,64 +165,3 @@ const lapierreEdgePage = ({ data }) => (
 )
 
 export default lapierreEdgePage
-
-export const query = graphql`
-  query cs2Query {
-    image2: file(relativePath: { regex: "/le-lifestyle1/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image3: file(relativePath: { regex: "/le-sitesample/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image5: file(relativePath: { regex: "/le-mockups/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image6: file(relativePath: { regex: "/le-audits-r1/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image4: file(relativePath: { regex: "/le-room-mockup/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image1: file(relativePath: { regex: "/le-feature-flowchart/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image7: file(relativePath: { regex: "/le-wireframes/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image8: file(relativePath: { regex: "/le-visual-designs/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }    
-  }
-`

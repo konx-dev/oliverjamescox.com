@@ -1,10 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Img from 'gatsby-image'
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
       <div className="index__wrapper">
       
@@ -35,7 +34,7 @@ const IndexPage = ({ data }) => (
               <Link to="/p-dev-ryanandchristie"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image2.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -53,7 +52,7 @@ const IndexPage = ({ data }) => (
               <Link to="/p-dev-lapierre-edge"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image3.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300820/oliverjamescox.com/project%20media/le-portfolio-cover.jpg" />
           </div>
         </div>
         <div className="index__project-container">
@@ -66,12 +65,11 @@ const IndexPage = ({ data }) => (
             </div>
             <div className="index__project-desc">
               <p>A product design brief to create the new flagship Raleigh urban e-bike.</p>
-              <p>**CASE STUDY COMING**</p>
             </div>
               <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
-            <Img fluid={data.image4.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300821/oliverjamescox.com/project%20media/p-des-centros-portfolio-cover.jpg" />
           </div>
         </div>
       </div>
@@ -80,36 +78,3 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
-
-export const query = graphql`
-  query IndexQuery {
-    image1: file(relativePath: { regex: "/placeholder-4Kres-1.jpg/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image2: file(relativePath: { regex: "/rc-portfolio-cover-alt/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image3: file(relativePath: { regex: "/le-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image4: file(relativePath: { regex: "/p-des-centros-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`

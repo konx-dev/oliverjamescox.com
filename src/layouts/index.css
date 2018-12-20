@@ -681,6 +681,17 @@ pre tt:after {
   margin: 0;
 }
 
+/* Banners */
+
+.banner-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
 /* !important classes */
 
 #hidden {
@@ -714,6 +725,7 @@ pre tt:after {
   grid-column: 1 / span 3;
   grid-row: 1;
   background: black;
+  display: inherit;
 }
 
 .hero--image img {

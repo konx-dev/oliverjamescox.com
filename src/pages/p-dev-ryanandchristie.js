@@ -1,16 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Img from 'gatsby-image'
-import { graphql } from "gatsby"
-
-import poundSign from '../images/general-icons/oc-poundsign.svg'
-import customiseIcon from '../images/general-icons/oc-customisation.svg'
-import monthlyCost from '../images/general-icons/oc-monthlycost.svg'
-import wwwIcon from '../images/general-icons/oc-www.svg'
-import wysiwyg from '../images/general-icons/oc-wysiwyg.svg'
-
-const weddingAppPage = ({ data }) => (
+const weddingAppPage = () => (
   <Layout>
     <div className="cs-body--background">
       
@@ -47,7 +38,7 @@ const weddingAppPage = ({ data }) => (
           
           <div className="pb-sec2--block">
             <div className="pb-block--img">
-              <img className="general-icon" src={poundSign} alt="poundSign logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300282/oliverjamescox.com/logos%20%2B%20icons/oc-poundsign.svg" alt="poundSign logo" />
             </div>
             <div className="pb-block--subheader">
               Running costs
@@ -59,7 +50,7 @@ const weddingAppPage = ({ data }) => (
           
           <div className="pb-sec2--block">
             <div className="pb-block--img">
-              <img className="general-icon" src={customiseIcon} alt="customised logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300283/oliverjamescox.com/logos%20%2B%20icons/oc-customisation.svg" alt="customised logo" />
             </div>
             <div className="pb-block--subheader">
               Customisation
@@ -76,7 +67,7 @@ const weddingAppPage = ({ data }) => (
         <div className="findings-block--sec1">
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              <img className="general-icon" src={wwwIcon} alt="world wide web icon" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300283/oliverjamescox.com/logos%20%2B%20icons/oc-www.svg" alt="world wide web icon" />
             </div>
             <div className="fb-sec1--block-copy">
               Personalising the site with a custom domain has an initial outlay and every year thereafter. Domain names of combined client names are reasonably priced due to the scarcity of demand.
@@ -84,7 +75,7 @@ const weddingAppPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              <img className="general-icon" src={wysiwyg} alt="wysiwyg logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300282/oliverjamescox.com/logos%20%2B%20icons/oc-wysiwyg.svg" alt="wysiwyg logo" />
             </div>
             <div className="fb-sec1--block-copy">
               WYSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as Wordpress can require separate hosting if not opting to host with their platform.
@@ -92,7 +83,7 @@ const weddingAppPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              <img className="general-icon" src={monthlyCost} alt="Monthly cost logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300282/oliverjamescox.com/logos%20%2B%20icons/oc-monthlycost.svg" alt="Monthly cost logo" />
             </div>
             <div className="fb-sec1--block-copy">
               Exploring options such as Wix, Squarespace on the surface you would often have to pay a monthly fee for features you don’t necessarily need and can include ads unless you pay more.
@@ -104,7 +95,7 @@ const weddingAppPage = ({ data }) => (
             WYSIWYG builders can get you up and running with ease but at a varying level of cost and may not offer the level of customisation required by the client.
           </div>
           <div className="fb-sec2--image">
-            <Img fluid={data.image2.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300819/oliverjamescox.com/project%20media/rc--wix-pricing-table.png" />
           </div>
         </div>
       </div>
@@ -124,7 +115,7 @@ const weddingAppPage = ({ data }) => (
             The initial brief was to adopt the pre-existing styling from the save the date stationary and create a solution where guests could RSVP, read important information about the day and explore the possibility of image uploading.
           </div>
           <div className="eb-sec1-image">
-          <Img fluid={data.image3.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300833/oliverjamescox.com/project%20media/rc-weddinginvite.jpg" />
           </div>
           <div className="eb-sec1-body">
             Started by exploring what information beyond those specified could elevate the app's usefulness and pre-emptively incorporate features that had yet to be realised. I looked into pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
@@ -132,7 +123,7 @@ const weddingAppPage = ({ data }) => (
         </div>
         <div className="explore-block-sec2">
           <div className="eb-sec2-image">
-          <Img fluid={data.image5.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300819/oliverjamescox.com/project%20media/rc-mockups-alt.png" />
           </div>
         </div>
       </div>
@@ -147,7 +138,7 @@ const weddingAppPage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image7.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300830/oliverjamescox.com/project%20media/rc-wireframes.jpg" />
         </div>
       </div>
 
@@ -161,7 +152,7 @@ const weddingAppPage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image1.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300823/oliverjamescox.com/project%20media/rc-feature-flowchart.jpg" />
         </div>
       </div>
 
@@ -175,7 +166,7 @@ const weddingAppPage = ({ data }) => (
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image8.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300824/oliverjamescox.com/project%20media/rc-visual-designs.jpg" />
         </div>
       </div>
 
@@ -210,14 +201,14 @@ const weddingAppPage = ({ data }) => (
         </div>
         <div className="brand-block--sec2">
           <div className="bb-sec2--image">
-            <Img fluid={data.image6.childImageSharp.fluid} />
+            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300828/oliverjamescox.com/project%20media/rc-iphone-mockup2.png" />
           </div>
         </div>
       </div>
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image4.childImageSharp.fluid} />
+          <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300819/oliverjamescox.com/project%20media/rc-room-mockup.jpg" />
         </div>
       </div>
 
@@ -239,64 +230,3 @@ const weddingAppPage = ({ data }) => (
 )
 
 export default weddingAppPage
-
-export const query = graphql`
-  query cs1Query {
-    image2: file(relativePath: { regex: "/rc--wix-pricing-table/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image3: file(relativePath: { regex: "/rc-weddinginvite/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image5: file(relativePath: { regex: "/rc-mockups-alt/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image6: file(relativePath: { regex: "/rc-iphone-mockup2/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image4: file(relativePath: { regex: "/rc-room-mockup/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image1: file(relativePath: { regex: "/rc-feature-flowchart/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image7: file(relativePath: { regex: "/rc-wireframes/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image8: file(relativePath: { regex: "/rc-visual-designs/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }    
-  }
-`
