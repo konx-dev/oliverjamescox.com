@@ -19,11 +19,12 @@ class ProjectCard extends React.Component {
         }
     }
 
-    render() {
-
+    componentDidMount() {
         var cl = cloudinary.Cloudinary.new({cloud_name: "olivercoxdesign"}); 
-        // replace 'demo' with your cloud name in the line above 
         cl.responsive();
+    }
+
+    render() {
 
         return (
                 <div className="project-container">
