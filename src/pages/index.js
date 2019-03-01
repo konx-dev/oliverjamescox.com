@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import { Link } from "gatsby"
+import ProjectCard from '../feature/01-Project-Card/project-card'
 
 const IndexPage = () => (
   <Layout>
@@ -34,7 +35,7 @@ const IndexPage = () => (
               <Link to="/p-dev-ryanandchristie"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
-            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt.jpg" />
+            <img src="#" />
           </div>
         </div>
         <div className="index__project-container">
@@ -52,7 +53,7 @@ const IndexPage = () => (
               <Link to="/p-dev-lapierre-edge"><button className="cta-btn">Find out more</button></Link>
           </div>
           <div className="index__project-container-sec2">
-            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300820/oliverjamescox.com/project%20media/le-portfolio-cover.jpg" />
+            <img src="#" />
           </div>
         </div>
         <div className="index__project-container">
@@ -69,9 +70,32 @@ const IndexPage = () => (
               <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer"><button className="cta-btn">Find out more</button></a>
           </div>
           <div className="index__project-container-sec2">
-            <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300821/oliverjamescox.com/project%20media/p-des-centros-portfolio-cover.jpg" />
+            {/* <img
+              sizes="(max-width: 2800px) 100vw, 2800px"
+              srcSet="
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_200/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 200w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_644/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 644w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_935/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 935w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_1266/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 1266w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_1557/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 1557w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_1844/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 1844w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2105/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2105w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2365/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2365w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2628/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2628w,
+                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2800/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2800w"
+              src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
+              alt="Ryan &amp; Christie's Wedding Project Cover" 
+            /> */}
           </div>
         </div>
+        <ProjectCard 
+                title="Bespoke Wedding site"
+                tech="GatsbyJS, UI/UX Design"
+                description="The cost of small bespoke websites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated site as an alternative to the subscription model prevelant in WYSIWYG builders."
+                link="/p-dev-ryanandchristie"
+                image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
+                alt="The words Ryan &amp; Christie surrounded by hearts and flowers and a bauble with the date 23rd december 2018, the date of their wedding"
+        />
       </div>
   </Layout>
   
