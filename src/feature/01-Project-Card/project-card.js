@@ -12,7 +12,8 @@ class ProjectCard extends React.Component {
         this.state = {
             title: props.title,
             tech: props.tech,
-            description: props.description,
+            descript1: props.descript1,
+            descript2: props.descript2,
             link: props.link,
             image: props.image,
             alt: props.alt
@@ -36,34 +37,17 @@ class ProjectCard extends React.Component {
                             {this.state.tech}
                         </div>
                         <div className="project-desc">
-                            {this.state.description}
+                            {this.state.descript1}<br /><br />
+                            {this.state.descript2}
                         </div>
                         <Link to={this.state.link}><button className="cta-btn">Find out more</button></Link>
                     </div>
                     <div className="project-container-sec2">
-                        {/* <img
-                            sizes="(max-width: 2800px) 100vw, 2800px"
-                            srcSet="
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_200/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 200w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_644/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 644w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_935/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 935w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_1266/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 1266w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_1557/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 1557w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_1844/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 1844w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2105/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2105w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2365/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2365w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2628/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2628w,
-                                https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/c_scale,w_2800/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt 2800w"
-                            src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
-                            alt={this.state.alt} */}
-
                         <img 
                             data-src={this.state.image} 
                             className="cld-responsive"
                             alt={this.state.alt}
                         />
-
-                        
                     </div>
                 </div>
         )

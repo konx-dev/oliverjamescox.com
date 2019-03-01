@@ -1,17 +1,34 @@
 import React from 'react'
 import Layout from '../components/layout'
+import cloudinary from 'cloudinary-core'
 
-const AboutPage = () => (
-  <Layout>
+
+class aboutPage extends React.Component {
+
+
+  componentDidMount() {
+    var cl = cloudinary.Cloudinary.new({cloud_name: "olivercoxdesign"}); 
+    cl.responsive();
+  }
+
+
+  render() {
+
+    return(
+      <Layout>
     <div className="about__header">
       <div className="about__header-image">
-        <img src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300829/oliverjamescox.com/project%20media/oc-profilepic.jpg" />
+        <img 
+            data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/oc-profilepic"
+            className="cld-responsive"
+            alt="A picture of my face, nothing too exciting to see here.."
+        />
       </div>
     </div>
     <div className="about__body">
       <div className="about__body-container">
         <div className="cv-body-main">
-          As a designer, I’m always looking for new sources of inspiration and projects to grow and learn within this ever-changing and fast-paced industry. My interests lie in usability and performance within design and development. I specialise in traditional print and digital design and am currently utilising these skills as the creative lead for Raleigh UK Ltd. digital marketing team.
+          As a designer, I’m always looking for new sources of inspiration and projects to grow and learn within this ever-changing and fast-paced industry. My interests lie in usability and performance within design and development. I specialise in traditional print and digital design and am currently utilising these skills as the designer for Raleigh UK Ltd digital marketing team.
         </div>
         <div className="cv-header">
           Qualifications
@@ -76,6 +93,8 @@ const AboutPage = () => (
     <a href="#page-top" title="Go to top"><button id="myBtn">&#8679;</button></a>
     
   </Layout>
-)
+    )
+  }
+}
 
-export default AboutPage
+export default aboutPage

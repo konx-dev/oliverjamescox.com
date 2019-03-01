@@ -1025,6 +1025,18 @@ pre tt:after {
 
 .blog--post-hero {
   height: 40vh;
+  margin: 0;
+}
+
+.blog--post-hero img {
+  width: 20%;
+  height: 20%;
+}
+
+.blog--post-heroblock > img {
+  object-fit: cover;
+  width: 100%;
+
 }
 
 .blog--post-copyblock {
@@ -1118,7 +1130,7 @@ pre tt:after {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .index__headline--job {
