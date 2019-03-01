@@ -1,13 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import cloudinary from 'cloudinary-core'
+
 
 export default ({ data }) => {
+  
   const post = data.markdownRemark
-
-  var cl = cloudinary.Cloudinary.new({cloud_name: "olivercoxdesign"}); 
-  cl.responsive();
 
   return (
     <Layout>
