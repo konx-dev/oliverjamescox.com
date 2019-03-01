@@ -93,7 +93,7 @@ const IndexPage = () => (
                 tech="GatsbyJS, UI/UX Design"
                 description="The cost of small bespoke websites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated site as an alternative to the subscription model prevelant in WYSIWYG builders."
                 link="/p-dev-ryanandchristie"
-                image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
+                image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
                 alt="The words Ryan &amp; Christie surrounded by hearts and flowers and a bauble with the date 23rd december 2018, the date of their wedding"
         />
       </div>
