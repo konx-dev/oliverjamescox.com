@@ -1317,6 +1317,13 @@ button.cta-btn:hover {
   width: 90%;
 }
 
+.cv-tldr {
+  width: 90%;
+  margin: 10px 0 10px 40px;
+  font-weight: 300;
+  color: #24b5ba;
+}
+
 .cv-body-main {
   font-size: 16px;
 }
@@ -1351,7 +1358,7 @@ button.cta-btn:hover {
   margin: 0 auto;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 780px) {

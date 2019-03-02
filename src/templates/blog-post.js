@@ -2,17 +2,17 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
-
 export default ({ data }) => {
   
   const post = data.markdownRemark
 
   return (
+
     <Layout>
         <div className="body--background">
-            <div className="blog--post-heroblock">
-              <img className="blog--post-hero" src={post.frontmatter.thumbnail} />
-            </div>
+        <div className="blog--post-heroblock">
+          <img className="blog--post-hero" src={post.frontmatter.thumbnail} />
+        </div>
             <div className="blog--post-copyblock">
               <div className="blog--post-date">{post.frontmatter.date}</div>
               <div className="blog--post-topic">{post.frontmatter.topic}</div>  

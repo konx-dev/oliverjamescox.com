@@ -5,6 +5,7 @@ import Header from './header'
 import Footer from './footer'
 import '../layouts/index.css'
 
+
 export default ({ children }) => (
          <>
           <Helmet 
@@ -25,7 +26,7 @@ export default ({ children }) => (
           <Header />
           
           {children}
-          
+
           <Footer />
          </>
    )
