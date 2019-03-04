@@ -75,11 +75,12 @@ class aboutPage extends React.Component {
             Development
         </div>
         <div className="cv-tldr">
-          TL;DR - HTML | CSS | JavaScript | React | Gatsby | jQuery | Wordpress
+          TL;DR - HTML | CSS / SCSS | JavaScript | React | Gatsby | jQuery | Wordpress
         </div>
         <div className="cv-body">
-          Strong understanding of the fundamentals in HTML, CSS &amp; JavaScript. Working with modern practices such as CSS Grid and SCSS within CSS and current ECMAScript with a babel transpiler for browser compatability.<br /><br />
-          JavaScript frameworks I use when suitable are React with Create-React-App and GatsbyJS as part of the JAM stack with queried markdown generated from GraphQL. As JavaScript can be utilised on both the front and backend I have side projects planned to have a working knowledge of the full stack. I utilise version control and manage my projects with git. Also with experience of jQuery and Wordpress theming and page builders.
+          Strong understanding of the fundamentals in HTML, CSS &amp; JavaScript. Working with modern practices such as CSS Grid and current ECMAScript<br /><br />
+          JavaScript frameworks I use when suitable are React with Create-React-App and GatsbyJS as part of the JAM stack with queried markdown generated from GraphQL. As JavaScript can be utilised on both the front and backend I am working on side projects to have a working knowledge of the full stack.<br /><br />
+          I utilise version control and manage my projects with git. Also with experience of jQuery and industry experience with Wordpress theming and page builders.
         </div>
         <div className="cv-header">
           Education

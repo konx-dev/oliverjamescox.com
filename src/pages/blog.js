@@ -9,10 +9,7 @@ export default ({ data }) => {
       <div className="body--background">
         <div className="hero--container">
           <div className="hero--title">
-            Latest Posts
-          </div>
-          <div className="hero--image">
-            <img className="banner-container" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300828/oliverjamescox.com/project%20media/4k-wallpaper-blog.jpg" />
+            Blog
           </div>
         </div>
         <div className="blog--container">

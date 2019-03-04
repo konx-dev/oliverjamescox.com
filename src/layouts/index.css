@@ -707,7 +707,10 @@ pre tt:after {
   color: #fafafa;
   font-family: 'Montserrat';
   font-weight: 600;
-  margin-bottom: 100px;
+  background-color: #333333;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.075' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 40px 0px 40px 0px;
+  margin-bottom: 50px;
 }
 
 .hero--container-divider {
@@ -736,14 +739,14 @@ pre tt:after {
   grid-column: 2;
   grid-row: 1;
   z-index: 1;
-  font-size: 50px;
+  font-size: 40px;
   align-self: center;
 }
 
 @media only screen and (max-width: 470px) {
   
   .hero--title {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -930,12 +933,19 @@ pre tt:after {
 
 .blog--card {
   background: white;
-  margin-bottom: 100px;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 .blog--card-sec2 {
   padding: 10px;
+}
+
+.blog--card-sec3 {
+  padding: 0px 0px 10px 10px;
+  background: #ffffff;
+  position: absolute; bottom: 0;
 }
 
 .blog--card-title {
@@ -1390,7 +1400,6 @@ button.cta-btn:hover {
   padding: 1em;
   display: grid;
   grid-template-columns: auto;
-  margin-top: 75px;
 }
 
 .form-body {
