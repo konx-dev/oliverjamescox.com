@@ -1,6 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
+
+import BlogCard from '../feature/03-Blog-Card/blogCard'
 
 export default ({ data }) => {
   console.log(data)
@@ -13,6 +15,20 @@ export default ({ data }) => {
           </div>
         </div>
         <div className="blog--container">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+              <BlogCard
+                key={node.id} 
+                title={node.frontmatter.title}
+                tech={node.frontmatter.topic}
+                descript1={node.frontmatter.description}
+                descript2=""
+                link={node.fields.slug}
+                image={node.frontmatter.thumbnail}
+                alt=""
+              />
+          ))}
+        </div>
+        {/* <div className="blog--container">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="blog--card"  key={node.id}>
               <div className="blog--card-sec1">
@@ -36,7 +52,7 @@ export default ({ data }) => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

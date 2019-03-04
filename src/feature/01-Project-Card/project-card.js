@@ -40,7 +40,9 @@ class ProjectCard extends React.Component {
                             {this.state.descript1}<br /><br />
                             {this.state.descript2}
                         </div>
-                        <Link to={this.state.link}><button className="cta-btn">Find out more</button></Link>
+                        <p className="blog--card-cta">
+                            <Link to={this.state.link}>Read &rarr;</Link>
+                        </p>
                     </div>
                     <div className="project-container-sec2">
                         <img 

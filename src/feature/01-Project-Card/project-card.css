@@ -12,8 +12,9 @@
     padding: 0px 10px 0px 10px;
     font-family: 'Montserrat';
     color: #333333;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .project-container-sec2 img {
@@ -36,8 +37,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding: 10px 0;
   }
   
   .project-cta {

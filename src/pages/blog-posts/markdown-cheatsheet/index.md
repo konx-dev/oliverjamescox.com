@@ -7,6 +7,7 @@ topic: "Resource"
 thumbnail: "https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545316713/oliverjamescox.com/blog%20content/md-splash"
 description: "Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid HTML."
 published: true
+featured: true
 ---
 
 I have to admit before working with the static site generator GatsbyJS I hadn't come across Markdown. In this post I am going to touch on what Markdown is and give a few of my personal opinions on why you should add it to your toolbelt and learn it.
