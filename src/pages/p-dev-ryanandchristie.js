@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
+import ScrollToTop from '../components/scrollToTop'
 
 const weddingAppPage = () => (
   <Layout>
+    <ScrollToTop />
     <div className="cs-body--background">
       
       
@@ -223,7 +225,6 @@ const weddingAppPage = () => (
           <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View project &rarr; </a>
         </button>
       </div>
-      <a href="#page-top" title="Go to top"><button id="myBtn">&#8679;</button></a>
     </div>
   </Layout>
   

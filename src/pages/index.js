@@ -6,7 +6,6 @@ import ProjectCard from '../feature/01-Project-Card/project-card'
 import BlogCard from '../feature/03-Blog-Card/blogCard'
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <div className="index__wrapper">

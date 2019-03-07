@@ -4,6 +4,7 @@ date: "2018-06-08"
 title: "CSS Grid: Pantone Cards"
 author: "Oliver Cox"
 thumbnail: "https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545316713/oliverjamescox.com/blog%20content/pantone_cards"
+alt: ""
 description: "Created as part of a codepen challenge experimenting with CSS Grid." 
 topic: "Challenge"
 published: true

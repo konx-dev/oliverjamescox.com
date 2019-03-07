@@ -5,6 +5,7 @@ title: "What is Markdown?"
 author: "Oliver Cox"
 topic: "Resource"
 thumbnail: "https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545316713/oliverjamescox.com/blog%20content/md-splash"
+alt: ""
 description: "Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid HTML."
 published: true
 featured: true

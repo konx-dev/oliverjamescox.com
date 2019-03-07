@@ -1,9 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
 import cloudinary from 'cloudinary-core'
+import ScrollToTop from '../components/scrollToTop'
 
 
 class aboutPage extends React.Component {
+
+  
+
 
 
   componentDidMount() {
@@ -13,12 +17,15 @@ class aboutPage extends React.Component {
 
   render() {
 
+
     return(
-      <Layout>
+
+  <Layout>
+    <ScrollToTop />
     <div className="about__header">
       <div className="about__header-image">
         <img 
-            data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/oc-profilepic"
+            data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/avatar-in-o.svg"
             className="cld-responsive"
             alt="my face, nothing too exciting to see here.."
         />
@@ -94,7 +101,6 @@ class aboutPage extends React.Component {
         </div>
       </div>
     </div>
-    <a href="#page-top" title="Go to top"><button id="myBtn">&#8679;</button></a>
     
   </Layout>
     )

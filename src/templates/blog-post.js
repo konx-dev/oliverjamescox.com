@@ -11,7 +11,7 @@ export default ({ data }) => {
     <Layout>
         <div className="body--background">
         <div className="blog--post-heroblock">
-          <img className="blog--post-hero" src={post.frontmatter.thumbnail} />
+          <img className="blog--post-hero" src={post.frontmatter.thumbnail} alt={post.frontmatter.alt}/>
         </div>
             <div className="blog--post-copyblock">
               <div className="blog--post-date">{post.frontmatter.date}</div>

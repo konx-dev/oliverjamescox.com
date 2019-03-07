@@ -921,8 +921,8 @@ pre tt:after {
 .blog--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 0px 25px 0px 25px;
+  grid-gap: 25px;
+  padding: 0px 50px 0px 50px;
   background-color: #f6f6f6;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -975,12 +975,6 @@ pre tt:after {
   font-family: "Montserrat";
   font-weight: 300;
   color: #24b5ba;
-}
-
-@media only screen and (min-width: 1400px) {
-  .blog--container {
-    max-width: 1300px;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1294,13 +1288,15 @@ button.cta-btn:hover {
 }
 
 .about__header-image {
-  max-width: 250px;
-  margin-bottom: -150px;
+  max-width: 225px;
+  margin: 0 auto -150px auto;
 }
 
-.about__header-image img {
-  border: 10px #ffffff solid;
-}
+/* .about__header-image img {
+  background: white;
+  border-radius: 50%;
+  padding: 5px 10px 10px 10px;
+} */
 
 .about__body-container {
   background: #ffffff;
@@ -2056,8 +2052,8 @@ button.cta-btn:hover {
   background-color: #24b5ba; 
   color: white; 
   cursor: pointer; 
-  padding: 10px 15px; 
-  border-radius: 5px; 
+  padding: 7.5px 12.5px; 
+  border-radius: 50%; 
   font-size: 18px; 
 }
 

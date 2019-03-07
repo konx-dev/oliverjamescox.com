@@ -81,12 +81,11 @@ const portfolioPage = () => (
             descript1="My personal site built with a JavaScript framework to showcase my projects and to host my blog."
             descript2="Exploring the build stack and my pursuit for a blazingly fast progressive web app that can be used as a substitute for a printed portfolio."
             link=""
-            image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/p-dev-personalPortfolio-portfolio-cover"
+            image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/oc-self-ident"
             alt="the letters O and C of my personal branding, the O has an illustration of me wearing a virtual reality headset"
         />
       </div>
     </div>
-    <a href="#page-top" title="Go to top"><button id="myBtn">&#8679;</button></a>
   </Layout>
 )
 

@@ -6,7 +6,7 @@ const Header = () => (
 <div className="menu-container" id="page-top">
   <div className="menu">
     <div className="menu-logo">
-        <Link to="/"><img className="logo" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300207/oliverjamescox.com/logos%20%2B%20icons/oc_logo.svg" alt="oc logo" /></Link>
+        <Link to="/"><img className="logo" src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto/w_auto,c_scale/dpr_auto/v1545300207/oliverjamescox.com/logos%20%2B%20icons/oc_logo.svg" alt="oc logo" /></Link>
     </div>
     <nav className="menu-items">
         <ul>
