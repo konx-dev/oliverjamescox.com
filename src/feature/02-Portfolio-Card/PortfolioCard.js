@@ -52,7 +52,7 @@ class PortfolioCard extends React.Component {
                 </div>
                 <div className="blog--card-sec3">
                 <p className="blog--card-cta">
-                <Link to={this.state.link}>Read &rarr;</Link>
+                <Link to={this.state.link}>Find out more &rarr;</Link>
                 </p>
             </div>
         </div>

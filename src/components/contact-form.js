@@ -1,5 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
+import cloudinary from 'cloudinary-core'
 
 function encode(data) {
     return Object.keys(data)
@@ -16,6 +17,11 @@ export default class Contact extends React.Component {
 handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
 };
+
+componentDidMount() {
+    var cl = cloudinary.Cloudinary.new({cloud_name: "olivercoxdesign"}); 
+    cl.responsive();
+  }
 
 handleSubmit = e => {
     e.preventDefault();
@@ -78,6 +84,13 @@ return (
                 <button type="submit">Submit</button>
             </div>
             </form>
+        </div>
+        <div className="form-body-sec2">
+        <img 
+            data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto/w_auto,c_scale/dpr_auto/v1552239597/oliverjamescox.com/project%20media/contact-main.svg"
+            className="cld-responsive"
+            alt="simple letter illustration in the brand colours for the contact form"
+        />
         </div>
     </div>
 );

@@ -681,6 +681,20 @@ pre tt:after {
   margin: 0;
 }
 
+.myButton {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0.5em 0;
+  background: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+
+.myButton:hover a {
+  color: #f6f6f6;
+}
+
 /* Banners */
 
 .banner-container {
@@ -754,6 +768,13 @@ pre tt:after {
 
 .body--background {
   padding-top: 0;
+  padding-bottom: 75px;
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.body--background-alt {
+  padding-top: 75px;
   padding-bottom: 75px;
   background-color: #f6f6f6;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -1131,10 +1152,10 @@ pre tt:after {
 }
 
 .index__headline--sub {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .index__headline--job {
@@ -1396,6 +1417,8 @@ button.cta-btn:hover {
   padding: 1em;
   display: grid;
   grid-template-columns: auto;
+  max-width: 500px;
+
 }
 
 .form-body {
@@ -1404,12 +1427,19 @@ button.cta-btn:hover {
 
 .form-body-sec1 {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .form-body-sec2 {
   grid-column: 1;
   grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-body-sec2 > img {
+  width: 75%;
 }
 
 .form-name input, .form-email input, .form-messagebox textarea {
@@ -1433,6 +1463,7 @@ button.cta-btn:hover {
   outline: none;
   border-bottom: 2px solid #24b5ba;
 }
+
 
 .form-submit button {
   width: 100%;
@@ -1468,6 +1499,20 @@ button.cta-btn:hover {
   .form-name input, .form-email input, .form-messagebox textarea {
     font-size: 16px;
   }
+}
+
+
+.thanks-text {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 26px;
+  padding-bottom: 25px;
+}
+
+.thanks-subtext {
+  font-size: 20px;
+
 }
 
 /* /////////// contact  end /////////// */

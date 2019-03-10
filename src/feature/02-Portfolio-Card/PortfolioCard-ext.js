@@ -53,7 +53,7 @@ class PortfolioCardExt extends React.Component {
                 </div>
                 <div className="blog--card-sec3">
                     <p className="blog--card-cta">
-                        <a href={this.state.link} target="_blank" rel="noopener noreferrer">Read &rarr;</a>
+                        <a href={this.state.link} target="_blank" rel="noopener noreferrer">Find out more &rarr;</a>
                     </p>
                 </div>
             </div>
