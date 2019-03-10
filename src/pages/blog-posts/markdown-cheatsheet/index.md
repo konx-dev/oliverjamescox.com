@@ -4,9 +4,11 @@ date: "2018-09-20"
 title: "What is Markdown?"
 author: "Oliver Cox"
 topic: "Resource"
-thumbnail: "./md-splash.jpg"
+thumbnail: "https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545316713/oliverjamescox.com/blog%20content/md-splash"
+alt: ""
 description: "Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid HTML."
 published: true
+featured: true
 ---
 
 I have to admit before working with the static site generator GatsbyJS I hadn't come across Markdown. In this post I am going to touch on what Markdown is and give a few of my personal opinions on why you should add it to your toolbelt and learn it.
@@ -133,7 +135,7 @@ http://www.example.com or <http://www.example.com>
 
 ```
 Inline-style: 
-![alt text](./md-splash.jpg "What is Markdown article hero image")
+![alt text](image-address-here.jpg "What is Markdown article hero image")
 
 Reference-style: 
 ![alt text][logo]
@@ -142,7 +144,7 @@ Reference-style:
 ```
 
 Inline-style: 
-![alt text](./md-splash.jpg "What is Markdown article hero image")
+![alt text](https://res.cloudinary.com/olivercoxdesign/image/upload/v1545316487/oliverjamescox.com/blog%20content/md-splash.jpg "What is Markdown article hero image")
 
 ## Code & Syntax Highlighting
 

@@ -1,17 +1,22 @@
 import React from 'react'
 import Layout from '../components/layout'
+import ScrollToTop from '../components/scrollToTop'
+import cloudinary from 'cloudinary-core'
 
-import Img from 'gatsby-image'
-import { graphql } from "gatsby"
 
-import poundSign from '../images/general-icons/oc-poundsign.svg'
-import customiseIcon from '../images/general-icons/oc-customisation.svg'
-import monthlyCost from '../images/general-icons/oc-monthlycost.svg'
-import wwwIcon from '../images/general-icons/oc-www.svg'
-import wysiwyg from '../images/general-icons/oc-wysiwyg.svg'
+export default class WeddingApp extends React.Component {
 
-const weddingAppPage = ({ data }) => (
+
+  componentDidMount() {
+    var cl = cloudinary.Cloudinary.new({cloud_name: "olivercoxdesign"}); 
+    cl.responsive();
+  }
+
+  render() {
+    return(
+    
   <Layout>
+    <ScrollToTop />
     <div className="cs-body--background">
       
       
@@ -21,10 +26,10 @@ const weddingAppPage = ({ data }) => (
             Case Study
           </div>
           <div className="ib-sec1--title">
-            Event web app
+            Bespoke Wedding site
           </div>
           <div className="ib-sec1--subtitle">
-          <p>The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated app as an alternative to the subscription model prevelant in WYSIWYG builders.</p>
+          <p>The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated site as an alternative to the subscription model prevalant in WYSIWYG builders.</p>
           <p>Key features included the ability to gather RSVP responses, provide day information and an integrated image gallery with zero hosting costs.</p>
           </div>
           <button className="ib-sec1--cta-btn">
@@ -47,7 +52,7 @@ const weddingAppPage = ({ data }) => (
           
           <div className="pb-sec2--block">
             <div className="pb-block--img">
-              <img className="general-icon" src={poundSign} alt="poundSign logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300282/oliverjamescox.com/logos%20%2B%20icons/oc-poundsign.svg" alt="poundSign logo" />
             </div>
             <div className="pb-block--subheader">
               Running costs
@@ -59,7 +64,7 @@ const weddingAppPage = ({ data }) => (
           
           <div className="pb-sec2--block">
             <div className="pb-block--img">
-              <img className="general-icon" src={customiseIcon} alt="customised logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300283/oliverjamescox.com/logos%20%2B%20icons/oc-customisation.svg" alt="customised logo" />
             </div>
             <div className="pb-block--subheader">
               Customisation
@@ -76,7 +81,7 @@ const weddingAppPage = ({ data }) => (
         <div className="findings-block--sec1">
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              <img className="general-icon" src={wwwIcon} alt="world wide web icon" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300283/oliverjamescox.com/logos%20%2B%20icons/oc-www.svg" alt="world wide web icon" />
             </div>
             <div className="fb-sec1--block-copy">
               Personalising the site with a custom domain has an initial outlay and every year thereafter. Domain names of combined client names are reasonably priced due to the scarcity of demand.
@@ -84,15 +89,15 @@ const weddingAppPage = ({ data }) => (
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              <img className="general-icon" src={wysiwyg} alt="wysiwyg logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300282/oliverjamescox.com/logos%20%2B%20icons/oc-wysiwyg.svg" alt="wysiwyg logo" />
             </div>
             <div className="fb-sec1--block-copy">
-              WYSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as Wordpress can require separate hosting if not opting to host with their platform.
+              WYSIWYG builders that handle the hosting typically run a monthly fee, alternative options such as WordPress can require separate hosting if not opting to host with their platform.
             </div>
           </div>
           <div className="fb-sec1--block">
             <div className="fb-sec1--block-img">
-              <img className="general-icon" src={monthlyCost} alt="Monthly cost logo" />
+              <img className="general-icon" src="https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300282/oliverjamescox.com/logos%20%2B%20icons/oc-monthlycost.svg" alt="Monthly cost logo" />
             </div>
             <div className="fb-sec1--block-copy">
               Exploring options such as Wix, Squarespace on the surface you would often have to pay a monthly fee for features you don’t necessarily need and can include ads unless you pay more.
@@ -104,7 +109,11 @@ const weddingAppPage = ({ data }) => (
             WYSIWYG builders can get you up and running with ease but at a varying level of cost and may not offer the level of customisation required by the client.
           </div>
           <div className="fb-sec2--image">
-            <Img fluid={data.image2.childImageSharp.fluid} />
+            <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300819/oliverjamescox.com/project%20media/rc--wix-pricing-table" 
+                className="cld-responsive"
+                alt="Wix pricing structure table"
+            />
           </div>
         </div>
       </div>
@@ -124,15 +133,23 @@ const weddingAppPage = ({ data }) => (
             The initial brief was to adopt the pre-existing styling from the save the date stationary and create a solution where guests could RSVP, read important information about the day and explore the possibility of image uploading.
           </div>
           <div className="eb-sec1-image">
-          <Img fluid={data.image3.childImageSharp.fluid} />
+            <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300833/oliverjamescox.com/project%20media/rc-weddinginvite" 
+                className="cld-responsive"
+                alt="Printed wedding stationary for Ryan &amp; Christies wedding"
+            />
           </div>
           <div className="eb-sec1-body">
-            Started by exploring what information beyond those specified could elevate the app's usefulness and pre-emptively incorporate features that had yet to be realised. I looked into pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
+            I started by exploring what information beyond those specified could elevate the app's usefulness and pre-emptively incorporate features that had yet to be realised. I researched pre-existing solutions provided as a service and looked for examples of actual sites to draw insight into commonly requested and desirable features.
           </div>
         </div>
         <div className="explore-block-sec2">
           <div className="eb-sec2-image">
-          <Img fluid={data.image5.childImageSharp.fluid} />
+            <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300819/oliverjamescox.com/project%20media/rc-mockups-alt" 
+                className="cld-responsive"
+                alt="High Fidelity initial mockups"
+            />
           </div>
         </div>
       </div>
@@ -140,42 +157,54 @@ const weddingAppPage = ({ data }) => (
       <div className="cs--question-block">
         <div className="qb-body">
           <h2>Building the wireframes</h2>
-          <p>I had ideas of how I was going to design the app based around the existing stationary and made a habit of sketching by hand before moving to digital mock-ups.</p>
-          <p>I used Adobe Illustrator to create the wireframes and prototypes. I use it everyday for work, so is extremely easy for me to create the visuals. The mock-ups were a great visual aid for the client, a lot of decisions and improvements were discussed with important information prioritised.</p>
+          <p>I had ideas of how I was going to design the website based around the existing stationary and started with pen and paper sketching before moving to digital mock-ups.</p>
+          <p>I used Adobe Illustrator to create the wireframes and prototypes. I use it frequently for work, so is easy for me to create the visuals. The mock-ups were a great visual aid for the client, a lot of decisions and improvements were discussed with important information prioritised.</p>
         </div>
       </div>
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image7.childImageSharp.fluid} />
+          <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/rc-wireframes" 
+                className="cld-responsive"
+                alt="initial wireframes"
+            />
         </div>
       </div>
 
       <div className="cs--question-block">
         <div className="qb-body">
           <h2>Mapping the features &amp; interactions</h2>
-          <p>Collated both as the app has only a few elements of interaction and mostly serves as a hub of information. With the ideas generated from previous stages I mapped out a feature flow chart. It served as blueprint for the app structure with each page broken down and going into all the details required for each page</p>
+          <p>I collated both as the website has only a few elements of interaction and mostly serves as a hub of information. With the ideas generated from previous stages I mapped out a feature flow chart. It served as blueprint for the app structure with each page broken down and going into all the details required for each page.</p>
           <p>The interactions are only present on the index and photos page. The goal of the site besides providing information is for guests to easily correspond to the RSVP. The Instagram API is called on every page refresh and highlighted for visibility. Building a diagram helps me keep track of all the components and provides value when communicating the proposals to the client.</p>
         </div>
       </div>
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image1.childImageSharp.fluid} />
+          <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300823/oliverjamescox.com/project%20media/rc-feature-flowchart" 
+                className="cld-responsive"
+                alt="Feature flowchart"
+            />
         </div>
       </div>
 
       <div className="cs--question-block">
         <div className="qb-body">
           <h2>Visual Design</h2>
-          <p>I set up a Trello board (web-based project management app) to provide instant feedback with the design going through several iterations. Trello provided granular feedback and reduced time between client inputs.</p>
+          <p>I set up a Kanban board to provide instant feedback with the design going through several iterations. The board provided granular feedback and reduced time between client inputs.</p>
           <p>Below are some of the resulting visuals.</p>
         </div>
       </div>
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image8.childImageSharp.fluid} />
+          <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300824/oliverjamescox.com/project%20media/rc-visual-designs" 
+                className="cld-responsive"
+                alt="High Fidelity visual designs"
+            />
         </div>
       </div>
 
@@ -210,14 +239,22 @@ const weddingAppPage = ({ data }) => (
         </div>
         <div className="brand-block--sec2">
           <div className="bb-sec2--image">
-            <Img fluid={data.image6.childImageSharp.fluid} />
+          <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300828/oliverjamescox.com/project%20media/rc-iphone-mockup2" 
+                className="cld-responsive"
+                alt="Instagram iphone feed mockup"
+            />
           </div>
         </div>
       </div>
 
       <div className="cs--examples-block">
         <div className="examples-block--image">
-        <Img fluid={data.image4.childImageSharp.fluid} />
+            <img 
+                data-src="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300819/oliverjamescox.com/project%20media/rc-room-mockup" 
+                className="cld-responsive"
+                alt="Wedding website mockup on a display in a office"
+            />
         </div>
       </div>
 
@@ -232,73 +269,9 @@ const weddingAppPage = ({ data }) => (
           <a href="https://ryanandchristie.co.uk" target="_blank" rel="noopener noreferrer">View project &rarr; </a>
         </button>
       </div>
-      <button id="myBtn">
-          <a href="#page-top" title="Go to top">&#8679;</a>
-      </button>
     </div>
   </Layout>
   
-)
-
-export default weddingAppPage
-
-export const query = graphql`
-  query cs1Query {
-    image2: file(relativePath: { regex: "/rc--wix-pricing-table/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image3: file(relativePath: { regex: "/rc-weddinginvite/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image5: file(relativePath: { regex: "/rc-mockups-alt/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image6: file(relativePath: { regex: "/rc-iphone-mockup2/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp 
-        }
-      }
-    }
-    image4: file(relativePath: { regex: "/rc-room-mockup/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image1: file(relativePath: { regex: "/rc-feature-flowchart/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image7: file(relativePath: { regex: "/rc-wireframes/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image8: file(relativePath: { regex: "/rc-visual-designs/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }    
-  }
-`
+  )
+}
+}

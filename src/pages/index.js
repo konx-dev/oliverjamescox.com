@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { graphql } from "gatsby"
 
-import Img from 'gatsby-image'
-import { graphql, Link } from "gatsby"
+import ProjectCard from '../feature/01-Project-Card/project-card'
+import BlogCard from '../feature/03-Blog-Card/blogCard'
 
-const IndexPage = ({ data }) => (
-  <Layout>
+export default ({ data }) => {
+  return (
+    <Layout>
       <div className="index__wrapper">
       
         <div className="index__container">
@@ -13,7 +15,7 @@ const IndexPage = ({ data }) => (
             Hello, I'm Oliver.
           </div>
           <div className="index__headline--sub">
-            I design and code with modern <br></br>tooling, and love what I do.
+          I am a Designer &amp; Developer wanting to help individuals and local businesses with building or improving their websites. Unlike my competitors I focus on user experience, making performant and accessible sites. 
           </div>
           <div className="index__headline--job">
             Designer at <a href="https://www.raleigh.co.uk/" target="_blank" rel="noopener noreferrer">@Raleigh</a>
@@ -21,104 +23,73 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
       <div className="index__body">
-        <div className="index__project-container">
-          <div className="index__project-container-sec1">
-            <div className="index__project-title">
-            Wedding bespoke app
-            </div>
-            <div className="index__project-tech">
-              GatsbyJS, UI/UX Design
-            </div>
-            <div className="index__project-desc">
-              The cost of small bespoke sites can vary in price, depending on user requirements. I helped address the clients pain points and created a statically generated app as an alternative to the subscription model prevelant in WYSIWYG builders.
-            </div>
-            <div className="index__project-cta">
-              <Link to="/p-dev-ryanandchristie">Find out more</Link>
-            </div>
-          </div>
-          <div className="index__project-container-sec2">
-            <Img fluid={data.image2.childImageSharp.fluid} />
-          </div>
-        </div>
-        <div className="index__project-container">
-          <div className="index__project-container-sec1">
-            <div className="index__project-title">
-              Lapierre Edge app
-            </div>
-            <div className="index__project-tech">
-              Wordpress, UI/UX Design
-            </div>
-            <div className="index__project-desc">
-              <p>Consumer facing web app tied in with the product launch of a range of Lapierre mountain bikes.</p>
-              <p>Assisting consumers in discovering the range and driving them through to the store locator to find their nearest stockist.</p>
-            </div>
-            <div className="index__project-cta">
-              <Link to="/p-dev-lapierre-edge">Find out more</Link>
-            </div>
-          </div>
-          <div className="index__project-container-sec2">
-            <Img fluid={data.image3.childImageSharp.fluid} />
-          </div>
-        </div>
-        <div className="index__project-container">
-          <div className="index__project-container-sec1">
-            <div className="index__project-title">
-              Bike Design: Centros
-            </div>
-            <div className="index__project-tech">
-              Product Design, Artworking
-            </div>
-            <div className="index__project-desc">
-              <p>A product design brief to create the new flagship Raleigh urban e-bike.</p>
-              <p>**CASE STUDY COMING**</p>
-            </div>
-            <div className="index__project-cta">
-              <a href="https://www.raleigh.co.uk/centros/" target="_blank" rel="noopener noreferrer">Find out more</a>
-            </div>
-          </div>
-          <div className="index__project-container-sec2">
-            <Img fluid={data.image4.childImageSharp.fluid} />
-          </div>
+        <ProjectCard 
+                  title="Lapierre Edge site"
+                  tech="WordPress"
+                  descript1="Consumer facing web site created to coincide with the product launch of a range of Lapierre mountain bikes."
+                  descript2="Raising awareness of the brand, assisting consumers in discovering the range and driving them through to the store locator to find nearest stockists."
+                  link="/p-dev-lapierre-edge"
+                  image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/le-portfolio-cover"
+                  alt="White Lapierre bicycles logo on a black background"
+          />
+          <ProjectCard 
+                  title="Bespoke Wedding site"
+                  tech="GatsbyJS, UI/UX Design"
+                  descript1="A project to create wedding website. I helped address the clients pain points and created a statically generated site as an alternative to the subscription model prevalant in WYSIWYG builders."
+                  descript2="Key requirements were zero overheads and a RSVP form and after the event a photo gallery and guest book."
+                  link="/p-dev-ryanandchristie"
+                  image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
+                  alt="The words Ryan &amp; Christie surrounded by hearts and flowers and a bauble with the date 23rd december 2018, the date of their wedding"
+          />
+      </div>
+      <div className="subheader-container">
+        <div className="subheader-text">
+          Featured Blogs
         </div>
       </div>
-      <button id="myBtn">
-          <a href="#page-top" title="Go to top">&#8679;</a>
-      </button>
-  </Layout>
-  
-)
-
-export default IndexPage
+      <div className="blog--container">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+              <BlogCard
+                key={node.id} 
+                title={node.frontmatter.title}
+                tech={node.frontmatter.topic}
+                descript1={node.frontmatter.description}
+                descript2=""
+                link={node.fields.slug}
+                image={node.frontmatter.thumbnail}
+                alt=""
+              />
+          ))}
+        </div>
+    </Layout>
+  )
+}
 
 export const query = graphql`
-  query IndexQuery {
-    image1: file(relativePath: { regex: "/placeholder-4Kres-1.jpg/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
+query {
+  allMarkdownRemark(
+    limit: 3
+    filter: { frontmatter: { featured: { eq: true } } }
+    sort: { fields: [frontmatter___date], order: DESC }
+  ) {
+    totalCount
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date
+          description
+          topic
+          path
+          thumbnail
         }
-      }
-    }
-    image2: file(relativePath: { regex: "/rc-portfolio-cover-alt/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image3: file(relativePath: { regex: "/le-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    image4: file(relativePath: { regex: "/p-des-centros-portfolio-cover/" }) {
-      childImageSharp {
-        fluid( quality: 85 ) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        fields {
+          slug
       }
     }
   }
+}
+}
 `
+
