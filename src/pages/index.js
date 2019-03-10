@@ -15,7 +15,7 @@ export default ({ data }) => {
             Hello, I'm Oliver.
           </div>
           <div className="index__headline--sub">
-          I am a Designer &amp; Developer who help individuals and local businesses with building or improving their websites. Unlike my competitors I focus on user experience, making performant and accessible sites. 
+          I am a Designer &amp; Developer wanting to help individuals and local businesses with building or improving their websites. Unlike my competitors I focus on user experience, making performant and accessible sites. 
           </div>
           <div className="index__headline--job">
             Designer at <a href="https://www.raleigh.co.uk/" target="_blank" rel="noopener noreferrer">@Raleigh</a>
@@ -41,6 +41,11 @@ export default ({ data }) => {
                   image="https://res.cloudinary.com/olivercoxdesign/image/upload/q_auto,f_auto/w_auto,c_scale/dpr_auto/v1545300830/oliverjamescox.com/project%20media/rc-portfolio-cover-alt"
                   alt="The words Ryan &amp; Christie surrounded by hearts and flowers and a bauble with the date 23rd december 2018, the date of their wedding"
           />
+      </div>
+      <div className="subheader-container">
+        <div className="subheader-text">
+          Featured Blogs
+        </div>
       </div>
       <div className="blog--container">
           {data.allMarkdownRemark.edges.map(({ node }) => (

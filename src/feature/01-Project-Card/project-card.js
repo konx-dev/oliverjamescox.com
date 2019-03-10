@@ -45,11 +45,13 @@ class ProjectCard extends React.Component {
                         </p>
                     </div>
                     <div className="project-container-sec2">
+                        <Link to={this.state.link}>
                         <img 
                             data-src={this.state.image} 
                             className="cld-responsive"
                             alt={this.state.alt}
                         />
+                        </Link>
                     </div>
                 </div>
         )

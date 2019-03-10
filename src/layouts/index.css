@@ -757,10 +757,26 @@ pre tt:after {
   align-self: center;
 }
 
+.subheader-container {
+  padding-bottom: 25px;
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.subheader-text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 470px) {
   
   .hero--title {
     font-size: 35px;
+  }
+  .hero-sml-title {
+    font-size: 30px;
   }
 }
 
@@ -1002,7 +1018,6 @@ pre tt:after {
   
   .blog--container {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 75px;
   }
   .blog--card {
     margin-bottom: 50px;
@@ -1013,7 +1028,6 @@ pre tt:after {
   
   .blog--container {
     grid-template-columns: 1fr;
-    margin-top: 50px;
   }
   .blog--card {
     margin-bottom: 25px;
@@ -1133,7 +1147,7 @@ pre tt:after {
 /* ////////////////////// Index.js ////////////////////// */
 
 .index__wrapper {
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -1186,7 +1200,7 @@ pre tt:after {
 @media only screen and (max-width: 500px) {
  
   .index__wrapper {
-    width: 100vw;
+    width: 80vw;
     grid-template-columns: 1fr auto 1fr
   }
 
@@ -1392,7 +1406,7 @@ button.cta-btn:hover {
   .about__body-container {
     width: 90vw;
   }
-  .cv-body, .cv-header, .cv-body-main {
+  .cv-body, .cv-header, .cv-body-main, .cv-tldr  {
     margin-left: 10px;
   }
 }
@@ -1401,6 +1415,10 @@ button.cta-btn:hover {
     
   .about__body-container {
     width: 100vw;
+  }
+
+  .about__header-image {
+    max-width: 175px;
   }
 }
 
@@ -1759,6 +1777,10 @@ button.cta-btn:hover {
   padding: 0 25px;
 }
 
+.fb-sec2--image img {
+  margin: 0;
+}
+
 @media only screen and (max-width: 950px) {
   .findings-block--sec1 {
     grid-template-columns: 1fr;
@@ -1803,7 +1825,7 @@ button.cta-btn:hover {
 }
 
 .qb-body {
-  width: 80%;
+  width: 80vw;
   padding: 125px 40px 125px 40px;
   margin: 0 auto;
 }
@@ -1816,6 +1838,7 @@ button.cta-btn:hover {
 
 @media only screen and (max-width: 550px) {
   .qb-body {
+    width: 90vw;
     padding: 75px 20px;
     font-size: 16px;
   }
@@ -1872,6 +1895,10 @@ button.cta-btn:hover {
   margin: 0 auto;
   margin-top: 50px;
   border: 1px solid #333333;
+}
+
+.eb-sec2-image img {
+  margin: 0;
 }
 
 .eb-sec2--cta-btn:hover {
@@ -1945,7 +1972,10 @@ button.cta-btn:hover {
   margin-bottom: 10px;
   font-size: 14px;
   color: #e1e08e;
+}
 
+.bb-sec2--image img {
+  margin: 0;
 }
 
 .bb-sec1--title {
