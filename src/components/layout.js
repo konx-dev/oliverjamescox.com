@@ -16,7 +16,7 @@ export default ({ children }) => (
               { name: 'keywords', content: 'webdev, design, gatsbyjs, reactjs, frontend, graphql, portfolio'}
             ]}
             link={[
-              { rel: 'shortcut icon', type: 'image/png', href: 'src/files/oc_logo.svg' }
+              { rel: 'shortcut icon', type: 'image/png', href: 'src/files/oc_logo.png' }
             ]}
           >
             <html lang="en" />
