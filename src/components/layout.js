@@ -16,7 +16,7 @@ export default ({ children }) => (
               { name: 'keywords', content: 'webdev, design, gatsbyjs, reactjs, frontend, graphql, portfolio'}
             ]}
             link={[
-              { rel: 'shortcut icon', type: 'image/png', href: `https://res.cloudinary.com/olivercoxdesign/image/upload/v1545300207/oliverjamescox.com/logos%20%2B%20icons/oc-favicon.png` }
+              { rel: 'shortcut icon', type: 'image/png', href: './files/oc_logo.svg' }
             ]}
           >
             <html lang="en" />
