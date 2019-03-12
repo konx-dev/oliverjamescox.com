@@ -5,6 +5,8 @@ import Header from './header'
 import Footer from './footer'
 import '../layouts/index.css'
 
+import faviconOC from '../files/oc_logo.png'
+
 
 export default ({ children }) => (
          <>
@@ -16,7 +18,7 @@ export default ({ children }) => (
               { name: 'keywords', content: 'webdev, design, gatsbyjs, reactjs, frontend, graphql, portfolio'}
             ]}
             link={[
-              { rel: 'shortcut icon', type: 'image/png', href: 'src/files/oc_logo.png' }
+              { rel: 'shortcut icon', type: 'image/png', href: `${faviconOC}` }
             ]}
           >
             <html lang="en" />
