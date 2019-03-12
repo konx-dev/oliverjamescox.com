@@ -34,16 +34,17 @@ class aboutPage extends React.Component {
     <div className="about__body">
       <div className="about__body-container">
         <div className="cv-body-main">
-          Work satisfaction for me is being able to provide value to a company that offers challenging experiences and allows me to continue to learn. I strive to enrich the user experience through performant and accessible products.<br /><br />
-          I started out studying traditional Graphic Design, exploring all aspects of the design process which I have continued to build upon in Industry. I enjoy working with type and visually problem solving through layout design and visual hierarchy.<br />Over the past few years I have been self-teaching myself web development, with a focus on the front-end technologies and interaction design. Currently utilising a blend of both for Raleigh UK Ltd.
+          I started out studying traditional Graphic Design, exploring all aspects of the design process which I have continued to build upon in Industry. I enjoy working with layout and typography.<br /><br />
+          Over the past few years I have been self-teaching myself web development, with a focus on the front-end technologies and interaction design. Currently studying Interaction Design Specialisation through the University of California, San Diego on the Coursera platform.<br /><br />
+          Work satisfaction for me is being able to provide value to a company that offers challenging experiences and allows me to continue to learn.
         </div>
         <div className="cv-header">
-          Qualifications
+          Key qualities
         </div>
         <div className="cv-body">
           <ul>
             <li>Passionate about marrying my graphic design education with web development to create memorable user experiences.</li>
-            <li>Ensure I am learning new technologies by continually self-studying and connecting with other professionals.</li>
+            <li>Ensure I am learning new technologies and skills, by continually self-studying and connecting with other professionals.</li>
             <li>Highly motivated and organised with experience working in fast-paced environments.</li>
             <li>Personable and professional; able to engage with and forge lasting relationships with a range of clients.</li>
           </ul>
@@ -63,7 +64,7 @@ class aboutPage extends React.Component {
             </li>
             <li className="cv-title">Graphic Designer, Creative Design &amp; Print
               <div className="cv-duration">November '14 - March '16</div>
-              <div className="cv-description">In this truly client-centric role, I demonstrated excellent client relations with a range of customers directly from inception to completion on a variety of briefs. I liaised with numerous suppliers and managed concurrent projects to strict deadlines whilst maintaining the highest quality.<br /><br />As a first job outside of education I really got thrown in at the deep end, but this has provided me with invaluable experience and confidence in my ability to work to a brief in a time critical environment.</div>
+              <div className="cv-description">In this truly client-centric role, I demonstrated excellent client relations with a range of customers directly from inception to completion on a variety of briefs. I liaised with numerous suppliers and managed concurrent projects to strict deadlines whilst maintaining the highest quality.<br /><br />As a first job outside of education I really got thrown in at the deep end, but this has provided me with invaluable experience and confidence in my ability to work to a brief across all stages of the project in a time critical environment.</div>
             </li>
           </ul>
         </div>
