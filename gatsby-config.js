@@ -16,11 +16,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GatsbyJS',
-        short_name: 'GatsbyJS',
+        name: 'oliverjamescox.com - personal portfolio',
+        short_name: 'oliverjamescox.com',
         start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        background_color: '#cbcdce',
+        theme_color: '#24b5ba',
         display: 'standalone',
         icon: 'oc_logo512.png',
         include_favicon: true,
