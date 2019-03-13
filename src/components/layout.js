@@ -5,7 +5,7 @@ import Header from './header'
 import Footer from './footer'
 import '../layouts/index.css'
 
-import faviconOC from '../files/oc_logo.png'
+import faviconOC from '../files/oc_logo512.png'
 
 
 export default ({ children }) => (
