@@ -22,7 +22,7 @@ module.exports = {
         background_color: '#f7f0eb',
         theme_color: '#a2466c',
         display: 'standalone',
-        icon: 'src/files/oc_logo512.png',
+        icon: 'oc_logo512.png',
         include_favicon: true,
       },
     },
