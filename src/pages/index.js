@@ -18,7 +18,7 @@ export default ({ data }) => {
           I am a Designer &amp; Developer wanting to help individuals and local businesses with building or improving their websites. Unlike my competitors I focus on user experience, making performant and accessible sites. 
           </div>
           <div className="index__headline--job">
-            Designer at <a href="https://www.raleigh.co.uk/" target="_blank" rel="noopener noreferrer">@Raleigh</a>
+            Junior Front-End Developer at <a href="https://weareabstrakt.com/" target="_blank" rel="noopener noreferrer">Abstrakt</a>
           </div>
         </div>
       </div>

@@ -54,8 +54,12 @@ class aboutPage extends React.Component {
         </div>
         <div className="cv-body">
           <ul>
+            <li className="cv-title">Junior Front-End Developer, Abstrakt
+              <div className="cv-duration">May '19 - present</div>
+              <div className="cv-description">Supporting the Head of Development and the wider company on the development of client sites.</div>
+            </li>
             <li className="cv-title">Digital Designer, Raleigh UK
-              <div className="cv-duration">October '17 - Present</div>
+              <div className="cv-duration">October '17 - April '19</div>
               <div className="cv-description">Supporting the development of the digital marketing plan, through creative input to alleviate challenges and to deliver strategic business objectives. Some of my key responsibilities are the design and development of the business and consumer email channels. I work as part of a team across a portfolio of brands having to wear many hats.<br /><br />Most notably on digital projects such as the Bike finder tool, helping consumers find the right product. This feature has resulted in an increased conversion rate across all bike ranges.<br /><br />Working closely with other departments on larger consumer-centric projects, such as creating the Lapierre Edge consumer website in line with the product launch. Establishing the build stack, hosting, then wireframing and prototyping. Before producing or sourcing the required assets and lastly developing, testing and the shipping of the finished site all to a time critical deadline.</div>
             </li>
             <li className="cv-title">Graphic Designer, Raleigh UK
