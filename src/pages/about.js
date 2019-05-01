@@ -54,9 +54,9 @@ class aboutPage extends React.Component {
         </div>
         <div className="cv-body">
           <ul>
-            <li className="cv-title">Junior Front-End Developer, Abstrakt
+            <li className="cv-title">Junior Developer, Abstrakt
               <div className="cv-duration">May '19 - present</div>
-              <div className="cv-description">Supporting the Head of Development and the wider company on the development of client sites.</div>
+              <div className="cv-description">Initial first few months focusing on personal development and tooling research, along with onboarding for the agencies processes. Then to support the Development team and the wider company on client &amp; in-house projects.</div>
             </li>
             <li className="cv-title">Digital Designer, Raleigh UK
               <div className="cv-duration">October '17 - April '19</div>
