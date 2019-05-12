@@ -14,9 +14,9 @@ export default ({ data }) => {
           <div className="index__headline">
             Hello, I'm Oliver.
           </div>
-          <div className="index__headline--sub">
-          I am a Designer &amp; Developer wanting to help individuals and local businesses with building or improving their websites. Unlike my competitors I focus on user experience, making performant and accessible sites. 
-          </div>
+          {/* <div className="index__headline--sub"> 
+          Building delightful user experiences with CraftCMS. 
+          </div> */}
           <div className="index__headline--job">
             Junior Developer at <a href="https://weareabstrakt.com/" target="_blank" rel="noopener noreferrer">Abstrakt</a>
           </div>
