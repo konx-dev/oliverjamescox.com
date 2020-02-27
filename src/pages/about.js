@@ -54,8 +54,12 @@ class aboutPage extends React.Component {
         </div>
         <div className="cv-body">
           <ul>
+            <li className="cv-title">Junior Developer, Nzime
+              <div className="cv-duration">Dec '19 - present</div>
+              <div className="cv-description">Continuing personal development as a junior across all aspects of web development. Working alongside the dev team adding functionality to existing clients, mainly working with VueJS &amp; CraftCMS.</div>
+            </li>
             <li className="cv-title">Junior Developer, Abstrakt
-              <div className="cv-duration">May '19 - present</div>
+              <div className="cv-duration">May '19 - Nov '19</div>
               <div className="cv-description">Initial first few months focusing on personal development and tooling research, along with onboarding for the agencies processes. Then to support the Development team and the wider company on client &amp; in-house projects.</div>
             </li>
             <li className="cv-title">Digital Designer, Raleigh UK
@@ -89,11 +93,11 @@ class aboutPage extends React.Component {
             Development
         </div>
         <div className="cv-tldr">
-          TL;DR - HTML | CSS / SCSS | JavaScript | React | Gatsby | jQuery | Wordpress
+          TL;DR - Sass | JavaScript | VueJS | React | CraftCMS | Docker
         </div>
         <div className="cv-body">
           Strong understanding of the fundamentals in HTML, CSS &amp; JavaScript. Working with modern standardisations such as CSS Grid and current ECMAScript.<br /><br />
-          JavaScript frameworks I use when suitable are React with Create-React-App and GatsbyJS as part of the JAM stack with queried markdown generated from GraphQL. As JavaScript can be utilised on both the front and backend, I am working on side projects to have a working knowledge of the full stack.<br /><br />
+          Day to day I use VueJS but also keen on exploring other JavaScript frameworks such as React, using with Create-React-App and GatsbyJS as part of the JAMstack with queried markdown generated from GraphQL. As JavaScript can be utilised on both the front and backend, I am working on side projects to have a working knowledge of the full stack.<br /><br />
           I utilise version control and manage my projects with git. Also, with experience of jQuery and industry experience with WordPress theming and page builders.
         </div>
         <div className="cv-header">

@@ -18,7 +18,7 @@ export default ({ data }) => {
           Building delightful user experiences with CraftCMS. 
           </div> */}
           <div className="index__headline--job">
-            Junior Developer at <a href="https://weareabstrakt.com/" target="_blank" rel="noopener noreferrer">Abstrakt</a>
+            Junior Developer at <a href="https://www.nzime.com/" target="_blank" rel="noopener noreferrer">Nzime</a>
           </div>
         </div>
       </div>
