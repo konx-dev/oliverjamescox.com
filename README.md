@@ -1,7 +1,5 @@
-# gatsby-starter-default
-The default Gatsby starter.
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+# oliverjamescox.com
+Personal development/design portfolio website. I created this when looking for my first developer role, has a mix of both my industry experience in graphic design and personal development projects.
 
 ## Install
 
@@ -21,6 +19,4 @@ cd gatsby-example-site
 npm run develop
 ```
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+This site is no longer active, archived to make way for the next iteration. The site can still be viewed on netlify at: [oliverjamescox.com](https://olivercox.netlify.app/) 
